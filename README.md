@@ -1,2 +1,2 @@
-# portfolio-website-public
-public version of my portfolio project
+# Portfolio
+A small overview of my teaching and science communication skills across formats and platforms.
