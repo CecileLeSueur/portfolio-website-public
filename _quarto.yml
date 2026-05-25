@@ -1,0 +1,25 @@
+project:
+  type: website
+  #pre-render: Workshops/convert_slides.py
+
+website:
+  title: "Cécile Le Sueur's Porfolio"
+  navbar:
+    left:
+      - href: index.qmd
+        text: home
+      #- about.qmd
+  page-footer:
+    right: "This page is built with ❤️ and [Quarto](https://quarto.org/)."
+    #left: "&copy; Copyright 2022, Mine Çetinkaya-Rundel"
+    left: "&copy; 2026 Cecile Le Sueur"
+    background: "rgb(248, 249, 250)"
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+    
+
+

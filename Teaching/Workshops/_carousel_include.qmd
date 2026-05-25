@@ -1,0 +1,58 @@
+:::: {.carousel .dark .framed autoplay="false" transition="none"}
+:::: {.carousel-item image="../../images/slides_workshop/slide-01.png"}
+:::
+:::: {.carousel-item image="../../images/slides_workshop/slide-02.png"}
+:::
+:::: {.carousel-item image="../../images/slides_workshop/slide-03.png"}
+:::
+:::: {.carousel-item image="../../images/slides_workshop/slide-04.png"}
+:::
+:::: {.carousel-item image="../../images/slides_workshop/slide-05.png"}
+:::
+:::: {.carousel-item image="../../images/slides_workshop/slide-06.png"}
+:::
+:::: {.carousel-item image="../../images/slides_workshop/slide-07.png"}
+:::
+:::: {.carousel-item image="../../images/slides_workshop/slide-08.png"}
+:::
+:::: {.carousel-item image="../../images/slides_workshop/slide-09.png"}
+:::
+:::: {.carousel-item image="../../images/slides_workshop/slide-10.png"}
+:::
+:::: {.carousel-item image="../../images/slides_workshop/slide-11.png"}
+:::
+:::: {.carousel-item image="../../images/slides_workshop/slide-12.png"}
+:::
+:::: {.carousel-item image="../../images/slides_workshop/slide-13.png"}
+:::
+:::: {.carousel-item image="../../images/slides_workshop/slide-14.png"}
+:::
+:::: {.carousel-item image="../../images/slides_workshop/slide-15.png"}
+:::
+:::: {.carousel-item image="../../images/slides_workshop/slide-16.png"}
+:::
+:::: {.carousel-item image="../../images/slides_workshop/slide-17.png"}
+:::
+:::: {.carousel-item image="../../images/slides_workshop/slide-18.png"}
+:::
+:::: {.carousel-item image="../../images/slides_workshop/slide-19.png"}
+:::
+:::: {.carousel-item image="../../images/slides_workshop/slide-20.png"}
+:::
+:::: {.carousel-item image="../../images/slides_workshop/slide-21.png"}
+:::
+:::: {.carousel-item image="../../images/slides_workshop/slide-22.png"}
+:::
+:::: {.carousel-item image="../../images/slides_workshop/slide-23.png"}
+:::
+:::: {.carousel-item image="../../images/slides_workshop/slide-24.png"}
+:::
+:::: {.carousel-item image="../../images/slides_workshop/slide-25.png"}
+:::
+:::: {.carousel-item image="../../images/slides_workshop/slide-26.png"}
+:::
+:::: {.carousel-item image="../../images/slides_workshop/slide-27.png"}
+:::
+:::: {.carousel-item image="../../images/slides_workshop/slide-28.png"}
+:::
+:::

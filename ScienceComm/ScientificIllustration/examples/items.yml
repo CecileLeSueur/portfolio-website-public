@@ -1,0 +1,25 @@
+- title: "Mass Spectrometry concepts"
+  subtitle: "Bottom-up vs Top-down proteomics (Figure 2.2 from [1]). (© 2025 Cécile Le Sueur)"
+  thumbnail: "../../../images/ScientificIllustration/ThesisFigureGallery/MS_figs_300dpi.png"
+- title: "Thermodynamics concepts" 
+  subtitle: "Thermodynamics of heat induced protein denaturation (Figure 3.1 from [1]). (© 2025 Cécile Le Sueur)"
+  thumbnail: "../../../images/ScientificIllustration/ThesisFigureGallery/Comparison_thermodynamic_models_300dpi.png"
+
+- title: "Molecular biology concepts" 
+  subtitle: "Cellular processes influencing the modelling of temperature dynamics (Figure 3.2 from [1]). (© 2025 Cécile Le Sueur)"
+  thumbnail: "../../../images/ScientificIllustration/ThesisFigureGallery/CellularProcesses_300dpi.png"
+
+- title: "Probabilistic ML/AI concepts" 
+  subtitle: "Implementation of the hierarchical GP model using the multitask GP regression framework (Figure 4.1 from [1]). (© 2025 Cécile Le Sueur)"
+  thumbnail: "../../../images/ScientificIllustration/ThesisFigureGallery/Figure2_300dpi.png"
+- title: "Mathematical concepts (linear algebra)"
+  subtitle: "Schematic visualisation of GPMelt extension allowing multiple kernels per level (Figure 7.8 from [1]). (© 2025 Cécile Le Sueur)"
+  thumbnail: "../../../images/ScientificIllustration/ThesisFigureGallery/multiple_kernels_300dpi.jpg"
+
+- title: "Design of biological protocols concepts"
+  subtitle: "Differences in multiplexing between TPP-TR and 2D-TPP (Figure 7.1 from [1]). (© 2025 Cécile Le Sueur)"
+  thumbnail: "../../../images/ScientificIllustration/ThesisFigureGallery/mutliplexing_differences_300.jpg"
+- title: "Statistical concepts (normalisation)" 
+  subtitle : "Illustration of the Internal Reference Scaling (IRS) methods[2] (Figure 7.3 from [1]). (© 2025 Cécile Le Sueur)"
+  thumbnail: "../../../images/ScientificIllustration/ThesisFigureGallery/IRS_offset_TPP_300dpi.jpg"
+

@@ -1,0 +1,35 @@
+---
+title: "Gallery of scientific illustrations"
+subtitle: "A selection of scientific illustrations covering a wide range of scientific expertise."
+image: "../../../images/thumbnails/slide-3.png"  # ← path to a preview image
+format: 
+  html:
+    page-layout: full
+    grid:
+      sidebar-width: 100px
+      body-width: 1100px
+      margin-width: 100px
+      gutter-width: 1.5rem
+listing:
+  id: listing-gallery
+  template: ../../../ListingTemplate/gallery.ejs
+  contents:
+    - items.yml
+  sort-ui: false
+  filter-ui: false
+  categories: false
+bibliography: ../../../References/references.bib
+csl: ../../../References/bibstyle.cls
+order: 0 # so it's excluded from the home page
+orderbis: 2 # so it's ordered on the Scientific illustration 
+---
+Covering Mass Spectrometry, thermodynamics, molecular biology, probabilistic ML/AI, linear algebra (matrix representation), biological protocols designs and statistics (data scaling and normalisation), these selected Figures illustrate that an "image is worth 1000 words", especially when considering complex concepts, for which a visualisation is key. Full quality images, their detailed legends and references can be found in [@LeSueurThesis].
+
+::: {#listing-gallery}
+:::
+
+<!-- to get the appropriate references -->
+[see @LeSueurThesis]{style="display:none;"}
+[see @plubell2017extended]{style="display:none;"}
+
+<!-- transition: transform .25s ease-in-out;   page-layout: full-->

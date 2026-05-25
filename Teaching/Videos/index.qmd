@@ -1,0 +1,105 @@
+---
+title: "Adapting complex concepts to different audiences:<br> the example of Gaussian Process Regression"
+subtitle: "<strong>Adapting complex concepts to different audiences</strong> <br> <br> Example: <br> <strong>Gaussian Process regression</strong>  <br> <br> Output: <br> <strong>Videos</strong>"
+#title-block-style: none
+description: |
+  During my PhD, I developed a statistical framework, GPMelt [-@LeSueurGPMelt], to analyse Thermal Proteome Profiling (TPP) datasets. I created a website, combining theoretical explanations and hands-on tutorials intended for users. Especially, I aimed to explain the **underlying modeling framework based on hierarchical Gaussian Process (GP) regression** to audiences with very different backgrounds—**from experimental biologists to statistically trained users**.
+
+  Jump to the [videos](#ex-Videos) or click on the boxes below to discover the work!
+#description-short: "Highlight: Gaussian Process regression"
+#author: "Cécile Le Sueur"
+#date: "05-2026"
+categories: [teaching, video]
+image: "../../images/thumbnails/slide-5.png"
+order: 1
+listing: 
+  id: sample-listings
+  contents: items.yml
+  template: ../../ListingTemplate/custom_listing_video_rows.ejs
+bibliography: ../../References/references.bib
+csl: ../../References/bibstyle.cls
+format: 
+  html:
+    page-layout: full
+    grid:
+      sidebar-width: 100px
+      body-width: 1100px
+      margin-width: 100px
+      gutter-width: 1.5rem
+---
+
+<div class="card card-retractable" style="margin-bottom: 2rem;" onclick="this.classList.toggle('expanded')">
+
+  <p style="text-align: center;font-weight: bold; font-size: 28px;">
+  Challenges
+  </p>
+
+  <div style="text-align: justify;">
+
+  If GP regression is a **highly abstract and mathematically complex concept**; it's combination with hierarchical modelling makes it even more complicated. The correct application of GPMelt to concrete and domain-specific biological data relies on a basic understanding of **how a biological experimental design is mathematically translated into a hierachy**. Moreover, adoption of this new framework depends on **lowering the rejection barrier linked to maths incomprehension**.
+  
+  The target audiences range from:
+
+  - **biologists** with little statistical background;
+  - to **bio-informaticians and bio-statisticians** whose middle to strong statistical background might not cover GP regression.
+
+  </div>
+
+  <div style="text-align: justify;">
+  The key is to **translate similar concepts across multiple levels of abstraction without losing clarity or rigor, while sparking interest and enthusiasm.**
+  </div>
+
+  </div>
+
+<div class="card-row">
+  
+  <div class="card card-retractable" onclick="this.classList.toggle('expanded')">
+  <p style="text-align: center;font-weight: bold; font-size: 28px;">
+  Approach
+  </p>
+
+  I designed a set of **short, visual-first videos**, each tailored to a **specific audience level**, while keeping a **consistent conceptual backbone**.
+
+  Key design choices:
+
+  * focus on **conceptual understanding** before formal definitions;
+  * adaptation of vocabulary and level of detail;
+  * strong use of visual metaphors, color coding, and animation;
+  * **progressive abstraction** (from intuition to formalization).
+
+  </div>
+
+  <div class="card card-retractable" onclick="this.classList.toggle('expanded')">
+  <p style="text-align: center;font-weight: bold; font-size: 28px;">
+  Strengths
+  </p>
+  * Ability to **adapt** explanations to different audiences;
+  * deep concept simplification **without oversimplification**;
+  * **translation between disciplines** (from biological data to mathematical modeling; from statistical analysis to biological interpretation);
+  * design of **structured learning pathways** (from intuition to formalization);
+  * **high-quality visual** communication (figures, animation, storytelling);
+  * creation of **concise, engaging educational** video content.
+  </div>
+
+</div>
+
+<div class="card card-retractable" style="margin-bottom: 2rem;" onclick="this.classList.toggle('expanded')">
+
+<p style="text-align: center;font-weight: bold; font-size: 28px;">
+Impact
+</p>
+As a statistician developping tools for biologists, the **risk is to deliver a black box** that users might use eyes closed, without trying to understand what's happening behind the scene. This general lack of understanding of statistical methods is at the **origin of the numerous incorrect data analysis leading to inapropriate results and interpretation** which can nowadays be found throughout the litterature. <br>
+By providing videos and figures to explain the theory and model behind GPMelt to diverse audiances, my goal is to **bridge the knowledge gap existing betweeen those generating the data and those analysing them**. Only then can data analysis become **truely powerful and lead to new discoveries**.
+</div>
+
+
+:::: {style="margin-top: 2rem; border: 1px solid rgba(0,0,0,0.2); box-shadow: 0 6px 14px rgba(0,0,0,0.12); border-radius: 8px; padding: 1em;" id="ex-Videos"}
+
+<p style="text-align: center;font-weight: bold; font-size: 28px;">
+  Have a look at some videos!
+</p>
+
+::: {#sample-listings}
+:::
+
+::::
