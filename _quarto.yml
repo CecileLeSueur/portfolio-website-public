@@ -1,0 +1,26 @@
+project:
+  type: website
+
+website:
+  title: "Cécile Le Sueur's Porfolio"
+  navbar:
+    left:
+      - href: index.qmd
+        text: home
+    right:
+    - text: "License"
+      href: license.qmd
+  page-footer:
+    right: "This page is built with ❤️ and [Quarto](https://quarto.org/)."
+    center: "Code: MIT | Content: CC BY-NC 4.0"
+    left: "&copy; 2026 Cecile Le Sueur"
+    background: "rgb(248, 249, 250)"
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+    
+
+

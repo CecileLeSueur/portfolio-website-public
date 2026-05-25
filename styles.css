@@ -1,0 +1,156 @@
+/* css styles */
+
+/* --------------------------------- */
+/* CARDS STYLES */
+.card-row {
+  display: flex;
+  gap: 1.5rem;
+  margin-bottom: 2rem; /* adds space below all cards */
+}
+
+.card {
+  flex: 1;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 1rem;
+  background: white;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  
+}
+
+.card h3 {
+  margin-top: 0;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.12);
+  transition: all 0.2s ease;
+
+   /* max-height: 500px; */      /*  expanded height */
+}
+
+/* Title */
+.card-title {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.card-subtitle {
+    text-align: justify;
+} 
+/* Justified text */
+.card-text {
+  text-align: justify;
+}
+
+
+/* collapsed height */
+.card-retractable {
+  max-height: 80px;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+  cursor: pointer;
+}
+
+.card-retractable:hover {
+  max-height: 1000px;  /* expands on hover */
+}
+
+
+.card-retractable.expanded {
+  max-height: 1000px; /* large enough to fit any content */ /* stays expanded after click */
+}
+
+/* --------------------------------- */
+/* QUARTO TITLE BLOCK and CATEGORY */
+/* Centered title */
+.quarto-title-block .title {
+  text-align: center;
+  
+}
+
+/* do not display subtitle on the page */
+.quarto-title-block .subtitle {
+  display: none;
+}
+
+/* justify the description in the title */
+.quarto-title-block .description {
+  text-align: justify;
+}
+
+/* Hide the author from the page without deleting the metadata */
+.quarto-title-meta .quarto-title-meta-author {
+  display: none;
+}
+
+/* Centered category */
+.quarto-categories {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+/* --------------------------------- */
+/* CAROUSEL */
+.carousel-item img {
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+  height: 500px;      /* adjust to your liking */
+  width: 100%;
+  object-fit: cover;  /* crops the image cleanly without distortion */
+}
+.carousel-caption {
+  position: relative;
+  left: auto;
+  right: auto;
+  bottom: auto;
+  color: #333;
+  padding: 0.5rem 1rem;
+  text-align: center;
+}
+/* flip caption above image and justify text */
+/*
+.carousel-caption {
+  text-align: center !important;
+}
+*/
+
+/*
+.carousel-item {
+  display: flex;
+  flex-direction: column-reverse;
+}*/
+
+/*
+.tall-slide img {
+  height: 100px !important;
+  width: auto !important;
+  object-fit: contain !important;
+}*/
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  white-space: nowrap;
+}
+
+.card-retractable h3 {
+  margin-top: 0;
+  font-size: 1rem;
+}
+
+/* --------------------------------- */
+/* Banner */
+.quarto-title-banner {
+  min-height: 200px !important;        /* controls the visible height */
+  background-size: contain !important; /* fits the whole image without cropping */
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+}

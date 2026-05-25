@@ -1,0 +1,62 @@
+:::: {.carousel .dark .framed autoplay="false" transition="none"}
+:::: {.carousel-item image="../../images/slides_talk/slide-01.png" caption="I came last year to ISMB and introduced my model, GPMelt. It's true that what I will present today might seem like a small incremental step of the modelling approach..."}
+:::
+:::: {.carousel-item image="../../images/slides_talk/slide-02.png" caption ="But thanks to a strong conceptual impact, I will show you that this small incremental step will take us to the moon! Let me first introduce you to the topic of Thermal stability and Thermal Proteome Profiling."}
+:::
+:::: {.carousel-item image="../../images/slides_talk/slide-03.png" caption = "At low temperatures, proteins are folded, and as the temperature increases, bonds are disrupted and proteins start to denature and aggregate. We can follow this melting behaviour, which, according to the chemical denaturation theory, is expected to be sigmoidal."}
+:::
+:::: {.carousel-item image="../../images/slides_talk/slide-04.png" caption = "An important fact about the thermal stability of proteins is that it’s not a fixed characteristic of a protein, but instead, is highly dependent on the protein’s surroundings and interactions. For example, upon interaction with small-molecule drugs, proteins can be stabilised or destabilised."}
+:::
+:::: {.carousel-item image="../../images/slides_talk/slide-05.png" caption = "Based on this observation, the Cellular Thermal Shift assay has been developed to investigate drug targets and off-targets. Combining this assay with multiplexed quantitative Mass Spectrometry analysis..."}
+:::
+:::: {.carousel-item image="../../images/slides_talk/slide-06.png" caption ="...lead to the Temperature Range Thermal Proteome Profiling (TPP-TR) assay. Thanks to this assay, we have access - on a proteome-wide scale - to the melting behaviour at the tryptic peptide levels."}
+:::
+:::: {.carousel-item image="../../images/slides_talk/slide-07.png" caption="My PhD project was focused on developing a novel statistical framework for TPP-TR data analysis, which we called GPMelt."}
+:::
+:::: {.carousel-item image="../../images/slides_talk/slide-08.png" caption="To analyse TPP-TR data, we need to statistically assess the extent of the change in melting behaviour, and thus in thermal stability. GPMelt is not the first statistical framework for TPP, however, it presents some key new features which we will demonstrate in this talk."}
+:::
+:::: {.carousel-item image="../../images/slides_talk/slide-09.png" caption="The main idea is to combine Gaussian Process (GP) regression with multi-task learning to deduce the protein’s melting behaviour from the observed melting curves of the different replicates."}
+:::
+:::: {.carousel-item image="../../images/slides_talk/slide-10.png" caption="The reason why this feature is particularly important for TPP-TR data analysis is its capacity to provide robustness to outliers."}
+:::
+:::: {.carousel-item image="../../images/slides_talk/slide-11.png" caption="Indeed TPP-TR data inherently suffers from a low-signal to noise ratio, with replicates potentially tremendously varying."}
+:::
+:::: {.carousel-item image="../../images/slides_talk/slide-12.png" caption="Of course, a solution would be to obtain more replicates, but this would require increase the workload of our experimentalists..."}
+:::
+:::: {.carousel-item image="../../images/slides_talk/slide-13.png" caption="Moreover, a main bottleneck is the high cost of TPP-TR experiments, mainly due to the number of samples to produce and the expensive TMT labelling and MS running time."}
+:::
+:::: {.carousel-item image="../../images/slides_talk/slide-14.png" caption="With this in mind, we started to wonder if we could use the improvement provided by the GPMelt analysis to help increase TPP-TR throughput."}
+:::
+:::: {.carousel-item image="../../images/slides_talk/slide-15.png" caption="Let’s consider a standard TPP-TR experiment, with two replicates and 8 measured temperatures."}
+:::
+:::: {.carousel-item image="../../images/slides_talk/slide-16.png" caption="Could we take advantage of our multi-task learning approach - which provides additional constraints and better shares replicates' information - for the replicates’ melting curves to be obtained even though we would measure only half the number of temperatures per replicate?"}
+:::
+:::: {.carousel-item image="../../images/slides_talk/slide-17.png" caption ="Well, yes and no. Especially, if we have half the number of observations, our protein’s fit (white curve) will show a much larger uncertainty (grey area around the curve). This is mainly because the replicates are measured in different MS runs and present some residual MS run batch effects that cannot be perfectly corrected by normalisation due to measurement errors specific to each MS run."}
+:::
+:::: {.carousel-item image="../../images/slides_talk/slide-18.png" caption="How can we solve this issue? We propose a minimalistic modification of GPMelt’s model. Currently, the observations are modelled by a function f, modelled as being drawn from a GP, and some iid normally distributed error."}
+:::
+:::: {.carousel-item image="../../images/slides_talk/slide-19.png" caption = "We propose to explicitly model the offset “s”, modelling that observations across replicates are shifted differently (replicate 1 by s1 and replicate 2 by s2); but by the same amount within replicates (all observations of replicate 1 are shifted by s1)."}
+:::
+:::: {.carousel-item image="../../images/slides_talk/slide-20.png" caption="To summarise, we propose to combine an updated GPMelt model..."}
+:::
+:::: {.carousel-item image="../../images/slides_talk/slide-21.png" caption="...with a new protocol defined by redefined temperature and multiplexing."}
+:::
+:::: {.carousel-item image="../../images/slides_talk/slide-22.png" caption="All together is what we call “Offset-TPP”, a sample and cost-efficient TPP-TR assay and analysis."}
+:::
+:::: {.carousel-item image="../../images/slides_talk/slide-23.png" caption="Combining a minor modification of GPMelt model with an ingenious change of TPP’s protocol, allows to double throughput without increasing the cost, the workload or the input samples."}
+:::
+:::: {.carousel-item image="../../images/slides_talk/slide-24.png" caption="But in addition, Offset-TPP could finally enable analysis of precious samples, opening the way for new discoveries."}
+:::
+:::: {.carousel-item image="../../images/slides_talk/slide-25.png" caption="Now I would like to make you realise a benefit of this work on a broader scale."}
+:::
+:::: {.carousel-item image="../../images/slides_talk/slide-26.png" caption="Since it’s creation, TPP has been applied to the discovery of drugs targets and off-targets..."}
+:::
+:::: {.carousel-item image="../../images/slides_talk/slide-27.png" caption="...and have been extended to a wide diversity of biological questions, leading to unprecedented discoveries regularly published in major research journals. However, TPP remains quite a small world, as it is restricted to scientists who can afford such expensive experiments."}
+:::
+:::: {.carousel-item image="../../images/slides_talk/slide-28.png" caption="By reducing by half the cost of TPP experiments, we make TPP discoveries affordable to more scientists, hence promoting more open and fairer Science."}
+:::
+:::: {.carousel-item image="../../images/slides_talk/slide-29.png"}
+:::
+:::: {.carousel-item image="../../images/slides_talk/slide-30.png" caption="By reducing by half the cost of TPP experiments, we make TPP discoveries affordable to more scientists, hence promoting more open and fairer Science."}
+:::
+:::

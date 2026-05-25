@@ -1,0 +1,55 @@
+<div class="video-rows">
+
+<% for (const item of items) { %>
+
+<div class="video-card">
+
+  <a href="<%= item.url %>" target="_blank">
+  <img src="<%= item.thumbnail %>" />
+  </a>
+
+  <div class="video-card-content">
+
+  <h3>
+    <a href="<%= item.url %>" target="_blank">
+      <%= item.title %>
+    </a>
+  </h3>
+
+  <p><%= item.description %></p>
+
+</div>
+
+</div>
+
+<% } %>
+
+</div>
+
+<style>
+
+.video-rows {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.video-card {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 1rem;
+}
+
+.video-card img {
+  width: 200px; /* thumbnail size */
+  flex-shrink: 0;
+  border-radius: 6px;
+}
+
+.video-card-content {
+  flex: 1;
+}
+
+</style>
