@@ -9,9 +9,12 @@ website:
       - href: index.qmd
         text: home
       #- about.qmd
+    right:
+    - text: "License"
+      href: license.qmd
   page-footer:
     right: "This page is built with ❤️ and [Quarto](https://quarto.org/)."
-    #left: "&copy; Copyright 2022, Mine Çetinkaya-Rundel"
+    center: "Code: MIT | Content: CC BY-NC 4.0"
     left: "&copy; 2026 Cecile Le Sueur"
     background: "rgb(248, 249, 250)"
 
