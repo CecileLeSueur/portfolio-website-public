@@ -2,4 +2,9 @@
 **/*.quarto_ipynb
 /_site
 images/.DS_Store
+
+.env
+.Rhistory
+.Rproj.user
 .DS_Store
+*.log
