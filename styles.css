@@ -41,10 +41,6 @@
 .card-subtitle {
     text-align: justify;
 } 
-/* Justified text */
-.card-text {
-  text-align: justify;
-}
 
 
 /* collapsed height */
@@ -149,8 +145,8 @@
 /* --------------------------------- */
 /* Banner */
 .quarto-title-banner {
-  min-height: 200px !important;        /* controls the visible height */
-  background-size: contain !important; /* fits the whole image without cropping */
+  min-height: 120px !important;        /* controls the visible height */
+  background-size: auto 90px !important; /*contain !important;*/ /* fits the whole image without cropping */
   background-repeat: no-repeat !important;
   background-position: center !important;
 }

@@ -6,9 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="During my PhD, I developed a statistical framework, GPMelt [1], to analyse Thermal Proteome Profiling (TPP) datasets. I created a website, combining theoretical explanations and hands-on tutorials intended for users. Especially, I aimed to explain the underlying modeling framework based on hierarchical Gaussian Process (GP) regression to audiences with very different backgrounds—from experimental biologists to statistically trained users.Jump to the videos or click on the boxes below to discover the work!">
+<meta name="description" content="One of the biggest communication challenges during my PhD was explaining hierarchical Gaussian Process (GP) regression, the statistical framework underlying GPMelt [1], a method I developed to analyse Thermal Proteome Profiling (TPP) datasets.While the method was designed for biologists, its correct use requires understanding several highly abstract statistical concepts that are unfamiliar to most users.To address this challenge, I created a series of educational resources combining videos, visual explanations, theory, and hands-on tutorials tailored to audiences ranging from experimental biologists to statistically trained users.Jump to the videos below or explore the communication process through the expandable sections.">
 
-<title>Adapting complex concepts to different audiences:  the example of Gaussian Process Regression – Cécile Le Sueur's Porfolio</title>
+<title>Adapting complex concepts to different audiences:  from Gaussian Process intuition to formalism – Cécile Le Sueur's Porfolio</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -64,7 +64,7 @@ div.csl-indent {
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-dc361cc906248144e7d0980098dc8413.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-e8bb5c388be52abac024dbec4631dec4.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -178,6 +178,16 @@ window.Quarto = {
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://www.linkedin.com/in/cécile-le-sueur-a79126251/"> <i class="bi bi-linkedin" role="img" aria-label="LinkedIn">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../cv.html"> <i class="bi bi-file-earmark-person" role="img" aria-label="CV">
+</i> 
+<span class="menu-text">Curriculum Vitae</span></a>
+  </li>  
   <li class="nav-item">
     <a class="nav-link" href="../../license.html"> 
 <span class="menu-text">License</span></a>
@@ -201,18 +211,22 @@ window.Quarto = {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Adapting complex concepts to different audiences:<br> the example of Gaussian Process Regression</h1>
-<p class="subtitle lead"><strong>Adapting complex concepts to different audiences</strong> <br> <br> Example: <br> <strong>Gaussian Process regression</strong> <br> <br> Output: <br> <strong>Videos</strong></p>
+<h1 class="title">Adapting complex concepts to different audiences:<br> from Gaussian Process intuition to formalism</h1>
+<p class="subtitle lead"><strong>Adapting complex concepts to different audiences</strong> <br> <br> Example: <br> <strong>Hierachical Gaussian Process</strong> <br> <br> Output: <br> <strong>Videos</strong></p>
   <div class="quarto-categories">
-    <div class="quarto-category">teaching</div>
-    <div class="quarto-category">video</div>
+    <div class="quarto-category">Audience Adaptation</div>
+    <div class="quarto-category">Knowledge Translation</div>
+    <div class="quarto-category">Conceptual Abstraction</div>
+    <div class="quarto-category">Method Adoption</div>
   </div>
   </div>
 
 <div>
   <div class="description">
-    <p>During my PhD, I developed a statistical framework, GPMelt <span class="citation" data-cites="LeSueurGPMelt">[<a href="#ref-LeSueurGPMelt" role="doc-biblioref">1</a>]</span>, to analyse Thermal Proteome Profiling (TPP) datasets. I created a website, combining theoretical explanations and hands-on tutorials intended for users. Especially, I aimed to explain the <strong>underlying modeling framework based on hierarchical Gaussian Process (GP) regression</strong> to audiences with very different backgrounds—<strong>from experimental biologists to statistically trained users</strong>.</p>
-    <p>Jump to the <a href="#ex-Videos">videos</a> or click on the boxes below to discover the work!</p>
+    <p>One of the biggest communication challenges during my PhD was explaining <strong>hierarchical Gaussian Process (GP) regression</strong>, the statistical framework underlying GPMelt <span class="citation" data-cites="LeSueurGPMelt">[<a href="#ref-LeSueurGPMelt" role="doc-biblioref">1</a>]</span>, a method I developed to analyse Thermal Proteome Profiling (TPP) datasets.</p>
+    <p>While the method was <strong>designed for biologists</strong>, its correct use requires understanding several <strong>highly abstract statistical concepts</strong> that are unfamiliar to most users.</p>
+    <p>To address this challenge, I created a <strong>series of educational resources</strong> combining videos, visual explanations, theory, and hands-on tutorials tailored to <strong>audiences ranging from experimental biologists to statistically trained users</strong>.</p>
+    <p>Jump to the <a href="#ex-Videos">videos</a> below or explore the communication process through the expandable sections.</p>
   </div>
 </div>
 
@@ -234,15 +248,9 @@ window.Quarto = {
 Challenges
 </p>
 <div style="text-align: justify;">
-<p>If GP regression is a <strong>highly abstract and mathematically complex concept</strong>; it’s combination with hierarchical modelling makes it even more complicated. The correct application of GPMelt to concrete and domain-specific biological data relies on a basic understanding of <strong>how a biological experimental design is mathematically translated into a hierachy</strong>. Moreover, adoption of this new framework depends on <strong>lowering the rejection barrier linked to maths incomprehension</strong>.</p>
-<p>The target audiences range from:</p>
-<ul>
-<li><strong>biologists</strong> with little statistical background;</li>
-<li>to <strong>bio-informaticians and bio-statisticians</strong> whose middle to strong statistical background might not cover GP regression.</li>
-</ul>
-</div>
-<div style="text-align: justify;">
-The key is to <strong>translate similar concepts across multiple levels of abstraction without losing clarity or rigor, while sparking interest and enthusiasm.</strong>
+<p>Hierarchical Gaussian Process regression is a <strong>highly abstract statistical framework</strong> that can be <strong>intimidating</strong> even for quantitatively trained scientists. Yet, using GPMelt effectively requires understanding several <strong>interconnected concepts spanning multiple levels of abstraction</strong>, from the intuition behind Gaussian Process regression and its application to Thermal Proteome Profiling data, to the way biological experimental designs are represented within a hierarchical statistical model.</p>
+<p>The communication challenge was therefore twofold: <strong>lowering the barrier created by mathematical complexity while preserving the concepts necessary for meaningful use of the method</strong>. At the same time, the resources had to work for audiences ranging from experimental biologists with limited statistical training to bioinformaticians and statisticians with very different levels of familiarity with Gaussian Processes.</p>
+The key challenge was to <strong>communicate the same underlying ideas across multiple levels of abstraction and audiences</strong> without sacrificing clarity, rigor, or engagement.
 </div>
 </div>
 <div class="card-row">
@@ -250,38 +258,48 @@ The key is to <strong>translate similar concepts across multiple levels of abstr
 <p style="text-align: center;font-weight: bold; font-size: 28px;">
 Approach
 </p>
-<p>I designed a set of <strong>short, visual-first videos</strong>, each tailored to a <strong>specific audience level</strong>, while keeping a <strong>consistent conceptual backbone</strong>.</p>
-<p>Key design choices:</p>
+<div style="text-align: justify;">
+<p>Rather than introducing the framework through <strong>mathematical formalism</strong>, I designed a series of <strong>short, visual-first videos</strong> that introduced the key concepts progressively, <strong>from intuitive explanations aimed at a broad audience to more advanced material for statistically trained users</strong>. The goal was not only to make the principles easier to understand, but to <strong>provide multiple entry points into the same underlying concepts</strong>.</p>
+<p>Key design choices included:</p>
 <ul>
-<li>focus on <strong>conceptual understanding</strong> before formal definitions;</li>
-<li>adaptation of vocabulary and level of detail;</li>
-<li>strong use of visual metaphors, color coding, and animation;</li>
-<li><strong>progressive abstraction</strong> (from intuition to formalization).</li>
-</ul>
+<li>prioritising <strong>conceptual understanding</strong> before introducing formal definitions;</li>
+<li><strong>adapting vocabulary</strong>, examples, and level of detail to each audience;</li>
+<li>using <strong>visual metaphors, colour coding, and animation</strong> to make abstract concepts more tangible;</li>
+<li><strong>progressively increasing the level of abstraction</strong>, from intuitive explanations to more formal statistical reasoning.
+</li></ul></div>
 </div>
+
 <div class="card card-retractable" onclick="this.classList.toggle('expanded')">
 <p style="text-align: center;font-weight: bold; font-size: 28px;">
 Strengths
 </p>
+<div style="text-align: justify;">
 <ul>
-<li>Ability to <strong>adapt</strong> explanations to different audiences;</li>
-<li>deep concept simplification <strong>without oversimplification</strong>;</li>
-<li><strong>translation between disciplines</strong> (from biological data to mathematical modeling; from statistical analysis to biological interpretation);</li>
-<li>design of <strong>structured learning pathways</strong> (from intuition to formalization);</li>
-<li><strong>high-quality visual</strong> communication (figures, animation, storytelling);</li>
-<li>creation of <strong>concise, engaging educational</strong> video content.
+<li><strong>Adapting explanations</strong> to audiences with different levels of expertise;</li>
+<li>Making complex concepts <strong>accessible without oversimplification</strong>;</li>
+<li>Communicating across <strong>multiple levels of abstraction</strong> while preserving rigor;</li>
+<li><strong>Translation between disciplines and domains</strong> (e.g.&nbsp;from biological data to mathematical modelling; from statistical analysis to biological interpretation);</li>
+<li>Connecting experimental, statistical, and computational perspectives;</li>
+<li>Designing <strong>learning pathways</strong> that support progressive understanding, from intuition to formalization;</li>
+<li>Creating <strong>high-quality visual</strong> explanations of abstract concepts (figures, animation, storytelling);</li>
+<li>Developing <strong>concise, engaging educational content</strong> for self-directed learning.
 </li></ul></div>
+</div>
 
 </div>
 <div class="card card-retractable" style="margin-bottom: 2rem;" onclick="this.classList.toggle('expanded')">
 <p style="text-align: center;font-weight: bold; font-size: 28px;">
 Impact
 </p>
-<p>As a statistician developping tools for biologists, the <strong>risk is to deliver a black box</strong> that users might use eyes closed, without trying to understand what’s happening behind the scene. This general lack of understanding of statistical methods is at the <strong>origin of the numerous incorrect data analysis leading to inapropriate results and interpretation</strong> which can nowadays be found throughout the litterature. <br> By providing videos and figures to explain the theory and model behind GPMelt to diverse audiances, my goal is to <strong>bridge the knowledge gap existing betweeen those generating the data and those analysing them</strong>. Only then can data analysis become <strong>truely powerful and lead to new discoveries</strong>.</p>
+<div style="text-align: justify;">
+<p>These resources were designed to <strong>help users understand the reasoning behind the model</strong>, not only to learn how to use GPMelt in practice. By making the underlying statistical framework more approachable across different levels of expertise, they aimed to <strong>reduce the gap between method developers and end users</strong>.</p>
+<p>This allows users to engage with the modelling framework at a <strong>depth appropriate to their needs and expertise</strong>, while maintaining a coherent conceptual link between the biological experiment and its statistical analysis. As a result, researchers can <strong>engage more confidently with the methodology</strong>, better <strong>understand its assumptions and limitations</strong>, and use the resulting analyses more <strong>critically and effectively</strong>.</p>
+<p>Ultimately, the objective was to transform the model <strong>from a black box</strong> into a tool that users could <strong>meaningfully understand and build upon</strong>. By focusing on the underlying modelling principles rather than software usage alone, these resources provide a <strong>foundation for adapting and extending the framework</strong> to new experimental settings and data types.</p>
+</div>
 </div>
 <div id="ex-Videos" style="margin-top: 2rem; border: 1px solid rgba(0,0,0,0.2); box-shadow: 0 6px 14px rgba(0,0,0,0.12); border-radius: 8px; padding: 1em;">
 <p style="text-align: center;font-weight: bold; font-size: 28px;">
-Have a look at some videos!
+Explore the videos and see how the communication strategy comes to life
 </p>
 <div id="listing-sample-listings" class="quarto-listing quarto-listing-container-custom">
 <div class="video-rows">
@@ -292,7 +310,7 @@ Have a look at some videos!
 <a href="https://gpmelt-website-grp-savitski-be284daa99aadeca97f8e634d7838ce7b92.embl-community.io/contents/GPMelt_for_dummies/HierarchicalModel/hierarchical_translation_concepts.html#vid-tpp_to_hierarchy" target="_blank"> From biological experimental set-up into mathematical formulation. </a>
 </h3>
 <p>
-Translating a TPP experimental design into levels of a hierarchical model. <br> Focus: <strong>bridging domain knowledge (biology) and mathematical representation.</strong>
+Translating a TPP experimental design into levels of a hierarchical model. <br> Focus: <strong>Bridging domain knowledge (biology) and mathematical representation.</strong>
 </p>
 </div>
 </div>
@@ -303,7 +321,7 @@ Translating a TPP experimental design into levels of a hierarchical model. <br> 
 <a href="https://gpmelt-website-grp-savitski-be284daa99aadeca97f8e634d7838ce7b92.embl-community.io/contents/GPMelt_for_dummies/Model_Specification_Estimation/gp_regression_intro.html#vid-gp_regression" target="_blank"> GP regression for TPP data: an introduction for biologists. </a>
 </h3>
 <p>
-Intuitive introduction to GP regression applied to TPP data. <br> Focus: <strong>building understanding without requiring statistical background. </strong>
+Intuitive introduction to GP regression applied to TPP data. <br> Focus: <strong>Building understanding without requiring statistical formalism. </strong>
 </p>
 </div>
 </div>
@@ -314,7 +332,7 @@ Intuitive introduction to GP regression applied to TPP data. <br> Focus: <strong
 <a href="https://gpmelt-website-grp-savitski-be284daa99aadeca97f8e634d7838ce7b92.embl-community.io/contents/GPMelt_for_dummies/Model_Specification_Estimation/gp_regression_diving.html#vid-gp_regression" target="_blank"> GP regression for advanced users. </a>
 </h3>
 <p>
-Formal explanation (Bayesian framework, model definition, parameter estimation). <br>Focus: <strong>precision, rigor, and deeper technical insight.</strong>
+Formal explanation (Bayesian framework, model definition, parameter estimation). <br>Focus: <strong>Precision, rigor, and deeper technical insight.</strong>
 </p>
 </div>
 </div>
@@ -357,6 +375,9 @@ Formal explanation (Bayesian framework, model definition, parameter estimation).
 <div class="csl-left-margin">1. </div><div class="csl-right-inline">Le Sueur C, Rattray M, Savitski M (2024) GPMelt: A hierarchical gaussian process framework to explore the dark meltome of thermal proteome profiling experiments. PLOS Computational Biology 20(9):e1011632</div>
 </div>
 </div></section></div></main></div>
+
+
+
 
 
  <!-- /main -->

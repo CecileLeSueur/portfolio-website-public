@@ -1,14 +1,7 @@
 [
   {
-    "listing": "/ScienceComm/ScientificIllustration/examples/ThesisFigureGallery.html",
+    "listing": "/Teaching/Videos/index.html",
     "items": []
-  },
-  {
-    "listing": "/ScienceComm/ScientificIllustration/index.html",
-    "items": [
-      "/ScienceComm/ScientificIllustration/examples/CoverImage.html",
-      "/ScienceComm/ScientificIllustration/examples/ThesisFigureGallery.html"
-    ]
   },
   {
     "listing": "/Teaching/Tutorials/index.html",
@@ -18,15 +11,27 @@
     "listing": "/index.html",
     "items": [
       "/Teaching/Videos/index.html",
-      "/Teaching/Workshops/index.html",
       "/Teaching/Tutorials/index.html",
+      "/Teaching/Workshops/index.html",
       "/ScienceComm/Talk/index.html",
       "/ScienceComm/Poster/index.html",
       "/ScienceComm/ScientificIllustration/index.html"
     ]
   },
   {
-    "listing": "/Teaching/Videos/index.html",
+    "listing": "/ScienceComm/ScientificIllustration/examples/ThesisFigureGallery.html",
+    "items": []
+  },
+  {
+    "listing": "/ScienceComm/ScientificIllustration/index.html",
+    "items": [
+      "/ScienceComm/ScientificIllustration/examples/CoverImage.html",
+      "/ScienceComm/ScientificIllustration/examples/ThesisFigureGallery.html",
+      "/ScienceComm/ScientificIllustration/examples/DataSciencesGallery.html"
+    ]
+  },
+  {
+    "listing": "/ScienceComm/ScientificIllustration/examples/DataSciencesGallery.html",
     "items": []
   }
 ]

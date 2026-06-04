@@ -6,9 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="At large international conferences, hundreds of projects compete simultaneously for the attention of researchers. In this environment, a poster has only a few seconds to capture interest, spark curiosity, and convince people that a project is worth exploring further.I designed this poster for the HUPO 2024 conference to introduce GPMelt [1], a statistical framework for Thermal Proteome Profiling (TPP) data analysis, to potential users ranging from experimental biologists to data scientists. Besides communicating the value of the framework, the poster was designed to attract attention, create a memorable impression, and encourage researchers to engage with the project beyond the poster session.Jump to the poster below or explore the communication process through the expandable sections.">
+<meta name="description" content="Data visualisation is more than a way to display results: it is a powerful tool for exploration, interpretation, and reasoning. Well-designed visualisations can reveal hidden patterns, highlight meaningful differences, communicate uncertainty, and support data-driven decision-making.The examples below illustrate different roles of data visualisation in scientific practice, from comparing groups and evaluating analytical strategies to uncovering unexpected behaviours in complex datasets. Together, they show how visual representations can transform large amounts of information into evidence that can be understood, questioned, and acted upon.Full-quality images, detailed legends, and references can be found in my PhD thesis [1].">
 
-<title>Scientific storytelling:  Designing a high-impact conference poster – Cécile Le Sueur's Porfolio</title>
+<title>Data visualisation for evidence and insight – Cécile Le Sueur’s Porfolio</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -46,26 +46,28 @@ div.csl-indent {
 }</style>
 
 
-<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../../">
-<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../../site_libs/quarto-html/popper.min.js"></script>
-<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-e8bb5c388be52abac024dbec4631dec4.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
-<script src="../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
-<link href="../../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
-<link href="../../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
+<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../">
+<script src="../../../site_libs/quarto-listing/list.min.js"></script>
+<script src="../../../site_libs/quarto-listing/quarto-listing.js"></script>
+<script src="../../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../site_libs/bootstrap/bootstrap-e8bb5c388be52abac024dbec4631dec4.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../../../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -93,9 +95,67 @@ div.csl-indent {
     "search-label": "Search"
   }
 }</script>
+<script>
 
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-listing-gallery .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
 
-<link rel="stylesheet" href="../../styles.css">
+    const options = {
+      valueNames: ['listing-title','listing-subtitle','listing-thumbnail',{ data: ['index'] },{ data: ['categories'] }],
+      
+      searchColumns: ["listing-title","listing-subtitle","listing-thumbnail"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-listing-gallery'] = new List('listing-listing-gallery', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../../../styles.css">
 </head>
 
 <body class="nav-fixed quarto-light">
@@ -105,7 +165,7 @@ div.csl-indent {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="../../index.html">
+    <a class="navbar-brand" href="../../../index.html">
     <span class="navbar-title">Cécile Le Sueur’s Porfolio</span>
     </a>
   </div>
@@ -116,7 +176,7 @@ div.csl-indent {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../index.html"> 
+    <a class="nav-link" href="../../../index.html"> 
 <span class="menu-text">home</span></a>
   </li>  
 </ul>
@@ -127,12 +187,12 @@ div.csl-indent {
 <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../cv.html"> <i class="bi bi-file-earmark-person" role="img" aria-label="CV">
+    <a class="nav-link" href="../../../cv.html"> <i class="bi bi-file-earmark-person" role="img" aria-label="CV">
 </i> 
 <span class="menu-text">Curriculum Vitae</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../license.html"> 
+    <a class="nav-link" href="../../../license.html"> 
 <span class="menu-text">License</span></a>
   </li>  
 </ul>
@@ -154,22 +214,15 @@ div.csl-indent {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Scientific storytelling:<br> Designing a high-impact conference poster</h1>
-<p class="subtitle lead"><strong>Capturing attention in highly competitive environments</strong> <br> <br> Example: <br> <strong>Visual storytelling for scientific engagement</strong> <br> <br> Output: <br> <strong>High Impact conference poster</strong><br>
-</p><p></p>
-  <div class="quarto-categories">
-    <div class="quarto-category">Visual Storytelling</div>
-    <div class="quarto-category">Curiosity Generation</div>
-    <div class="quarto-category">Audience Attraction</div>
-    <div class="quarto-category">Scientific Marketing</div>
-  </div>
-  </div>
+<h1 class="title">Data visualisation for evidence and insight</h1>
+<p class="subtitle lead">Visualisations designed to reveal patterns, communicate evidence, and support data-driven reasoning.</p>
+</div>
 
 <div>
   <div class="description">
-    <p>At large international conferences, <strong>hundreds of projects</strong> compete simultaneously for the attention of researchers. In this environment, a poster has only a <strong>few seconds to capture interest</strong>, spark curiosity, and convince people that a project is worth exploring further.</p>
-    <p>I designed this poster for the HUPO 2024<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> conference to introduce GPMelt <span class="citation" data-cites="LeSueurGPMelt">[<a href="#ref-LeSueurGPMelt" role="doc-biblioref">1</a>]</span>, a statistical framework for Thermal Proteome Profiling (TPP) data analysis, to potential users ranging from experimental biologists to data scientists. Besides communicating the value of the framework, the poster was designed to <strong>attract attention</strong>, create a <strong>memorable impression</strong>, and encourage researchers to <strong>engage with the project beyond the poster session</strong>.</p>
-    <p>Jump to the <a href="#ex-Poster">poster</a> below or explore the communication process through the expandable sections.</p>
+    <p>Data visualisation is more than a way to display results: it is a <strong>powerful tool for exploration, interpretation, and reasoning</strong>. Well-designed visualisations can <strong>reveal hidden patterns, highlight meaningful differences, communicate uncertainty, and support data-driven decision-making</strong>.</p>
+    <p>The examples below illustrate different roles of data visualisation in scientific practice, from comparing groups and evaluating analytical strategies to uncovering unexpected behaviours in complex datasets. Together, they show how <strong>visual representations can transform large amounts of information into evidence</strong> that can be understood, questioned, and acted upon.</p>
+    <p>Full-quality images, detailed legends, and references can be found in my PhD thesis <span class="citation" data-cites="LeSueurThesis">[<a href="#ref-LeSueurThesis" role="doc-biblioref">1</a>]</span>.</p>
   </div>
 </div>
 
@@ -186,100 +239,135 @@ div.csl-indent {
 </header>
 
 
-<div class="card card-retractable" style="margin-bottom: 2rem;" onclick="this.classList.toggle('expanded')">
-<p style="text-align: center;font-weight: bold; font-size: 28px;">
-Challenges
-</p>
-<div style="text-align: justify;">
-<p>At large international conferences, poster sessions are <strong>highly competitive environments</strong> in which hundreds of projects compete simultaneously for attention. <strong>Standing out from the crowd</strong> is therefore essential to attract an audience before they move on to the next poster, often leaving only <strong>a few minutes to pitch the project</strong>.</p>
-<p>For GPMelt, this <strong>challenge was amplified</strong> by the nature of the project itself. Advanced statistical methodologies can appear <strong>intimidating</strong> to researchers unfamiliar with sophisticated modelling approaches, <strong>creating a barrier</strong> not only to understanding the work, but even to <strong>initially approaching</strong> the poster and engaging with the presenter.</p>
-The challenge was therefore to create a poster that attracted attention, lowered this initial barrier, and encouraged researchers from diverse backgrounds to <strong>engage confidently with both the project and the person presenting it</strong>.
-</div>
-</div>
-<!--
-  - Capture attention in a high-density, time-constrained environment (poster session)
-  - Communicate a complex methodological framework clearly and quickly to an audiance with diverse background
-  - Balance:
-    - visual appeal (to attract viewers)
-    - informational depth (to stand alone without explanation)-->
-<div class="card-row">
-<div class="card card-retractable" onclick="this.classList.toggle('expanded')">
-<p style="text-align: center;font-weight: bold; font-size: 28px;">
-Approach
-</p>
-<div style="text-align: justify;">
-<p>I designed the poster as a <strong>self-contained narrative</strong> that combines <strong>visual impact, accessibility, and scientific credibility</strong>.</p>
-<p>Key design choices included:</p>
-<ul>
-<li>creating a <strong>strong visual identity through branding elements</strong> such as the software name, logo, and direct access to resources via QR codes;</li>
-<li>creating a <strong>visually distinctive entry point</strong> (iceberg metaphor) designed to attract curiosity while making the underlying methodology feel more approachable;</li>
-<li>structuring information in layers, allowing both <strong>quick scanning and deeper exploration</strong> depending on the audience’s level of interest;</li>
-<li>highlighting the key features of the tool, its practical value, and its use cases through a <strong>clear structured layout</strong>;</li>
-<li>designing the poster to function both as a <strong>conversation starter</strong> during the session and as a <strong>stand-alone communication resource</strong> afterwards.
-</li></ul></div>
-</div>
+<div id="listing-listing-gallery" class="quarto-listing quarto-listing-container-custom">
+<!-- From https://github.com/mcanouil/quarto-issues-experiments/tree/main/test-gallery/gallery ; and https://www.cynthiahqy.com/posts/masonry-gallery/#fn1-->
+<style type="text/css">
+.grid-gallery {
+  columns: 4 200px;
+  column-gap: 0.5rem;
+  width: 90%;
+  margin: 0 auto;
+  max-height: 600px;  /* adjust until only 2 items fit per column */
+}
+.grid-item {
+  width: 150px;
+  margin: 0 0.5rem 0.5rem 0;
+  display: inline-block;
+  border-radius: 5px;
+  background: #FFFFFF;
+  border: 1px solid #333;
+  border-color: hsla(0, 0%, 0%, 0.5);
+  border-radius: 5px;
+  break-inside: avoid;
 
-<div class="card card-retractable" onclick="this.classList.toggle('expanded')">
-<p style="text-align: center;font-weight: bold; font-size: 28px;">
-Strengths
-</p>
-<div style="text-align: justify;">
-<ul>
-<li><strong>Visual storytelling for scientific engagement</strong> in a highly competitive environment;</li>
-<li><strong>Anticipating barriers to engagement</strong> and designing communication resources to overcome them;</li>
-<li><strong>Transforming intimidating</strong> technical topics <strong>into approachable</strong> conversations;</li>
-<li><strong>Creating curiosity</strong> around complex scientific and technical subjects;</li>
-<li>Building <strong>memorable project identities</strong> through branding and communication design;</li>
-<li>Translating methodological innovation into <strong>clear user value</strong> for diverse audiences;</li>
-<li>Balancing <strong>clarity, completeness, and visual appeal</strong> in constrained communication formats.
-</li></ul></div>
-</div>
+}
+img.grid-item {
+  width: 100%;
+}
+img.grid-item:hover {
+  transform: scale(1.025);
+}
 
-</div>
-<div class="card card-retractable" style="margin-bottom: 2rem;" onclick="this.classList.toggle('expanded')">
-<p style="text-align: center;font-weight: bold; font-size: 28px;">
-Impact
-</p>
-<div style="text-align: justify;">
-<p>The HUPO 2024 poster session proved <strong>particularly successful</strong> in attracting and maintaining engagement throughout the event. The poster consistently <strong>gathered a large audience and generated numerous discussions</strong> with researchers from diverse backgrounds.</p>
-<p>Many participants with limited statistical training specifically commented on the <strong>accessibility of the explanations and their ability to grasp the core ideas behind the methodology</strong>. The combination of the poster design and the accompanying discussions helped create an <strong>environment in which researchers felt comfortable asking questions and engaging</strong> with concepts they might otherwise have considered too technical or intimidating.</p>
-Beyond the conference itself, the communication strategy succeeded in making both the project and the GPMelt framework memorable. Several researchers later <strong>recontacted me after the conference</strong>, demonstrating that the poster had not only captured attention during the session, but also <strong>left a lasting impression afterwards</strong>.
-</div>
-</div>
-<div id="ex-Poster" style="margin-top: 2rem; border: 1px solid rgba(0,0,0,0.2); box-shadow: 0 6px 14px rgba(0,0,0,0.12); border-radius: 8px; padding: 1em;">
-<!--
-<p style="text-align: center;font-weight: bold; font-size: 28px; ">
-  Results
-</p> -->
-<p style="text-align: center;font-weight: bold;  font-size: 28px; ">
-Explore the poster and see how visual storytelling and communication design were used to transform a complex statistical framework into an engaging conference experience. <br>
-</p>
+figcaption {
+    display: none;
+}
+.quarto-figure {
+    margin-bottom: 0px;
+    }
+</style>
+<div class="grid-gallery">
+<div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="../../images/poster/PosterExpli.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Click on the image to zoom in!"><img src="../../images/poster/PosterExpli.png" class="img-fluid figure-img" style="width:100.0%" alt="Click on the image to zoom in!"></a></p>
-<figcaption>Click on the image to zoom in!</figcaption>
+<p><a href="../../../images/ScientificIllustration/DataSciences/groupComparison.png" class="lightbox" data-gallery="quarto-grid-gallery" data-glightbox="description: .lightbox-desc-1;title:Groups comparison;" title="Groups comparison"><img src="../../../images/ScientificIllustration/DataSciences/groupComparison.png" class="grid-item img-fluid figure-img" loading="lazy" alt="Groups comparison"></a></p>
+<figcaption><strong>Groups comparison</strong></figcaption>
 </figure>
+</div>
+</div>
+<div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="../../../images/ScientificIllustration/DataSciences/Uncertainty.png" class="lightbox" data-gallery="quarto-grid-gallery" data-glightbox="description: .lightbox-desc-2;title:Communicating model uncertainty;" title="Communicating model uncertainty"><img src="../../../images/ScientificIllustration/DataSciences/Uncertainty.png" class="grid-item img-fluid figure-img" loading="lazy" alt="Communicating model uncertainty"></a></p>
+<figcaption><strong>Communicating model uncertainty</strong></figcaption>
+</figure>
+</div>
+</div>
+<div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="../../../images/ScientificIllustration/DataSciences/IRS_condition_wise_offsetTPP.png" class="lightbox" data-gallery="quarto-grid-gallery" data-glightbox="description: .lightbox-desc-3;title:Dimensionality reduction for evaluating analytical strategies;" title="Dimensionality reduction for evaluating analytical strategies"><img src="../../../images/ScientificIllustration/DataSciences/IRS_condition_wise_offsetTPP.png" class="grid-item img-fluid figure-img" loading="lazy" alt="Dimensionality reduction for evaluating analytical strategies"></a></p>
+<figcaption><strong>Dimensionality reduction for evaluating analytical strategies</strong></figcaption>
+</figure>
+</div>
+</div>
+<div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="../../../images/ScientificIllustration/DataSciences/ROCcurves.png" class="lightbox" data-gallery="quarto-grid-gallery" data-glightbox="description: .lightbox-desc-4;title:Generating insight through methods comparison;" title="Generating insight through methods comparison"><img src="../../../images/ScientificIllustration/DataSciences/ROCcurves.png" class="grid-item img-fluid figure-img" loading="lazy" alt="Generating insight through methods comparison"></a></p>
+<figcaption><strong>Generating insight through methods comparison</strong></figcaption>
+</figure>
+</div>
+</div>
+<div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="../../../images/ScientificIllustration/DataSciences/volcanoPlot.png" class="lightbox" data-gallery="quarto-grid-gallery" data-glightbox="description: .lightbox-desc-5;title:Revealing a hidden pattern - permutation datasets &amp; volcano plots;" title="Revealing a hidden pattern - permutation datasets &amp; volcano plots"><img src="../../../images/ScientificIllustration/DataSciences/volcanoPlot.png" class="grid-item img-fluid figure-img" loading="lazy" alt="Revealing a hidden pattern - permutation datasets &amp; volcano plots"></a></p>
+<figcaption><strong>Revealing a hidden pattern - permutation datasets &amp; volcano plots</strong></figcaption>
+</figure>
+</div>
+</div>
+<div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="../../../images/ScientificIllustration/DataSciences/Histograms_300dpi.png" class="lightbox" data-gallery="quarto-grid-gallery" data-glightbox="description: .lightbox-desc-6;title:Revealing a hidden pattern - p-values histograms;" title="Revealing a hidden pattern - p-values histograms"><img src="../../../images/ScientificIllustration/DataSciences/Histograms_300dpi.png" class="grid-item img-fluid figure-img" loading="lazy" alt="Revealing a hidden pattern - p-values histograms"></a></p>
+<figcaption><strong>Revealing a hidden pattern - p-values histograms</strong></figcaption>
+</figure>
+</div>
+</div>
+<div>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="../../../images/ScientificIllustration/DataSciences/convergence_example.png" class="lightbox" data-gallery="quarto-grid-gallery" data-glightbox="description: .lightbox-desc-7;title:Conceptualising statistical optimisation;" title="Conceptualising statistical optimisation"><img src="../../../images/ScientificIllustration/DataSciences/convergence_example.png" class="grid-item img-fluid figure-img" loading="lazy" alt="Conceptualising statistical optimisation"></a></p>
+<figcaption><strong>Conceptualising statistical optimisation</strong></figcaption>
+</figure>
+</div>
+</div>
+</div>
+<div class="listing-no-matching d-none">No matching items</div>
+</div>
+
+
+
+<div class="hidden" aria-hidden="true">
+<div class="glightbox-desc lightbox-desc-1">
+<p>Using comparative visualisation (bar charts, boxplots, violin plots, and statistical significance tests) to compare two analytical approaches. Together, these representations highlight differences in the phosphosites detected by each method and show that phosphosites uniquely identified by GPMelt are associated with higher functional scores, supporting their biological relevance (Figure 6.9BC from [1]). (© 2025 Cécile Le Sueur)</p>
+</div>
+<div class="glightbox-desc lightbox-desc-2">
+<p>Comparing model fits produced by NPARC (top row) and GPMelt (bottom row). While NPARC provides only a fitted curve, GPMelt additionally communicates uncertainty through a 95% confidence region around the posterior mean estimate, supporting more informed interpretation of the results (Figure 6.8D from [1]). (© 2025 Cécile Le Sueur)</p>
+</div>
+<div class="glightbox-desc lightbox-desc-3">
+<p>Using multidimensional scaling (MDS) to evaluate the effectiveness of three batch-correction strategies. By projecting complex longitudinal data into an interpretable visual space, the figure reveals which method successfully aligns measurements across temperatures, conditions, and replicates (Figure B20 from [1]). (© 2025 Cécile Le Sueur)</p>
+</div>
+<div class="glightbox-desc lightbox-desc-4">
+<p>Using ROC curves to compare the performance of four statistical methods across two datasets. The visualisation revealed the consistently poorer performance of one approach, motivating further investigation and ultimately leading to the identification of its sensitivity to outliers (Figure 6.6 from [1]). (© 2025 Cécile Le Sueur)</p>
+</div>
+<div class="glightbox-desc lightbox-desc-5">
+<p>Comparing real and permuted datasets through volcano plots. The unexpected presence of numerous discoveries in the permuted datasets (second row) revealed a previously unnoticed batch effect, illustrating how visualisation can uncover hidden patterns and guide methodological investigation (Figure 7.7 from [1]). (© 2025 Cécile Le Sueur)</p>
+</div>
+<div class="glightbox-desc lightbox-desc-6">
+<p>Using p-value histograms to diagnose a statistical calibration problem. The visualisation immediately revealed that the method produced miscalibrated p-values on this dataset (left panel), leading to the discovery that non-sigmoidal data violated the model assumptions. Removing these data restored calibration (right panel) and confirmed the source of the issue.(Figure 6.8C from [1]). (© 2025 Cécile Le Sueur)</p>
+</div>
+<div class="glightbox-desc lightbox-desc-7">
+<p>Combining conceptual illustration (A) and model diagnostics (B) to explain convergence analysis. The figure uses a simplified optimisation landscape (A) to visualise how model fitting can become trapped in local optima before reaching a better solution (as examplified in the second panel in (B)), helping make an abstract statistical concept more intuitive (Figure 5.3 from [1]). (© 2025 Cécile Le Sueur)</p>
 </div>
 </div>
 
 
 <div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body" role="list">
-<div id="ref-LeSueurGPMelt" class="csl-entry" role="listitem">
-<div class="csl-left-margin">1. </div><div class="csl-right-inline">Le Sueur C, Rattray M, Savitski M (2024) GPMelt: A hierarchical gaussian process framework to explore the dark meltome of thermal proteome profiling experiments. PLOS Computational Biology 20(9):e1011632</div>
+<div id="ref-LeSueurThesis" class="csl-entry" role="listitem">
+<div class="csl-left-margin">1. </div><div class="csl-right-inline">Le Sueur C (2025) Statistical and computational method development for thermal stability proteomics. PhD thesis, ETH Zurich</div>
 </div>
-</div></section><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
-
-<ol>
-<li id="fn1"><p>Human Proteome Organisation World Congress <a href="https://2024.hupo.org" class="uri">https://2024.hupo.org</a><a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-</ol>
-</section></div></main></div>
-
-
-
-
-
-
- <!-- /main -->
+</div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
@@ -680,7 +768,7 @@ Explore the poster and see how visual storytelling and communication design were
     }
   });
   </script>
- <!-- /content -->
+</div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">

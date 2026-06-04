@@ -6,9 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="I designed and delivered multiple workshops for PhD students and researchers at EMBL to introduce them to some key statistical concepts. I feature here how I explained multiple testing, False Discovery Rate (FDR) control and the problem of p-values miscalibration — concepts they frequently encounter in practice but often find unclear or intimidating.Jump to the slides or click on the boxes below to discover the work.">
+<meta name="description" content="One recurring challenge in scientific research is that some of the most widely used statistical concepts are also among the most misunderstood.As part of a series of workshops for PhD students and researchers at EMBL, I developed training material to explain multiple testing, False Discovery Rate (FDR) control, and p-value miscalibration—concepts that researchers frequently encounter in practice but often find abstract, confusing, or intimidating.Jump to the slides below or explore the communication process through the expandable sections.">
 
-<title>Making statistical concepts intuitive:   Multiple testing, False Discovery Rate (FDR) and p-values miscalibration – Cécile Le Sueur's Porfolio</title>
+<title>Building intuition for statistical reasoning:   Multiple testing, False Discovery Rate (FDR) and p-values miscalibration – Cécile Le Sueur's Porfolio</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -43,7 +43,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-dc361cc906248144e7d0980098dc8413.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-e8bb5c388be52abac024dbec4631dec4.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <link href="../../site_libs/quarto-contrib/carousel-0.1.0/quarto-carousel.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
@@ -100,6 +100,16 @@ ul.task-list li input[type="checkbox"] {
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://www.linkedin.com/in/cécile-le-sueur-a79126251/"> <i class="bi bi-linkedin" role="img" aria-label="LinkedIn">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../cv.html"> <i class="bi bi-file-earmark-person" role="img" aria-label="CV">
+</i> 
+<span class="menu-text">Curriculum Vitae</span></a>
+  </li>  
   <li class="nav-item">
     <a class="nav-link" href="../../license.html"> 
 <span class="menu-text">License</span></a>
@@ -123,19 +133,21 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Making statistical concepts intuitive: <br> Multiple testing, False Discovery Rate (FDR) and p-values miscalibration</h1>
-<p class="subtitle lead"><strong>Making statistical concepts intuitive</strong> <br> <br> Example: <br> <strong>Multiple testing, False Discovery Rate and p-values miscalibration</strong> <br><br> Output: <br> <strong>Workshop</strong></p>
+<h1 class="title">Building intuition for statistical reasoning: <br> Multiple testing, False Discovery Rate (FDR) and p-values miscalibration</h1>
+<p class="subtitle lead"><strong>Making statistical concepts intuitive</strong> <br> <br> Example: <br> <strong>Building intuition for multiple-testing scenarios</strong> <br><br> Output: <br> <strong>Workshop</strong></p>
   <div class="quarto-categories">
-    <div class="quarto-category">teaching</div>
-    <div class="quarto-category">workshop</div>
-    <div class="quarto-category">statistics</div>
+    <div class="quarto-category">Visual Reasoning</div>
+    <div class="quarto-category">Statistical Intuition</div>
+    <div class="quarto-category">Misconception Correction</div>
+    <div class="quarto-category">User Empowerment</div>
   </div>
   </div>
 
 <div>
   <div class="description">
-    <p>I designed and delivered multiple <strong>workshops for PhD students and researchers at EMBL<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> to introduce them to some key statistical concepts</strong>. I feature here how I explained multiple testing, False Discovery Rate (FDR) control and the problem of p-values miscalibration — concepts they frequently encounter in practice but often find unclear or intimidating.</p>
-    <p>Jump to the <a href="#ex-Workshop">slides</a> or click on the boxes below to discover the work.</p>
+    <p>One recurring challenge in scientific research is that some of the <strong>most widely used statistical concepts are also among the most misunderstood</strong>.</p>
+    <p>As part of a series of workshops for PhD students and researchers at EMBL<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>, I developed training material to explain multiple testing, False Discovery Rate (FDR) control, and p-value miscalibration—concepts that <strong>researchers frequently encounter in practice but often find abstract, confusing, or intimidating</strong>.</p>
+    <p>Jump to the <a href="#ex-Workshop">slides</a> below or explore the communication process through the expandable sections.</p>
   </div>
 </div>
 
@@ -156,66 +168,60 @@ ul.task-list li input[type="checkbox"] {
 <p style="text-align: center;font-weight: bold; font-size: 28px;">
 Challenges
 </p>
-<p>Nowadays, <strong>biological experiments often go hand in hand with high throughput and big data, providing the opportunity to test numerous hypotheses</strong>. This complexifies the statistical data analysis, and requires <strong>extra level of caution</strong>. While experimentalists are often aware of it:</p>
-<ul>
-<li>the topic of multiple testing is mathematically abstract and often perceived as difficult, obscur and/or inaccessible;</li>
-<li>experimentalists have highly heterogeneous statistical backgrounds (from minimal to solid knowledge). <br></li>
-</ul>
-<p>The goal of these workshops was not just explanation, but:</p>
-<ul>
-<li>building <strong>intuition and confidence</strong>;</li>
-<li>showcasing what breaks in multiple vs simple hypothesis testing;</li>
-<li>enabling participants to engage with these concepts independently after the session.
-</li></ul></div>
-
+<div style="text-align: justify;">
+<p>Modern biological experiments increasingly rely on <strong>high-throughput technologies</strong> that generate <strong>large datasets</strong> and create opportunities to test hundreds or thousands of hypotheses simultaneously. While this offers considerable scientific potential, it also introduces <strong>new statistical challenges</strong> that require additional caution during data analysis.</p>
+<p>Multiple testing, False Discovery Rate (FDR) control, and p-value calibration are therefore <strong>central concepts in modern biological research</strong>, yet many researchers <strong>struggle to develop an intuitive understanding</strong> of what they mean in practice. Although encountered routinely, the reasoning behind them is often perceived as <strong>abstract, mathematically complex, or inaccessible</strong>.</p>
+<p>The communication challenge was compounded by the <strong>highly heterogeneous statistical backgrounds of the workshop’s participants</strong>, ranging from researchers with minimal formal training in statistics to others with substantial quantitative experience.</p>
+Another challenge was therefore not simply to explain statistical procedures, but to <strong>help participants build intuition and confidence</strong>, understand what changes when moving from single to multiple hypothesis testing, and develop the reasoning needed to <strong>engage with these concepts independently after the session</strong>.
+</div>
+</div>
 <div class="card-row">
 <div class="card card-retractable" onclick="this.classList.toggle('expanded')">
 <p style="text-align: center;font-weight: bold; font-size: 28px;">
 Approach
 </p>
-<p>I structured the workshop around progressive intuition-building, grounded in familiar visual tools.</p>
-<p>Key elements:</p>
+<div style="text-align: justify;">
+<p>Rather than introducing these concepts through formulas and statistical procedures, I designed the workshop around <strong>visual reasoning and progressively reconstructed the intuition</strong> needed to understand multiple testing, False Discovery Rate control, and p-value calibration.</p>
+<p>I used <strong>histograms as a consistent visual language</strong> throughout the presentation. While participants were generally familiar with these representations, they often <strong>lacked a clear understanding of how to interpret them statistically</strong>. Histograms therefore provided a natural starting point for introducing more sophisticated concepts without requiring entirely new visual tools.</p>
+<p>Further design choices included:</p>
 <ul>
-<li>starting from a simple, <strong>concrete example to introduce the problem</strong>;</li>
-<li>using histograms as a central visual language, <strong>leveraging familiar representations</strong>;</li>
-<li>guiding participants through <strong>logical reasoning steps</strong>:
-<ul>
-<li>why multiple testing inflates false positives;</li>
-<li>what p-value miscalibration means in practice;</li>
-</ul></li>
-<li>introducing <strong>formulas without avoiding them</strong>, but supporting them with:
-<ul>
-<li>color coding</li>
-<li>visual representations</li>
-<li>intuitive interpretation</li>
-</ul></li>
+<li>structuring the explanation around the transition from single to multiple hypothesis testing, <strong>highlighting where intuitive reasoning begins to fail</strong> when the same reasoning is applied repeatedly across hundreds or thousands of tests;</li>
+<li><strong>introducing formulas without avoiding them</strong>, but only after participants have developed an intuitive understanding of the underlying concepts; and supporting them with colour coding, visual representations, and intuitive interpretations;</li>
+<li>using <strong>visual reasoning</strong> to demonstrate how p-value calibration depends on underlying modelling assumptions, and how violations of these assumptions can fundamentally alter the interpretation of statistical results.</li>
 </ul>
+</div>
 </div>
 <div class="card card-retractable" onclick="this.classList.toggle('expanded')">
 <p style="text-align: center;font-weight: bold; font-size: 28px;">
 Strengths
 </p>
+<div style="text-align: justify;">
 <ul>
-<li>Design of <strong>structured learning experiences under time constraints</strong> (1h workshops);</li>
-<li>ability to make <strong>abstract statistical concepts intuitive and non-intimidating</strong>;</li>
-<li><strong>adaptation to audiences</strong> with diverse levels of confidence in mathematics;</li>
-<li>use of <strong>visual tools</strong> (histograms, color, diagrams) to support conceptual understanding;</li>
-<li><strong>connecting theory to real-world</strong> data analysis practice.
+<li>Making <strong>abstract statistical concepts intuitive and non-intimidating</strong>;</li>
+<li>Identifying and <strong>addressing common misconceptions</strong> in quantitative reasoning;</li>
+<li>Using <strong>visual tools &amp; reasoning</strong> (histograms, color, diagrams) to support conceptual understanding;</li>
+<li>Communicating mathematical concepts without sacrificing rigour;</li>
+<li>Designing <strong>structured learning experiences under time constraints</strong> (1h workshops);</li>
+<li>Supporting audiences with highly heterogeneous quantitative backgrounds and levels of confidence in mathematics;</li>
+<li>Connecting <strong>statistical theory to real-world</strong> data analysis practice.
 </li></ul></div>
+</div>
 
 </div>
 <div class="card card-retractable" style="margin-bottom: 2rem;" onclick="this.classList.toggle('expanded')">
 <p style="text-align: center;font-weight: bold; font-size: 28px;">
 Impact
 </p>
-<p><strong>Why do we need experimentalists to build intuition and understanding based on theory?</strong> <br> <i>A fish to a man, you feed him for a day, teach him to fish, he will feed for a lifetime.</i> <br> <br> Incomprehension of statistical concepts often lead experimentalists to mistrust - or blindly trust! - data analysts. While the former can cause incorrect data analysis, the second leads to strong dependency. <br> Explaining fundamental statistical concepts with intuition while keeping rigor is key to enabling interactions and constructive collaborations between experimentalists and data analysts. Inter-disciplinary collaboration performs better when both sides understands each other - and can thus reasonably rely on each other expertise to go further and deeper.</p>
+<div style="text-align: justify;">
+<p>By focusing on intuition before procedure, the workshop helped participants understand <strong>how multiple-testing corrections work</strong>, but also <strong>why they become necessary</strong> in the first place.</p>
+<p>The goal of these workshops was <strong>not to turn experimental scientists into statisticians</strong>, but to provide them with the intuition and conceptual understanding needed to <strong>engage confidently with statistical analyses</strong>.</p>
+<p>A limited understanding of statistical concepts can lead <strong>experimentalists either to mistrust data analysts or to blindly rely on them</strong> without fully understanding the reasoning behind the analysis. Neither situation is ideal.</p>
+By helping participants build intuition for commonly used statistical procedures, these workshops aimed to <strong>facilitate more informed discussions, more critical interpretation of results, and more effective collaboration between experimentalists and quantitative researchers</strong>.
+</div>
 </div>
 <div id="ex-Workshop" style="margin-top: 2rem; border: 1px solid rgba(0,0,0,0.2); box-shadow: 0 6px 14px rgba(0,0,0,0.12); border-radius: 8px; padding: 1em;">
 <p style="text-align: center;font-weight: bold; font-size: 28px;">
-Selected slides illustrating how I build intuition using visual and progressive reasoning.
-</p>
-<p style="text-align: center;">
-Full workshop available upon request.
+Selected slides illustrating how I use visual reasoning to reveal where statistical intuition breaks down—and how it can be rebuilt.
 </p>
 <!-- :::: {.carousel .dark .framed autoplay="false" transition="none"}
 

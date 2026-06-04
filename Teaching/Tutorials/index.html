@@ -6,7 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="I developed an interactive tutorial website to support the adoption of GPMelt [1], a flexible R package embedded in a Nextflow workflow for analyzing Thermal Proteome Profiling (TPP) datasets. The goal is to help users not only use the tool, but understand the modeling choices behind it.Jump to the website or click on the boxes below to discover the work!">
+<meta name="description" content="This tutorial complements the theoretical resources presented in Example 1 by focusing on the practical use of GPMelt [1]. While the videos explain the modelling framework and its underlying assumptions, this resource is designed to help users apply the methodology in practice and make informed decisions throughout the analysis process.GPMelt combines probabilistic modelling, statistical analysis, and reproducible workflow execution into a flexible framework for analysing Thermal Proteome Profiling (TPP) datasets. This flexibility allows the framework to accommodate a wide range of experimental designs and analytical questions, but also requires users to understand how methodological choices influence the results.The goal of the tutorial was therefore not simply to teach users how to run the workflow, but to help them understand the reasoning behind parameter choices, interpret outputs critically, and make effective use of the framework’s flexibility.Jump to the website below or explore the communication process through the expandable sections.">
 
 <title>Hands-on teaching of complex tools:  the example of GPMelt interactive tutorial – Cécile Le Sueur's Porfolio</title>
 <style>
@@ -64,7 +64,7 @@ div.csl-indent {
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-dc361cc906248144e7d0980098dc8413.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-e8bb5c388be52abac024dbec4631dec4.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -178,6 +178,16 @@ window.Quarto = {
   </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://www.linkedin.com/in/cécile-le-sueur-a79126251/"> <i class="bi bi-linkedin" role="img" aria-label="LinkedIn">
+</i> 
+<span class="menu-text"></span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../cv.html"> <i class="bi bi-file-earmark-person" role="img" aria-label="CV">
+</i> 
+<span class="menu-text">Curriculum Vitae</span></a>
+  </li>  
   <li class="nav-item">
     <a class="nav-link" href="../../license.html"> 
 <span class="menu-text">License</span></a>
@@ -202,18 +212,21 @@ window.Quarto = {
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">Hands-on teaching of complex tools:<br> the example of GPMelt interactive tutorial</h1>
-<p class="subtitle lead"><strong>Hands-on teaching of complex tools</strong> <br> <br> Example: <br> <strong>GPMelt interactive tutorial</strong> <br> <br> Output: <br> <strong>Website + tutorial</strong></p>
+<p class="subtitle lead"><strong>Promoting understanding rather than execution</strong> <br> <br> Example: <br> <strong>GPMelt interactive tutorial</strong> <br> <br> Output: <br> <strong>Website + tutorial</strong></p>
   <div class="quarto-categories">
-    <div class="quarto-category">teaching</div>
-    <div class="quarto-category">tutorial</div>
-    <div class="quarto-category">website</div>
+    <div class="quarto-category">User Empowerment</div>
+    <div class="quarto-category">Critical Data Interpretation</div>
+    <div class="quarto-category">Analytical Decision-Making</div>
+    <div class="quarto-category">Method Adoption</div>
   </div>
   </div>
 
 <div>
   <div class="description">
-    <p>I developed an interactive tutorial website to support the adoption of GPMelt <span class="citation" data-cites="LeSueurGPMelt">[<a href="#ref-LeSueurGPMelt" role="doc-biblioref">1</a>]</span>, a flexible R package embedded in a Nextflow workflow for analyzing Thermal Proteome Profiling (TPP) datasets. The goal is to <strong>help users not only use the tool, but understand the modeling choices behind it</strong>.</p>
-    <p>Jump to the <a href="#ex-Website">website</a> or click on the boxes below to discover the work!</p>
+    <p>This tutorial complements the theoretical resources presented in <a href="../../Teaching/Videos/index.html">Example 1</a> by focusing on the <strong>practical use of GPMelt</strong> <span class="citation" data-cites="LeSueurGPMelt">[<a href="#ref-LeSueurGPMelt" role="doc-biblioref">1</a>]</span>. While the videos explain the modelling framework and its underlying assumptions, this resource is designed to <strong>help users apply the methodology in practice and make informed decisions throughout the analysis process</strong>.</p>
+    <p>GPMelt combines probabilistic modelling, statistical analysis, and reproducible workflow execution into a flexible framework for analysing Thermal Proteome Profiling (TPP) datasets. This flexibility allows the framework to accommodate a wide range of experimental designs and analytical questions, but also requires users to <strong>understand how methodological choices influence the results</strong>.</p>
+    <p>The goal of the tutorial was therefore not simply to teach users how to run the workflow, but to help them understand the <strong>reasoning behind parameter choices, interpret outputs critically, and make effective use of the framework’s flexibility</strong>.</p>
+    <p>Jump to the <a href="#ex-Website">website</a> below or explore the communication process through the expandable sections.</p>
   </div>
 </div>
 
@@ -234,60 +247,58 @@ window.Quarto = {
 <p style="text-align: center;font-weight: bold; font-size: 28px;">
 Challenges
 </p>
-<p>The mindset behind GPMelt development was to create a tool which is flexible enough to deal with a great variety of existing - and to come !- TPP experimental set-ups.</p>
-<ul>
-<li><strong>Flexibility often comes at the cost of complexity</strong>, and requires a <strong>deeper understanding than a black box</strong>.</li>
-<li>To allow for flexibility, numerous parameters have been left free to be chosen or adapted by the user. However, <strong>informed parameter choices</strong> requires an additional step of understanding, through visualisation and intuition of how a parameter value impacts the model output.</li>
-<li>Users (biologists, bioinformaticians) often risk treating tools as black boxes and spontaneouly <strong>use default parameters without knowing</strong> how - nor why - to adapt them.</li>
-</ul>
-The challenge was to design a <strong>tutorial that promotes understanding, not just execution.</strong>
+<div style="text-align: justify;">
+<p>GPMelt was developed as a flexible analytical framework designed to accommodate both <strong>existing and future</strong> Thermal Proteome Profiling (TPP) experimental designs. While this <strong>flexibility increases the applicability</strong> of the method, it also <strong>introduces additional complexity</strong> for users.</p>
+<p>Many aspects of the analysis can be <strong>configured or adapted</strong> depending on the experimental design, the biological question, and the characteristics of the data. Making <strong>informed choices</strong> therefore requires <strong>more than simply following instructions or applying default settings</strong>: users need to understand how different parameters, assumptions, and visualisations influence the resulting analyses and interpretations.</p>
+Overall, the challenge was to design a <strong>tutorial that promotes understanding rather than execution</strong> and encourages users to <strong>move beyond default settings and black-box usage</strong>.
+</div>
 </div>
 <div class="card-row">
 <div class="card card-retractable" onclick="this.classList.toggle('expanded')">
 <p style="text-align: center;font-weight: bold; font-size: 28px;">
 Approach
 </p>
-<p>I designed a step-by-step, interactive tutorial combining <strong>practical usage with conceptual guidance</strong>.</p>
-<p>Key elements:</p>
+<div style="text-align: justify;">
+<p>I designed the tutorial as a <strong>guided learning experience</strong> that combines practical usage with conceptual understanding, rather than presenting the workflow as a sequence of commands to execute.</p>
+<p>Key design choices included:</p>
 <ul>
-<li>structured workflow:
-<ul>
-<li>data preparation;</li>
-<li>parameters selection;</li>
-<li>output interpretation;</li>
-</ul></li>
-<li><strong>copy-paste ready code</strong> to reduce friction;</li>
-<li>integration of <strong>high-quality visual outputs</strong>, with explanations and code on how to generate them;</li>
-<li>tight coupling between:
-<ul>
-<li>practice (how to use the tool);</li>
-<li>theory (why it works this way).</li>
-</ul></li>
+<li>structuring the tutorial around the <strong>complete analytical workflow</strong>, from data preparation and parameter selection to result interpretation;</li>
+<li>combining <strong>practical instructions with explanations of the modelling assumptions</strong> and analytical decisions underlying the workflow;</li>
+<li>explaining the <strong>role and impact of key parameters</strong>, including the situations in which different settings may be appropriate, and illustrating it through examples drawn from multiple experimental datasets;</li>
+<li>providing <strong>copy-paste ready code examples</strong> to minimise technical friction and allow users to focus on the concepts being introduced;</li>
+<li>integrating <strong>high-quality visualisations</strong> alongside code to generate them and explaination on how to interpret them.</li>
 </ul>
-<p>Users can progressively <strong>move from usage to deeper understanding.</strong></p>
+</div>
 </div>
 <div class="card card-retractable" onclick="this.classList.toggle('expanded')">
 <p style="text-align: center;font-weight: bold; font-size: 28px;">
 Strengths
 </p>
+<div style="text-align: justify;">
 <ul>
-<li>Ability to teach complex technical tools to non-expert users;</li>
-<li>design of structured, user-centered learning experiences;</li>
-<li>bridging theory and practice in a usable way;</li>
-<li>encouraging user <strong>autonomy and critical use of tools</strong>;</li>
-<li>clear communication of data workflows and outputs.
+<li>Designing <strong>user-centred learning experiences</strong> for complex technical tools;</li>
+<li><strong>Bridging theory and practice* to support </strong>informed decision-making**;</li>
+<li>Encouraging <strong>autonomy and critical thinking</strong> rather than procedural execution;</li>
+<li>Communicating modelling assumptions, parameter choices, trade-offs, and methodological consequences clearly;</li>
+<li><strong>Reducing technical barriers to adoption</strong> thanks to code examples without sacrificing conceptual understanding;</li>
+<li>Creating <strong>interactive educational resources</strong> that combine code, visualisation, and explanation.
 </li></ul></div>
 
+</div>
 </div>
 <div class="card card-retractable" style="margin-bottom: 2rem;" onclick="this.classList.toggle('expanded')">
 <p style="text-align: center;font-weight: bold; font-size: 28px;">
 Impact
 </p>
-<p>GPMelt has always been developped with the deep wish to be an <strong>actionable statistical framework</strong>, not just a black box. <br> In the course of my PhD, I encountered a lot of dataset and experimental design that would have beneficiating from GPMelt’s hierarchical modelling. Thus, I envisioned this tool with the power to analyse more than just TPP data. However,this required to leave enough parametrical freedom to better accomodate for the specificity of different data types and experimental designs. <br> This tutorial supported onboarding of new users, and <strong>demonstrated all the capabilities of the tool, with the hope to inspire users</strong>: while previous experimental designs were restricted to available statistical framework for analysis, <strong>GPMelt allows for creativity and novelty to design complex new experiments</strong>, pionnering new discoveries !</p>
+<div style="text-align: justify;">
+<p>GPMelt was developed with the ambition of becoming an <strong>actionable statistical framework</strong> rather than a black-box analysis tool. Its flexibility was intentionally designed to accommodate not only existing experimental designs, but also the increasingly diverse methodologies emerging within the Thermal Proteome Profiling field and beyond.</p>
+<p>By helping users understand the reasoning behind the framework and the consequences of different analytical choices, the tutorial enables them to understand <strong>how those choices influence the outputs, interpretations, and conclusions</strong> that can be drawn from the data. This gives researchers the <strong>confidence to adapt the methodology to their own scientific questions rather than simply applying predefined workflows</strong>.</p>
+Ultimately, the objective was to provide a foundation that supports both rigorous analysis and methodological creativity, <strong>enabling new experimental designs to be driven by scientific needs rather than constrained by available analytical tools</strong>.
+</div>
 </div>
 <div id="ex-Website" style="margin-top: 2rem; border: 1px solid rgba(0,0,0,0.2); box-shadow: 0 6px 14px rgba(0,0,0,0.12); border-radius: 8px; padding: 1em;">
 <p style="text-align: center;font-weight: bold; font-size: 28px;">
-Have a look at the website and explore the tutorial!
+Explore the tutorial and see how users are guided from workflow execution to informed analytical decision through a hands-on learning experience.
 </p>
 <div id="listing-sample-listings" class="quarto-listing quarto-listing-container-custom">
 <div class="video-rows">
