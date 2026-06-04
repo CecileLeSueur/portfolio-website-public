@@ -1,0 +1,25 @@
+- title: "Groups comparison" 
+  subtitle: "Using comparative visualisation (bar charts, boxplots, violin plots, and statistical significance tests) to compare two analytical approaches. Together, these representations highlight differences in the phosphosites detected by each method and show that phosphosites uniquely identified by GPMelt are associated with higher functional scores, supporting their biological relevance (Figure 6.9BC from [1]). (© 2025 Cécile Le Sueur)"
+  thumbnail: "../../../images/ScientificIllustration/DataSciences/groupComparison.png"
+- title: "Communicating model uncertainty" 
+  subtitle: "Comparing model fits produced by NPARC (top row) and GPMelt (bottom row). While NPARC provides only a fitted curve, GPMelt additionally communicates uncertainty through a 95% confidence region around the posterior mean estimate, supporting more informed interpretation of the results (Figure 6.8D from [1]). (© 2025 Cécile Le Sueur)"
+  thumbnail: "../../../images/ScientificIllustration/DataSciences/Uncertainty.png"
+
+- title: "Dimensionality reduction for evaluating analytical strategies"
+  subtitle: "Using multidimensional scaling (MDS) to evaluate the effectiveness of three batch-correction strategies. By projecting complex longitudinal data into an interpretable visual space, the figure reveals which method successfully aligns measurements across temperatures, conditions, and replicates (Figure B20 from [1]). (© 2025 Cécile Le Sueur)"
+  thumbnail: "../../../images/ScientificIllustration/DataSciences/IRS_condition_wise_offsetTPP.png"
+- title: "Generating insight through methods comparison"
+  subtitle: "Using ROC curves to compare the performance of four statistical methods across two datasets. The visualisation revealed the consistently poorer performance of one approach, motivating further investigation and ultimately leading to the identification of its sensitivity to outliers (Figure 6.6 from [1]). (© 2025 Cécile Le Sueur)"
+  thumbnail: "../../../images/ScientificIllustration/DataSciences/ROCcurves.png"
+
+- title: "Revealing a hidden pattern - permutation datasets & volcano plots" 
+  subtitle: "Comparing real and permuted datasets through volcano plots. The unexpected presence of numerous discoveries in the permuted datasets (second row) revealed a previously unnoticed batch effect, illustrating how visualisation can uncover hidden patterns and guide methodological investigation (Figure 7.7 from [1]). (© 2025 Cécile Le Sueur)"
+  thumbnail: "../../../images/ScientificIllustration/DataSciences/volcanoPlot.png"
+- title: "Revealing a hidden pattern - p-values histograms"
+  subtitle: "Using p-value histograms to diagnose a statistical calibration problem. The visualisation immediately revealed that the method produced miscalibrated p-values on this dataset (left panel), leading to the discovery that non-sigmoidal data violated the model assumptions. Removing these data restored calibration (right panel) and confirmed the source of the issue.(Figure 6.8C from [1]). (© 2025 Cécile Le Sueur)"
+  thumbnail: "../../../images/ScientificIllustration/DataSciences/Histograms_300dpi.png"
+
+- title: "Conceptualising statistical optimisation" 
+  subtitle : "Combining conceptual illustration (A) and model diagnostics (B) to explain convergence analysis. The figure uses a simplified optimisation landscape (A) to visualise how model fitting can become trapped in local optima before reaching a better solution (as examplified in the second panel in (B)), helping make an abstract statistical concept more intuitive (Figure 5.3 from [1]). (© 2025 Cécile Le Sueur)"
+  thumbnail: "../../../images/ScientificIllustration/DataSciences/convergence_example.png"
+

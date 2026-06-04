@@ -1,0 +1,35 @@
+---
+title: "Data visualisation for evidence and insight"
+subtitle: "Visualisations designed to reveal patterns, communicate evidence, and support data-driven reasoning."
+description: |
+  Data visualisation is more than a way to display results: it is a **powerful tool for exploration, interpretation, and reasoning**. Well-designed visualisations can **reveal hidden patterns, highlight meaningful differences, communicate uncertainty, and support data-driven decision-making**.
+
+  The examples below illustrate different roles of data visualisation in scientific practice, from comparing groups and evaluating analytical strategies to uncovering unexpected behaviours in complex datasets. Together, they show how **visual representations can transform large amounts of information into evidence** that can be understood, questioned, and acted upon.
+
+  Full-quality images, detailed legends, and references can be found in my PhD thesis [@LeSueurThesis].
+image: "../../../images/thumbnails/slide-8.png"  # ← path to a preview image
+format: 
+  html:
+    page-layout: full
+    grid:
+      sidebar-width: 100px
+      body-width: 1100px
+      margin-width: 100px
+      gutter-width: 1.5rem
+listing:
+  id: listing-gallery
+  template: ../../../ListingTemplate/gallery.ejs
+  contents:
+    - items_data_sciences.yml
+  sort-ui: false
+  filter-ui: false
+  categories: false
+bibliography: ../../../References/references.bib
+csl: ../../../References/bibstyle.cls
+order: 0 # so it's excluded from the home page
+orderbis: 3 # so it's ordered on the Scientific illustration 
+---
+
+
+::: {#listing-gallery}
+:::

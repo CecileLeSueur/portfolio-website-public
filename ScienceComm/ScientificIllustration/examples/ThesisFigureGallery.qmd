@@ -1,6 +1,12 @@
 ---
-title: "Gallery of scientific illustrations"
-subtitle: "A selection of scientific illustrations covering a wide range of scientific expertise."
+title: "Scientific illustrations across disciplines"
+subtitle: "A collection of visuals designed to translate complex concepts and support understanding across a wide range of scientific expertise."
+description : |
+  Covering topics ranging from mass spectrometry and molecular biology to thermodynamics, probabilistic ML/AI, linear algebra, experimental design, and statistics, these selected figures illustrate **how visual communication can make complex concepts more accessible and intuitive**.
+
+  Many of these ideas are **difficult to explain efficiently through text alone**. By combining abstraction, synthesis, and visual reasoning, these figures help translate specialised knowledge into forms that can be understood across different scientific backgrounds.
+
+  Full-quality images, detailed legends, and references can be found in my PhD thesis [@LeSueurThesis].
 image: "../../../images/thumbnails/slide-3.png"  # ← path to a preview image
 format: 
   html:
@@ -23,7 +29,7 @@ csl: ../../../References/bibstyle.cls
 order: 0 # so it's excluded from the home page
 orderbis: 2 # so it's ordered on the Scientific illustration 
 ---
-Covering Mass Spectrometry, thermodynamics, molecular biology, probabilistic ML/AI, linear algebra (matrix representation), biological protocols designs and statistics (data scaling and normalisation), these selected Figures illustrate that an "image is worth 1000 words", especially when considering complex concepts, for which a visualisation is key. Full quality images, their detailed legends and references can be found in [@LeSueurThesis].
+
 
 ::: {#listing-gallery}
 :::

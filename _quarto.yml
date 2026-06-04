@@ -8,8 +8,14 @@ website:
       - href: index.qmd
         text: home
     right:
-    - text: "License"
-      href: license.qmd
+     - icon: linkedin
+       href: https://www.linkedin.com/in/cécile-le-sueur-a79126251/
+       aria-label: LinkedIn
+     - icon: file-earmark-person
+       href: cv.qmd
+       aria-label: CV
+     - text: "License"
+       href: license.qmd
   page-footer:
     right: "This page is built with ❤️ and [Quarto](https://quarto.org/)."
     center: "Code: MIT | Content: CC BY-NC 4.0"

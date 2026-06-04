@@ -1,6 +1,6 @@
 ---
 title: "Striking image for GPMelt"
-subtitle: "A visual designed to attract attention and communicate the core idea of the tool at a glance."
+subtitle: "A visual designed to spark curiosity and communicate the core idea of the tool at a glance."
 image:  "../../../images/thumbnails/slide-2.png"  # ← path to a preview image
 bibliography: ../../../References/references.bib
 csl: ../../../References/bibstyle.cls

@@ -1,17 +1,15 @@
 ---
-title: "Scientific illustration: <br> Designing visuals for clarity and engagement"
-subtitle: "<strong>Designing visuals for clarity and engagement</strong> <br> <br> Example: <br> <strong> Visual thinking for scientific communication </strong>  <br> <br> Output: <br> <strong>Scientific illustrations</strong>"
+title: "Visual thinking for scientific communication: <br> Designing visuals for clarity and engagement"
+subtitle: "<strong>Visual thinking for scientific communication</strong> <br> <br> Example: <br> <strong> From conceptual illustrations to data visualisation </strong>  <br> <br> Output: <br> <strong>Scientific illustrations and visualisations</strong>"
 description: |
-  Across my work, I **design scientific visuals to support communication at different stages**:
+  Some ideas are difficult to communicate through words alone. Across my work, I use **visual thinking as a communication tool** to spark curiosity, explain complex concepts, and communicate data-driven insights.
 
-  - introducing new tools and concepts;
-  - summarizing complex theoretical content;
-  - supporting interdisciplinary understanding.
+  Depending on the communication objective, this can take the form of conceptual illustrations, explanatory figures, or analytical visualisations. Together, these examples illustrate how visual design can support different stages of communication: **attracting interest, building understanding, and communicating evidence**.
 
-  These visuals target audiences ranging from biologists to data scientists and statisticians. 
-  
-  Jump to the [examples](#ex-ScientificIllustrations) or click on the boxes below to discover the work!
-categories: [Sciences communication, cover image, scientific illustration]
+  The visuals presented here target audiences ranging from biologists to data scientists, serving as a **bridge between disciplines with very different ways of thinking and communicating**.
+
+  Jump to the [examples](#ex-ScientificIllustrations) below or explore the communication process through the expandable sections.
+categories: [Visual Thinking, Information Synthesis, Conceptual Abstraction, Interdisciplinary Translation]
 image: "../../images/thumbnails/slide-2.png"
 order: 3
 #author: "Cécile Le Sueur"
@@ -47,18 +45,15 @@ listing:
   <p style="text-align: center;font-weight: bold; font-size: 28px;">
   Challenges
   </p>
-  The common challenges of these visuals are to **translate complex, abstract concepts into intuitive visual representations**.
+  <div style="text-align: justify;">
 
-  Balance:
+  The common challenge across these visuals is to **translate complex concepts into intuitive visual representations without sacrificing scientific accuracy**. Many of the ideas involved are abstract, interdisciplinary, or highly technical, making them difficult to communicate effectively through text alone.
 
-  - scientific accuracy;
-  - clarity and accessibility;
-  - visual appeal.
+  Regardless of their communicative purpose, each visual therefore requires balancing multiple objectives simultaneously: **accessibility** for non-specialists, sufficient **depth** for expert audiences, **clarity** to support understanding and engagement, and enough **visual appeal** to attract and maintain attention.
 
-  Ensure visuals can:
+  The challenge is not simply to illustrate information, but to **identify the visual representation that best supports understanding, highlights the key message, and communicates effectively** across different backgrounds and communication contexts.
+  </div>
 
-  - stand alone;
-  - support understanding across diverse backgrounds.
   </div>
 
 <div class="card-row">
@@ -68,16 +63,17 @@ listing:
   <p style="text-align: center;font-weight: bold; font-size: 28px;">
   Approach
   </p>
-  I **design visuals as conceptual tools**, not just illustrations.
+  <div style="text-align: justify;">
+  I design visuals as communication tools rather than decorative illustrations. The objective is not simply to represent information, but to support understanding through visual reasoning and synthesis.
 
   Key principles:
 
-  - simplifying without losing essential meaning;
-  - selecting and adapting representations from multiple sources when needed;
-  - combining abstract ideas with concrete representations;
-  - ensuring visual coherence and readability across elements;
-  - using design to guide attention and highlight key insights.
-  
+  * simplifying complex ideas without losing their essential meaning;
+  * combining abstract concepts with concrete visual representations to **support intuition and understanding**;
+  * **synthesising information** from multiple disciplines or sources into **coherent visual narratives**;
+  * using visual hierarchy, colour, and layout to guide attention towards the most important information;
+  * **adapting the style and level of detail** to the intended audience and communication objective.
+  </div>
   </div>
 
   <div class="card card-retractable" onclick="this.classList.toggle('expanded')">
@@ -85,11 +81,13 @@ listing:
   <p style="text-align: center;font-weight: bold; font-size: 28px;">
   Strengths
   </p>
-  - Ability to **design clear and engaging** scientific visuals;
-  - translation of **complex concepts into intuitive** representations;
-  - **visual synthesis** condensing information from multiple sources;
-  - use of design to **support interdisciplinary learning and understanding**;
-  - adaptation of visuals to **different communication goals** (attract, explain, summarize).
+  <div style="text-align: justify;">
+  * **Bridging audiences** with different backgrounds through visual communication;
+  * Distilling complex ideas into their **essential communicable elements**;
+  * Condensing large amounts of information into **clear visual summaries**;
+  * Designing visuals that support **curiosity, reasoning, understanding, and decision-making**;
+  * **Adapting visual communication** across different stages of the communication process.
+  </div>
   </div>
 </div>
 
@@ -98,8 +96,14 @@ listing:
   <p style="text-align: center;font-weight: bold; font-size: 28px;">
   Impacts
   </p>
-  Working on highly interdisciplinary projects (at the interface between biology, medicine, thermodynamic, mathematical modelling, probabilistic ML/AI, data sciences and computational sciences), it is often required to **translate knwoledge from one audiance to another**. To this aim, I developed skills in scientific illustrations to **capture my audiance attention while transmitting the appropriate information**. <br>
-  Mathematical **formula often freeze an audiance**: it is necessary to learn how to **present a theoretical concept with simple and engaging visuals** without weakening the content.  
+  <div style="text-align: justify;">
+
+  Some concepts are difficult to communicate effectively through text, formulas, or verbal explanations alone, yet become immediately more accessible once visualised. By transforming abstract ideas into intuitive visual representations, these illustrations supported **conceptual abstraction, knowledge translation, and information synthesis** across a wide range of communication contexts.
+
+  These visual representations also provided a **common language between disciplines**. By translating abstract concepts, workflows, and analytical reasoning into intuitive visual forms, they **facilitated discussions between researchers with different areas of expertise** and helped communicate key ideas more efficiently.
+
+  More broadly, this work reinforced the idea that effective **visuals are not merely decorative elements**. When carefully designed, they can **reduce the intimidation** often associated with theoretical or highly technical content, making **complex ideas more approachable while preserving their depth and meaning**.
+  </div>
 </div>
 <!-- [striking image](examples/CoverImage.qmd) -->
 
@@ -107,7 +111,7 @@ listing:
 :::: {style="margin-top: 2rem; border: 1px solid rgba(0,0,0,0.2); box-shadow: 0 6px 14px rgba(0,0,0,0.12); border-radius: 8px; padding: 1em;" id="ex-ScientificIllustrations"}
 
 <p style="text-align: center;font-weight: bold; font-size: 28px;">
-  Examples of scientific illustrations
+  Scientific illustrations and visualisations
 </p>
 
 ::: {#Examples }
@@ -115,14 +119,17 @@ listing:
 
 ::::
 
+
 ```{=html}
 <style>
 .quarto-listing-container-grid .list.grid {
-  grid-template-columns: repeat(2, minmax(200px, 300px)) !important;
+  grid-template-columns: repeat(3, minmax(200px, 300px)) !important;
   justify-content: center !important;
 }
 </style>
 ```
+<!-- 
+-->
 
 <!-- 
 As examples, I present the **striking image** aimed at advertising GPMelt on social medias, and a **selection of scientific illustrations** covering a wide range of scientific expertise, which I included in my thesis [-@LeSueurThesis] whose commitee consisted in biologists, bio-informaticians and mathematicians.

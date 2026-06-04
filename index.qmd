@@ -13,7 +13,7 @@ listing:
     image-height: 150px
     image-placeholder: "images/themockup.png"
     fields: [image, subtitle]
-    categories: true
+    categories: false
     date-format: "YYYY-MM-DD"
     page-size: 9 
   - id: science_comm
@@ -28,7 +28,7 @@ listing:
     image-height: 150px
     image-placeholder: "images/themockup.png"
     fields: [image, subtitle]
-    categories: true
+    categories: false
     date-format: "YYYY-MM-DD"
     page-size: 9 
 toc: false
@@ -46,13 +46,20 @@ editor:
 }
 </style>
 ```
+## Explore the portfolio
 
-## AI, Stats & Data Education
+- [Technical Education & Knowledge Translation](#Educ): 
+*Building understanding of complex machine learning, statistical, and analytical methods*
+
+- [Scientific Storytelling & Engagement](#Comm): 
+*Communicating science through talks, visual design, and audience engagement*
+
+## Technical Education & Knowledge Translation (AI, ML & Statistics) {#Educ}
 
 :::{#teaching}
 :::
 
-## Science communication
+## Scientific Storytelling & Engagement {#Comm}
 
 :::{#science_comm}
 :::

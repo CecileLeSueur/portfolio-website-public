@@ -1,14 +1,18 @@
 ---
 title: "Hands-on teaching of complex tools:<br> the example of GPMelt interactive tutorial"
-subtitle: "<strong>Hands-on teaching of complex tools</strong> <br> <br> Example: <br> <strong>GPMelt interactive tutorial</strong> <br> <br> Output: <br> <strong>Website + tutorial</strong>"
+subtitle: "<strong>Promoting understanding rather than execution</strong> <br> <br> Example: <br> <strong>GPMelt interactive tutorial</strong> <br> <br> Output: <br> <strong>Website + tutorial</strong>"
 description: |
-  I developed an interactive tutorial website to support the adoption of GPMelt [-@LeSueurGPMelt], a flexible R package embedded in a Nextflow workflow for analyzing Thermal Proteome Profiling (TPP) datasets.
-  The goal is to **help users not only use the tool, but understand the modeling choices behind it**.
+  This tutorial complements the theoretical resources presented in [Example 1](../Videos/index.qmd) by focusing on the **practical use of GPMelt** [-@LeSueurGPMelt]. While the videos explain the modelling framework and its underlying assumptions, this resource is designed to **help users apply the methodology in practice and make informed decisions throughout the analysis process**.
 
-  Jump to the [website](#ex-Website) or click on the boxes below to discover the work!
-categories: [teaching, tutorial, website]
+  GPMelt combines probabilistic modelling, statistical analysis, and reproducible workflow execution into a flexible framework for analysing Thermal Proteome Profiling (TPP) datasets. This flexibility allows the framework to accommodate a wide range of experimental designs and analytical questions, but also requires users to **understand how methodological choices influence the results**.
+
+  The goal of the tutorial was therefore not simply to teach users how to run the workflow, but to help them understand the **reasoning behind parameter choices, interpret outputs critically, and make effective use of the framework's flexibility**.
+
+  Jump to the [website](#ex-Website) below or explore the communication process through the expandable sections.
+
+categories: [User Empowerment, Critical Data Interpretation, Analytical Decision-Making, Method Adoption]
 image: "../../images/thumbnails/slide-1.png"
-order: 3
+order: 2
 #author: "Cécile Le Sueur"
 #date: "05.2026"
 bibliography: ../../References/references.bib
@@ -32,13 +36,15 @@ listing:
   <p style="text-align: center;font-weight: bold; font-size: 28px;">
   Challenges
   </p>
-  The mindset behind GPMelt development was to create a tool which is flexible enough to deal with a great variety of existing - and to come !- TPP experimental set-ups. 
-  
-  - **Flexibility often comes at the cost of complexity**, and requires a **deeper understanding than a black box**.
-  - To allow for flexibility, numerous parameters have been left free to be chosen or adapted by the user. However, **informed parameter choices** requires an additional step of understanding, through visualisation and intuition of how a parameter value impacts the model output.
-  - Users (biologists, bioinformaticians) often risk treating tools as black boxes and spontaneouly **use default parameters without knowing** how - nor why - to adapt them. 
 
-  The challenge was to design a **tutorial that promotes understanding, not just execution.**
+  <div style="text-align: justify;">
+
+  GPMelt was developed as a flexible analytical framework designed to accommodate both **existing and future** Thermal Proteome Profiling (TPP) experimental designs. While this **flexibility increases the applicability** of the method, it also **introduces additional complexity** for users.
+
+  Many aspects of the analysis can be **configured or adapted** depending on the experimental design, the biological question, and the characteristics of the data. Making **informed choices** therefore requires **more than simply following instructions or applying default settings**: users need to understand how different parameters, assumptions, and visualisations influence the resulting analyses and interpretations.
+
+  Overall, the challenge was to design a **tutorial that promotes understanding rather than execution** and encourages users to **move beyond default settings and black-box usage**. 
+  </div>
   </div>
 
 
@@ -48,33 +54,35 @@ listing:
   <p style="text-align: center;font-weight: bold; font-size: 28px;">
   Approach
   </p>
-  I designed a step-by-step, interactive tutorial combining **practical usage with conceptual guidance**.
-
-  Key elements:
-
-  - structured workflow:
-    - data preparation;
-    - parameters selection;
-    - output interpretation;
-  - **copy-paste ready code** to reduce friction;
-  - integration of **high-quality visual outputs**, with explanations and code on how to generate them;
-  - tight coupling between:
-    - practice (how to use the tool);
-    - theory (why it works this way).
   
-  Users can progressively **move from usage to deeper understanding.**
-  
+  <div style="text-align: justify;">
+
+  I designed the tutorial as a **guided learning experience** that combines practical usage with conceptual understanding, rather than presenting the workflow as a sequence of commands to execute.
+
+  Key design choices included:
+
+  * structuring the tutorial around the **complete analytical workflow**, from data preparation and parameter selection to result interpretation;
+  * combining **practical instructions with explanations of the modelling assumptions** and analytical decisions underlying the workflow;
+  * explaining the **role and impact of key parameters**, including the situations in which different settings may be appropriate, and illustrating it through examples drawn from multiple experimental datasets;
+  * providing **copy-paste ready code examples** to minimise technical friction and allow users to focus on the concepts being introduced;
+  * integrating **high-quality visualisations** alongside code to generate them and explaination on how to interpret them.
+
+  </div>
   </div>
 
   <div class="card card-retractable" onclick="this.classList.toggle('expanded')">
   <p style="text-align: center;font-weight: bold; font-size: 28px;">
   Strengths
   </p>
-  - Ability to teach complex technical tools to non-expert users;
-  - design of structured, user-centered learning experiences;
-  - bridging theory and practice in a usable way;
-  - encouraging user **autonomy and critical use of tools**;
-  - clear communication of data workflows and outputs.
+  <div style="text-align: justify;">
+  * Designing **user-centred learning experiences** for complex technical tools;
+  * **Bridging theory and practice* to support **informed decision-making**;
+  * Encouraging **autonomy and critical thinking** rather than procedural execution;
+  * Communicating modelling assumptions, parameter choices, trade-offs, and methodological consequences clearly;
+  * **Reducing technical barriers to adoption** thanks to code examples without sacrificing conceptual understanding;
+  * Creating **interactive educational resources** that combine code, visualisation, and explanation.
+  </div>
+
   </div>
 
 </div>
@@ -84,16 +92,21 @@ listing:
   <p style="text-align: center;font-weight: bold; font-size: 28px;">
   Impact
   </p>
-  GPMelt has always been developped with the deep wish to be an **actionable statistical framework**, not just a black box. <br>
-  In the course of my PhD, I encountered a lot of dataset and experimental design that would have beneficiating from GPMelt's hierarchical modelling. Thus, I envisioned this tool with the power to analyse more than just TPP data. However,this required to leave enough parametrical freedom to better accomodate for the specificity of different data types and experimental designs. <br>
-  This tutorial supported onboarding of new users, and **demonstrated all the capabilities of the tool, with the hope to inspire users**: while previous experimental designs were restricted to available statistical framework for analysis, **GPMelt allows for creativity and novelty to design complex new experiments**, pionnering new discoveries !
+  <div style="text-align: justify;">
+
+  GPMelt was developed with the ambition of becoming an **actionable statistical framework** rather than a black-box analysis tool. Its flexibility was intentionally designed to accommodate not only existing experimental designs, but also the increasingly diverse methodologies emerging within the Thermal Proteome Profiling field and beyond.
+
+  By helping users understand the reasoning behind the framework and the consequences of different analytical choices, the tutorial enables them to understand **how those choices influence the outputs, interpretations, and conclusions** that can be drawn from the data. This gives researchers the **confidence to adapt the methodology to their own scientific questions rather than simply applying predefined workflows**.
+
+  Ultimately, the objective was to provide a foundation that supports both rigorous analysis and methodological creativity, **enabling new experimental designs to be driven by scientific needs rather than constrained by available analytical tools**.
+  </div>
 </div>
 
 
 :::: {style="margin-top: 2rem; border: 1px solid rgba(0,0,0,0.2); box-shadow: 0 6px 14px rgba(0,0,0,0.12); border-radius: 8px; padding: 1em;" id="ex-Website"}
 
 <p style="text-align: center;font-weight: bold; font-size: 28px;">
-  Have a look at the website and explore the tutorial!
+  Explore the tutorial and see how users are guided from workflow execution to informed analytical decision through a hands-on learning experience.
 </p>
 
 ::: {#sample-listings}

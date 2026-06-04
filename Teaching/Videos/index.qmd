@@ -1,15 +1,19 @@
 ---
-title: "Adapting complex concepts to different audiences:<br> the example of Gaussian Process Regression"
-subtitle: "<strong>Adapting complex concepts to different audiences</strong> <br> <br> Example: <br> <strong>Gaussian Process regression</strong>  <br> <br> Output: <br> <strong>Videos</strong>"
+title: "Adapting complex concepts to different audiences:<br> from Gaussian Process intuition to formalism"
+subtitle: "<strong>Adapting complex concepts to different audiences</strong> <br> <br> Example: <br> <strong>Hierachical Gaussian Process</strong>  <br> <br> Output: <br> <strong>Videos</strong>"
 #title-block-style: none
 description: |
-  During my PhD, I developed a statistical framework, GPMelt [-@LeSueurGPMelt], to analyse Thermal Proteome Profiling (TPP) datasets. I created a website, combining theoretical explanations and hands-on tutorials intended for users. Especially, I aimed to explain the **underlying modeling framework based on hierarchical Gaussian Process (GP) regression** to audiences with very different backgrounds—**from experimental biologists to statistically trained users**.
+  One of the biggest communication challenges during my PhD was explaining **hierarchical Gaussian Process (GP) regression**, the statistical framework underlying GPMelt [-@LeSueurGPMelt], a method I developed to analyse Thermal Proteome Profiling (TPP) datasets. 
+  
+  While the method was **designed for biologists**, its correct use requires understanding several **highly abstract statistical concepts** that are unfamiliar to most users.
 
-  Jump to the [videos](#ex-Videos) or click on the boxes below to discover the work!
+  To address this challenge, I created a **series of educational resources** combining videos, visual explanations, theory, and hands-on tutorials tailored to **audiences ranging from experimental biologists to statistically trained users**.
+
+  Jump to the [videos](#ex-Videos) below or explore the communication process through the expandable sections.
 #description-short: "Highlight: Gaussian Process regression"
 #author: "Cécile Le Sueur"
 #date: "05-2026"
-categories: [teaching, video]
+categories: [Audience Adaptation, Knowledge Translation, Conceptual Abstraction, Method Adoption]
 image: "../../images/thumbnails/slide-5.png"
 order: 1
 listing: 
@@ -35,18 +39,11 @@ format:
   </p>
 
   <div style="text-align: justify;">
+  Hierarchical Gaussian Process regression is a **highly abstract statistical framework** that can be **intimidating** even for quantitatively trained scientists. Yet, using GPMelt effectively requires understanding several **interconnected concepts spanning multiple levels of abstraction**, from the intuition behind Gaussian Process regression and its application to Thermal Proteome Profiling data, to the way biological experimental designs are represented within a hierarchical statistical model.
 
-  If GP regression is a **highly abstract and mathematically complex concept**; it's combination with hierarchical modelling makes it even more complicated. The correct application of GPMelt to concrete and domain-specific biological data relies on a basic understanding of **how a biological experimental design is mathematically translated into a hierachy**. Moreover, adoption of this new framework depends on **lowering the rejection barrier linked to maths incomprehension**.
-  
-  The target audiences range from:
+  The communication challenge was therefore twofold: **lowering the barrier created by mathematical complexity while preserving the concepts necessary for meaningful use of the method**. At the same time, the resources had to work for audiences ranging from experimental biologists with limited statistical training to bioinformaticians and statisticians with very different levels of familiarity with Gaussian Processes.
 
-  - **biologists** with little statistical background;
-  - to **bio-informaticians and bio-statisticians** whose middle to strong statistical background might not cover GP regression.
-
-  </div>
-
-  <div style="text-align: justify;">
-  The key is to **translate similar concepts across multiple levels of abstraction without losing clarity or rigor, while sparking interest and enthusiasm.**
+  The key challenge was to **communicate the same underlying ideas across multiple levels of abstraction and audiences** without sacrificing clarity, rigor, or engagement.
   </div>
 
   </div>
@@ -58,27 +55,32 @@ format:
   Approach
   </p>
 
-  I designed a set of **short, visual-first videos**, each tailored to a **specific audience level**, while keeping a **consistent conceptual backbone**.
+  <div style="text-align: justify;">
+  Rather than introducing the framework through **mathematical formalism**, I designed a series of **short, visual-first videos** that introduced the key concepts progressively, **from intuitive explanations aimed at a broad audience to more advanced material for statistically trained users**. The goal was not only to make the principles easier to understand, but to **provide multiple entry points into the same underlying concepts**.
 
-  Key design choices:
+  Key design choices included:
 
-  * focus on **conceptual understanding** before formal definitions;
-  * adaptation of vocabulary and level of detail;
-  * strong use of visual metaphors, color coding, and animation;
-  * **progressive abstraction** (from intuition to formalization).
-
+  * prioritising **conceptual understanding** before introducing formal definitions;
+  * **adapting vocabulary**, examples, and level of detail to each audience;
+  * using **visual metaphors, colour coding, and animation** to make abstract concepts more tangible; 
+  * **progressively increasing the level of abstraction**, from intuitive explanations to more formal statistical reasoning.
+  </div>
   </div>
 
   <div class="card card-retractable" onclick="this.classList.toggle('expanded')">
   <p style="text-align: center;font-weight: bold; font-size: 28px;">
   Strengths
   </p>
-  * Ability to **adapt** explanations to different audiences;
-  * deep concept simplification **without oversimplification**;
-  * **translation between disciplines** (from biological data to mathematical modeling; from statistical analysis to biological interpretation);
-  * design of **structured learning pathways** (from intuition to formalization);
-  * **high-quality visual** communication (figures, animation, storytelling);
-  * creation of **concise, engaging educational** video content.
+  <div style="text-align: justify;">
+  * **Adapting explanations** to audiences with different levels of expertise;
+  * Making complex concepts **accessible without oversimplification**;
+  * Communicating across **multiple levels of abstraction** while preserving rigor;
+  * **Translation between disciplines and domains** (e.g. from biological data to mathematical modelling; from statistical analysis to biological interpretation);
+  * Connecting experimental, statistical, and computational perspectives;
+  * Designing **learning pathways** that support progressive understanding, from intuition to formalization;
+  * Creating **high-quality visual** explanations of abstract concepts (figures, animation, storytelling);
+  * Developing **concise, engaging educational content** for self-directed learning.
+  </div>
   </div>
 
 </div>
@@ -88,15 +90,20 @@ format:
 <p style="text-align: center;font-weight: bold; font-size: 28px;">
 Impact
 </p>
-As a statistician developping tools for biologists, the **risk is to deliver a black box** that users might use eyes closed, without trying to understand what's happening behind the scene. This general lack of understanding of statistical methods is at the **origin of the numerous incorrect data analysis leading to inapropriate results and interpretation** which can nowadays be found throughout the litterature. <br>
-By providing videos and figures to explain the theory and model behind GPMelt to diverse audiances, my goal is to **bridge the knowledge gap existing betweeen those generating the data and those analysing them**. Only then can data analysis become **truely powerful and lead to new discoveries**.
+<div style="text-align: justify;">
+These resources were designed to **help users understand the reasoning behind the model**, not only to learn how to use GPMelt in practice. By making the underlying statistical framework more approachable across different levels of expertise, they aimed to **reduce the gap between method developers and end users**.
+
+This allows users to engage with the modelling framework at a **depth appropriate to their needs and expertise**, while maintaining a coherent conceptual link between the biological experiment and its statistical analysis. As a result, researchers can **engage more confidently with the methodology**, better **understand its assumptions and limitations**, and use the resulting analyses more **critically and effectively**.
+
+Ultimately, the objective was to transform the model **from a black box** into a tool that users could **meaningfully understand and build upon**. By focusing on the underlying modelling principles rather than software usage alone, these resources provide a **foundation for adapting and extending the framework** to new experimental settings and data types.
+</div>
 </div>
 
 
 :::: {style="margin-top: 2rem; border: 1px solid rgba(0,0,0,0.2); box-shadow: 0 6px 14px rgba(0,0,0,0.12); border-radius: 8px; padding: 1em;" id="ex-Videos"}
 
 <p style="text-align: center;font-weight: bold; font-size: 28px;">
-  Have a look at some videos!
+  Explore the videos and see how the communication strategy comes to life
 </p>
 
 ::: {#sample-listings}

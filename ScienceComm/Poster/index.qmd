@@ -1,11 +1,14 @@
 ---
 title: "Scientific storytelling:<br> Designing a high-impact conference poster"
-subtitle: "<strong>Scientific storytelling at international conferences</strong> <br> <br> Example: <br> <strong>High-impact conference poster</strong>  <br> <br> Output: <br> <strong>Conference poster</strong></p>"
+subtitle: "<strong>Capturing attention in highly competitive environments</strong> <br> <br> Example: <br> <strong>Visual storytelling for scientific engagement</strong>  <br> <br> Output: <br> <strong>High Impact conference poster</strong></p>"
 description: |
-  I designed a poster for the international HUPO 2024^[Human Proteome Organisation World Congress <https://2024.hupo.org>] conference to present my PhD work. The goal was to promote GPMelt [-@LeSueurGPMelt], a statistical framework for Thermal Proteome Profiling (TPP) data analysis, to potential users (ranging from biologists to data scientists). I aimed to **showcase all the unique features** of this new model, while **explaining the modelling principles** to the audiance **without scaring them with the complexity** of the underlying mathematical model.
+  At large international conferences, **hundreds of projects** compete simultaneously for the attention of researchers. In this environment, a poster has only a **few seconds to capture interest**, spark curiosity, and convince people that a project is worth exploring further.
 
-  Jump to the [poster](#ex-Poster) or click on the boxes below to discover the work!
-categories: [Sciences communication, poster, International conference]
+  I designed this poster for the HUPO 2024^[Human Proteome Organisation World Congress <https://2024.hupo.org>] conference to introduce GPMelt [-@LeSueurGPMelt], a statistical framework for Thermal Proteome Profiling (TPP) data analysis, to potential users ranging from experimental biologists to data scientists. Besides communicating the value of the framework, the poster was designed to **attract attention**, create a **memorable impression**, and encourage researchers to **engage with the project beyond the poster session**.
+
+  Jump to the [poster](#ex-Poster) below or explore the communication process through the expandable sections.
+
+categories: [Visual Storytelling, Curiosity Generation, Audience Attraction, Scientific Marketing]
 image: "../../images/thumbnails/slide-4.png"
 order: 2
 #author: "Cécile Le Sueur"
@@ -29,9 +32,14 @@ filters:
   <p style="text-align: center;font-weight: bold; font-size: 28px;">
   Challenges
   </p>
-  At international conferences, posters session are **usually short** (2h), and the **competition is intense**, with a huge number of presented posters (typically over hundreds). The real challenge is to **stand out from the crowd to attract the audiance** and pitch the project in a short time before they move to another poster. <br>
-  It's a real **marketing exercise**: in only few minutes of attention from the audiance, I need to introduce the limitation of previously developed statistical framework, highlight the consequences of these limitations and present our **innovative solution** to the problem. The description of the methodology should remain conceptual, but clear enough to support the presented results. As presenter, it's fundamental to **spark interest and enthusiasm** among listeners, to create a lasting impression that will predominate over all other posters seen that day, thus maximising the chance that the audiance will remember the project to look at it in more detail later on. Poster sessions are really about **advertising the project** to convince futur users. **Effort on the branding** (e.g. software name and logo, simplicity of the ressources' accessibility via QR code) are essential. <br>
-  Similarly, **visual appeals** are crucial to **pique scientists' curiosity** while they do a first tour of posters to select which ones to investigate during the poster session. Additionally, the poster should have an **appropriate informational depth**, to stand alone without explanation for audiance that would go through it outside of the poster session.
+
+  <div style="text-align: justify;">
+  At large international conferences, poster sessions are **highly competitive environments** in which hundreds of projects compete simultaneously for attention. **Standing out from the crowd** is therefore essential to attract an audience before they move on to the next poster, often leaving only **a few minutes to pitch the project**.
+
+  For GPMelt, this **challenge was amplified** by the nature of the project itself. Advanced statistical methodologies can appear **intimidating** to researchers unfamiliar with sophisticated modelling approaches, **creating a barrier** not only to understanding the work, but even to **initially approaching** the poster and engaging with the presenter.
+
+  The challenge was therefore to create a poster that attracted attention, lowered this initial barrier, and encouraged researchers from diverse backgrounds to **engage confidently with both the project and the person presenting it**.
+  </div>
 </div>
 <!--
   - Capture attention in a high-density, time-constrained environment (poster session)
@@ -46,33 +54,32 @@ filters:
   <p style="text-align: center;font-weight: bold; font-size: 28px;">
   Approach
   </p>
-  I designed the poster as a **self-contained narrative**, combining **visual impact with layered information**.
-  <br> <br>
-  Key elements:
+  <div style="text-align: justify;">
+  I designed the poster as a **self-contained narrative** that combines **visual impact, accessibility, and scientific credibility**.
 
-  - a **clear visual entry point** to introduce the problem and context;
-  - use of a **central visual metaphor (iceberg)** to:
-    - reassure applied users;
-    - de-emphasize intimidating theoretical depth;
-  - **structured layout** highlighting:
-    - key features of the tool;
-    - practical value and use cases;
-  - emphasis on readability and visual hierarchy for **quick scanning**.
-  
-  This conference poster is designed for both:
+  Key design choices included:
 
-  - **quick engagement** during sessions
-  - **independent reading** outside presentation time
+  * creating a **strong visual identity through branding elements** such as the software name, logo, and direct access to resources via QR codes;
+  * creating a **visually distinctive entry point** (iceberg metaphor) designed to attract curiosity while making the underlying methodology feel more approachable;
+  * structuring information in layers, allowing both **quick scanning and deeper exploration** depending on the audience's level of interest;
+  * highlighting the key features of the tool, its practical value, and its use cases through a **clear structured layout**;
+  * designing the poster to function both as a **conversation starter** during the session and as a **stand-alone communication resource** afterwards.
+  </div>
   </div>
 
   <div class="card card-retractable" onclick="this.classList.toggle('expanded')">
   <p style="text-align: center;font-weight: bold; font-size: 28px;">
   Strengths
   </p>
-  - Ability to distill complex scientific work into a **clear, engaging narrative**;
-  - **visual storytelling** for persuasion and user engagement;
-  - designing content for **constrained attention environments**;
-  - balancing **clarity, completeness, and attractiveness**.
+  <div style="text-align: justify;">
+  * **Visual storytelling for scientific engagement** in a highly competitive environment;
+  * **Anticipating barriers to engagement** and designing communication resources to overcome them;
+  * **Transforming intimidating** technical topics **into approachable** conversations;
+  * **Creating curiosity** around complex scientific and technical subjects;
+  * Building **memorable project identities** through branding and communication design;
+  * Translating methodological innovation into **clear user value** for diverse audiences;
+  * Balancing **clarity, completeness, and visual appeal** in constrained communication formats.
+  </div>
   </div>
 </div>
 
@@ -80,7 +87,14 @@ filters:
   <p style="text-align: center;font-weight: bold; font-size: 28px;">
   Impact
   </p>
-  The poster session at HUPO 2024 has been **particularly effective**, managing to attract and **gather a large crowd** for the whole duration of the session. Numerous scientists with little mathematical background **emphasized my capacity to make complex mathematical concepts sound simple and straightforward**, and thank me for the exciting introduction to my project. Lots of them got really interested and stayed by my poster for a long time, **asking numerous questions**, highlighting their strong interest and curiosity, along with their trusts in me to be able to explain them to the level they needed. Thanks to this poster session, the name of **GPMelt got in the head of numerous experimentalists** working on TPP data, who **recontacted me after** the conference.
+
+  <div style="text-align: justify;">
+  The HUPO 2024 poster session proved **particularly successful** in attracting and maintaining engagement throughout the event. The poster consistently **gathered a large audience and generated numerous discussions** with researchers from diverse backgrounds.
+
+  Many participants with limited statistical training specifically commented on the **accessibility of the explanations and their ability to grasp the core ideas behind the methodology**. The combination of the poster design and the accompanying discussions helped create an **environment in which researchers felt comfortable asking questions and engaging** with concepts they might otherwise have considered too technical or intimidating.
+
+  Beyond the conference itself, the communication strategy succeeded in making both the project and the GPMelt framework memorable. Several researchers later **recontacted me after the conference**, demonstrating that the poster had not only captured attention during the session, but also **left a lasting impression afterwards**.
+  </div>
 </div>
 
 ::::: {style="margin-top: 2rem; border: 1px solid rgba(0,0,0,0.2); box-shadow: 0 6px 14px rgba(0,0,0,0.12); border-radius: 8px; padding: 1em;" id="ex-Poster"}
@@ -91,12 +105,9 @@ filters:
 </p> -->
 
 <p style="text-align: center;font-weight: bold;  font-size: 28px; ">
-  Poster
+  Explore the poster and see how visual storytelling and communication design were used to transform a complex statistical framework into an engaging conference experience. <br>
 </p>
-<p style="text-align: center; font-size: 20px; ">
-  Designed to communicate both the intuition and practical value of the method within a few minutes of attention.
-  <br>
-</p>
+
 
 ![Click on the image to zoom in!](../../images/poster/PosterExpli.png){.lightbox width=100%}
 

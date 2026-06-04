@@ -1,11 +1,13 @@
 ---
-title: "Scientific Communication & Persuasion: <br> 10-Minute Conference Talk"
-subtitle: "<strong>Impact-driven communication</strong> <br> <br> Example: <br> <strong>10-Minute Conference Talk</strong>  <br> <br> Output: <br> <strong>Conference talk</strong></p>"
+title: "Communicating potential, not just results: <br> Persuasive scientific storytelling in a 10-minute conference talk"
+subtitle: "<strong>Persuasive scientific storytelling</strong> <br> <br> Example: <br> <strong>Communicating potential, not just results</strong>  <br> <br> Output: <br> <strong>10-minute Conference talk</strong></p>"
 description: |
-  After delivering a 20-minute award winning talk at the international ISMB 2023^[International Conference on Intelligent Systems For Molecular Biology 2023 <https://www.iscb.org/ismbeccb2023/home>], I was selected for a short 10-minute talk at the international ISMB 2024^[International Conference on Intelligent Systems For Molecular Biology 2024 <https://www.iscb.org/ismb2024/home-ismb-2024>] to introduce a **game changer concept**: combining a slight modification of GPMelt's model [-@LeSueurGPMelt] with a modified experimental protocol for Thermal Proteome Profiling (TPP) data to double throughput (see section 7.4 from [-@LeSueurThesis]). Beyond simple methodology, the goal was to highlight how this approach could **improve accessibility and fairness in scientific research by reducing experimental costs**.
+  After delivering an award winning 20-minute talk at ISMB 2023^[International Conference on Intelligent Systems For Molecular Biology 2023 <https://www.iscb.org/ismbeccb2023/home>], I was selected to give a 10-minute presentation at ISMB 2024^[International Conference on Intelligent Systems For Molecular Biology 2024 <https://www.iscb.org/ismb2024/home-ismb-2024>] introducing a **methodological concept** that combines a slight modification of GPMelt's model [-@LeSueurGPMelt] with a modified Thermal Proteome Profiling (TPP) experimental protocol to potentially **double experimental throughput** (see Section 7.4 of my PhD thesis [-@LeSueurThesis]). 
+  
+  Beyond the technical contribution itself, the talk focused on the **broader implications** of reducing experimental costs and making advanced methodologies more accessible to a wider range of research groups. The communication challenge was to **convey both the technical value and long-term potential of the idea to a diverse audience within only ten minutes**.
 
-  Jump to the [talk](#ex-10MinTalk) or click on the boxes below to discover the work!
-categories: [Sciences communication, talk, beyond Sciences, impact-driven communication]
+  Jump to the [talk](#ex-10MinTalk) below or explore the communication process through the expandable sections.
+categories: [Community Engagement, Scientific Persuasion, Impact-Driven Communication, Beyond the Technical Contribution]
 image: "../../images/slides_talk/slide-25.png"
 order: 1
 #author: "Cécile Le Sueur"
@@ -31,13 +33,14 @@ filters:
   <p style="text-align: center;font-weight: bold; font-size: 28px;">
   Challenges
   </p>
-  I had an **extremely limited time** (10 minutes) to communicate a **complex concept** to a **diverse audience** (from biologists to data scientists) not specialised in TPP.
-  I needed to:
 
-  - explain the core idea clearly, without going in the details while not sounding vague;
-  - **generate interest** in a niche methodological topic;
-  - convey both **technical value and broader impact**;
-  - **inspire** people to think about accessibility to sciences.
+  <div style="text-align: justify;">
+  The talk targeted a **diverse audience** ranging from experimental biologists to computational researchers, most of whom were **not specialists in Thermal Proteome Profiling**.
+
+  The challenge was not only to explain the core idea clearly and accurately, but also to do so within a ten-minute conference format. This left **very little time to introduce the scientific problem, explain the proposed solution, and persuade the audience that the idea mattered**.
+
+  The communication challenge was further complicated by the **structure of the message** itself. The talk began with a highly specialised methodological problem before gradually revealing a broader question hidden beneath it: **how reducing experimental costs could contribute to making advanced scientific methodologies more accessible**. The key challenge was therefore to guide the audience from a niche technical concept to its wider implications **without losing either scientific rigour or narrative momentum**.
+  </div>
 </div>
 
 <div class="card-row">
@@ -46,50 +49,52 @@ filters:
   <p style="text-align: center;font-weight: bold; font-size: 28px;">
   Approach
   </p>
-  I structured the talk around **impact-driven storytelling**, rather than technical depth. 
-  <br><br>
-  Key elements:
+  
+  <div style="text-align: justify;">
+  I structured the talk around a **progressive reframing of the problem**, moving from a specialised methodological challenge to a broader discussion about accessibility in scientific research.
 
-  - using clear, structured slides to guide a **fast-paced, engaging narrative**;
-  - focusing on the core concept (the need for higher throughtput for more reliable data analysis) and its practical implications, rather than full technical detail
-  **highlighting benefits at two levels**:
+  Key design choices included:
 
-    - **practical**: improving results while reducing experimental effort;
-    - **systemic**: enabling broader access to advanced methods across labs.
-
-  <!--Output: Slide deck designed for clarity, pacing, and impact-->
+  * introducing enough technical intuition to make the proposed **solution credible without overwhelming** a non-specialist audience;
+  * prioritising the **significance of the idea and what it could enable** over a comprehensive methodological explanation;
+  * using the methodological innovation as a tangible example of how statistical and experimental advances can reduce barriers to research;
+  * designing a fast-paced narrative and slide structure that **maintained audience engagement** while delivering a complete and persuasive message within a ten-minute format.
+  </div>
   </div>
 
   <div class="card card-retractable" onclick="this.classList.toggle('expanded')">
   <p style="text-align: center;font-weight: bold; font-size: 28px;">
   Strengths
   </p>
-  - Ability to **communicate complex ideas** concisely under **strong time constraints**;
-  - **persuasive storytelling** for scientific and technical audiences;
-  - framing technical work in terms of **real-world and societal impact**;
-  - engaging diverse audiences with **different backgrounds**;
-  - **bridging the needs** of experimentalists with the capabilities of data scientists;
-  - making a **long-lasting impression, inspiring** scientists to considere this issue and what they could do on their side to improve it.
+
+  <div style="text-align: justify;">
+  * Communicating complex ideas under **severe time constraints**;
+  * Maintaining **audience engagement** through narrative design and progressive revelation;
+  * **Identifying challenges** faced by experimental researchers and addressing them through **methodological innovation**;
+  * Framing technical innovations through **broader scientific and societal implications**;
+  * Communicating the **significance of ideas** whose value lies primarily in what they could enable;
+  * Designing messages that leave a **lasting impression** and encourage **continued reflection beyond the presentation**;
+  * **Aligning** diverse scientific audiences around a **common research bottleneck**.
   </div>
+  </div>
+
 </div>
 
 <div class="card card-retractable" style="margin-bottom: 2rem;" onclick="this.classList.toggle('expanded')">
 <p style="text-align: center;font-weight: bold; font-size: 28px;">
 Impact
 </p>
-In the current academical research world, it is all about having enough money to pursuie research. However, like everywhere else, **wealth is distributed in an unfair manner, and poorer labs are stuck** in a vivious circle: to get grants, researchers needs publications in highly ranked  journals, for which articles' submission is extremely expensive. Those journals also expect exceptional results, often achievable with state-of-the-art scientific assays, which are, them too, particularly costly. Thus, the richest groups manage to publish more regularly in the best journals, being able to afford the price of publications and experimentation, and in turn, to get the next grants. 
-<br> <br>
-I believe that **brilliant and revolutionnary ideas are not restricted to scientists who made it to the richests labs**. Thus, lowering the wealth barrier would give a chance to **Science to integrate more diverse ideas and researchs, to move faster and further**.
+<div style="text-align: justify;">
+This talk was designed to **communicate a methodological innovation** just as much as to encourage the audience to **think differently** about the broader challenges it addressed. By connecting a specialised technical problem to questions of experimental cost and resource inequality, the presentation aimed to **expand the conversation beyond methodology alone**.
 
+Ultimately, the objective was to show how seemingly small technical advances can have implications far beyond their immediate application, and to **encourage researchers to consider how their own work might contribute to lowering barriers and broadening access to scientific discovery**.
+</div>
 </div>
 
 :::: {style="margin-top: 2rem; border: 1px solid rgba(0,0,0,0.2); box-shadow: 0 6px 14px rgba(0,0,0,0.12); border-radius: 8px; padding: 1em;" id="ex-10MinTalk"}
 
 <p style="text-align: center;font-weight: bold; font-size: 28px;">
-  Have a look at my slides!
-</p>
-<p style="text-align: center;">
-Designed to communicate both the technical value and broader societal impact of the method within a 10-minute format.
+  Explore the slides and see how a niche methodological concept and a broader conversation about accessibility in science were woven into a single ten-minute narrative.
 </p>
 
 {{< include _carousel_include.qmd >}}
