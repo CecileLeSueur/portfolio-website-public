@@ -1,0 +1,59 @@
+---
+subtitle: "<strong>Technical Communication, Teaching & Storytelling</strong><br> <br> Making complex scientific and technical ideas clear, engaging, and accessible." 
+author: "Cecile Le Sueur"
+image: "../../images/thumbnails/slide-13.png"
+listing:
+  - id: teaching
+    type: grid
+    contents: Teaching
+    sort-ui: false # no need to order my portfolio
+    sort: "order"
+    image-height: 150px
+    fields: [image, subtitle]
+    categories: false
+    date-format: "YYYY-MM-DD"
+    page-size: 9 
+  - id: science_comm
+    type: grid
+    contents: ScienceComm
+    exclude:
+        order: 0
+    sort-ui: false # no need to order my portfolio
+    sort: "order"
+    image-height: 150px
+    fields: [image, subtitle]
+    categories: false
+    date-format: "YYYY-MM-DD"
+    page-size: 9 
+toc: false
+toc-location: body
+page-layout: full
+title-block-banner: "images/banner/Banner.svg"
+editor:
+    render-on-save: true
+---
+
+```{=html}
+<style>
+.quarto-title-meta {
+  display: none !important;
+}
+</style>
+```
+## Two dimensions of my communication work
+
+- [Technical Education & Knowledge Translation](#Educ): 
+*Building understanding of complex machine learning, statistical, and analytical methods*
+
+- [Scientific Storytelling & Engagement](#Comm): 
+*Communicating science through talks, visual design, and audience engagement*
+
+## Technical Education & Knowledge Translation (AI, ML & Statistics) {#Educ}
+
+:::{#teaching}
+:::
+
+## Scientific Storytelling & Engagement {#Comm}
+
+:::{#science_comm}
+:::

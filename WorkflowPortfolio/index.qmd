@@ -1,0 +1,49 @@
+---
+subtitle: "<strong> Workflow optimisation & technology enablement</strong> <br> <br> Diagnosing complex workflows, designing practical interventions, and enabling people to use them." 
+author: "Cecile Le Sueur"
+image: "../images/thumbnails/slide-14.png"
+listing:
+  - id: workflow
+    type: grid
+    contents: StudyCases
+    sort-ui: false # no need to order my portfolio
+    sort: "orderbis"
+    image-height: 150px
+    image-placeholder: "images/themockup.png"
+    fields: [image, subtitle]
+    categories: false
+    date-format: "YYYY-MM-DD"
+    page-size: 9 
+toc: false
+toc-location: body
+page-layout: full
+title-block-banner: "images/banner/Banner.svg"
+editor:
+    render-on-save: true
+---
+
+```{=html}
+<style>
+.quarto-title-meta {
+  display: none !important;
+}
+</style>
+```
+## How I approach workflow optimisation in practice
+
+:::{#workflow}
+:::
+
+```{=html}
+<style>
+.quarto-listing-container-grid .list.grid {
+  grid-template-columns: repeat(4, minmax(200px, 300px)) !important;
+  justify-content: center !important;
+}
+
+/* override the global justify rule, this page only */
+.card-subtitle {
+  text-align: left !important;
+}
+</style>
+```

@@ -43,6 +43,7 @@
 } 
 
 
+
 /* collapsed height */
 .card-retractable {
   max-height: 80px;
@@ -58,6 +59,10 @@
 
 .card-retractable.expanded {
   max-height: 1000px; /* large enough to fit any content */ /* stays expanded after click */
+}
+
+.quarto-grid-item.card .card-img-top .thumbnail-image.card-img {
+  object-fit: contain !important;
 }
 
 /* --------------------------------- */
@@ -95,9 +100,9 @@
 /* CAROUSEL */
 .carousel-item img {
   box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
-  height: 500px;      /* adjust to your liking */
-  width: 100%;
-  object-fit: cover;  /* crops the image cleanly without distortion */
+  height: 500px !important;      /* adjust to your liking */
+  width: 100% !important;
+  object-fit: cover !important;  /* crops the image cleanly without distortion */
 }
 .carousel-caption {
   position: relative;

@@ -2,31 +2,13 @@
 title: "" #"Portfolio"
 author: "Cecile Le Sueur"
 listing:
-  - id: teaching
+    contents: 
+        - CommunicationWorkflow/index.qmd
+        - WorkflowPortfolio/index.qmd 
     type: grid
-    #template: ListingTemplate/custom_listing_home_grid.ejs
-    contents: Teaching
     sort-ui: false # no need to order my portfolio
-    sort: "order"
-        #- "date desc"
-        #- "title desc"
+    sort: false
     image-height: 150px
-    image-placeholder: "images/themockup.png"
-    fields: [image, subtitle]
-    categories: false
-    date-format: "YYYY-MM-DD"
-    page-size: 9 
-  - id: science_comm
-    type: grid
-    contents: ScienceComm
-    exclude:
-        order: 0
-    sort-ui: false # no need to order my portfolio
-    sort: "order"
-        #- "date desc"
-        #- "title desc"
-    image-height: 150px
-    image-placeholder: "images/themockup.png"
     fields: [image, subtitle]
     categories: false
     date-format: "YYYY-MM-DD"
@@ -46,20 +28,16 @@ editor:
 }
 </style>
 ```
-## Explore the portfolio
 
-- [Technical Education & Knowledge Translation](#Educ): 
-*Building understanding of complex machine learning, statistical, and analytical methods*
+## Turning complex technology and scientific expertise into practical solutions, clear communication, and meaningful impact.
 
-- [Scientific Storytelling & Engagement](#Comm): 
-*Communicating science through talks, visual design, and audience engagement*
+```{=html}
+<style>
+.quarto-listing-container-grid .list.grid {
+    grid-template-columns: repeat(2, minmax(0, 350px)) !important;
+    justify-content: center !important;
+}
 
-## Technical Education & Knowledge Translation (AI, ML & Statistics) {#Educ}
 
-:::{#teaching}
-:::
-
-## Scientific Storytelling & Engagement {#Comm}
-
-:::{#science_comm}
-:::
+</style>
+```
