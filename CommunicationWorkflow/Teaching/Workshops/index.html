@@ -2,21 +2,24 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.38">
+<meta name="generator" content="quarto-1.10.18">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="After delivering an award winning 20-minute talk at ISMB 2023, I was selected to give a 10-minute presentation at ISMB 2024 introducing a methodological concept that combines a slight modification of GPMelt’s model [1] with a modified Thermal Proteome Profiling (TPP) experimental protocol to potentially double experimental throughput (see Section 7.4 of my PhD thesis [2]).Beyond the technical contribution itself, the talk focused on the broader implications of reducing experimental costs and making advanced methodologies more accessible to a wider range of research groups. The communication challenge was to convey both the technical value and long-term potential of the idea to a diverse audience within only ten minutes.Jump to the talk below or explore the communication process through the expandable sections.">
+<meta name="description" content="One recurring challenge in scientific research is that some of the most widely used statistical concepts are also among the most misunderstood.As part of a series of workshops for PhD students and researchers at EMBL, I developed training material to explain multiple testing, False Discovery Rate (FDR) control, and p-value miscalibration—concepts that researchers frequently encounter in practice but often find abstract, confusing, or intimidating.Jump to the slides below or explore the communication process through the expandable sections.">
 
-<title>Communicating potential, not just results:   Persuasive scientific storytelling in a 10-minute conference talk – Cécile Le Sueur's Portfolio</title>
+<title>Building intuition for statistical reasoning:   Multiple testing, False Discovery Rate (FDR) and p-values miscalibration – Cécile Le Sueur's Portfolio</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
 */
-code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -24,46 +27,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for citations */
-div.csl-bib-body { }
-div.csl-entry {
-  clear: both;
-}
-.hanging-indent div.csl-entry {
-  margin-left:2em;
-  text-indent:-2em;
-}
-div.csl-left-margin {
-  min-width:2em;
-  float:left;
-}
-div.csl-right-inline {
-  margin-left:2em;
-  padding-left:1em;
-}
-div.csl-indent {
-  margin-left: 2em;
-}</style>
+</style>
 
 
-<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../../">
-<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../../site_libs/quarto-html/popper.min.js"></script>
-<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-e8bb5c388be52abac024dbec4631dec4.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/quarto-contrib/carousel-0.1.0/quarto-carousel.css" rel="stylesheet">
+<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../">
+<script src="../../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../site_libs/bootstrap/bootstrap-cd55cfdd28625eb0f340cf31cbbf6ef6.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../../site_libs/quarto-contrib/carousel-0.1.0/quarto-carousel.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -93,7 +77,7 @@ div.csl-indent {
 }</script>
 
 
-<link rel="stylesheet" href="../../styles.css">
+<link rel="stylesheet" href="../../../styles.css">
 </head>
 
 <body class="nav-fixed quarto-light">
@@ -103,7 +87,7 @@ div.csl-indent {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="../../index.html">
+    <a class="navbar-brand" href="../../../index.html">
     <span class="navbar-title">Cécile Le Sueur’s Portfolio</span>
     </a>
   </div>
@@ -114,7 +98,7 @@ div.csl-indent {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../index.html"> 
+    <a class="nav-link" href="../../../index.html"> 
 <span class="menu-text">home</span></a>
   </li>  
 </ul>
@@ -125,12 +109,7 @@ div.csl-indent {
 <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../cv.html"> <i class="bi bi-file-earmark-person" role="img" aria-label="CV">
-</i> 
-<span class="menu-text">Curriculum Vitae</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../../license.html"> 
+    <a class="nav-link" href="../../../license.html"> 
 <span class="menu-text">License</span></a>
   </li>  
 </ul>
@@ -152,22 +131,21 @@ div.csl-indent {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Communicating potential, not just results: <br> Persuasive scientific storytelling in a 10-minute conference talk</h1>
-<p class="subtitle lead"><strong>Persuasive scientific storytelling</strong> <br> <br> Example: <br> <strong>Communicating potential, not just results</strong> <br> <br> Output: <br> <strong>10-minute Conference talk</strong><br>
-</p><p></p>
+<h1 class="title">Building intuition for statistical reasoning: <br> Multiple testing, False Discovery Rate (FDR) and p-values miscalibration</h1>
+<p class="subtitle lead"><strong>Making statistical concepts intuitive</strong> <br> <br> Example: <br> <strong>Building intuition for multiple-testing scenarios</strong> <br><br> Output: <br> <strong>Workshop</strong></p>
   <div class="quarto-categories">
-    <div class="quarto-category">Community Engagement</div>
-    <div class="quarto-category">Scientific Persuasion</div>
-    <div class="quarto-category">Impact-Driven Communication</div>
-    <div class="quarto-category">Beyond the Technical Contribution</div>
+    <div class="quarto-category">Visual Reasoning</div>
+    <div class="quarto-category">Statistical Intuition</div>
+    <div class="quarto-category">Misconception Correction</div>
+    <div class="quarto-category">User Empowerment</div>
   </div>
   </div>
 
 <div>
   <div class="description">
-    <p>After delivering an award winning 20-minute talk at ISMB 2023<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>, I was selected to give a 10-minute presentation at ISMB 2024<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> introducing a <strong>methodological concept</strong> that combines a slight modification of GPMelt’s model <span class="citation" data-cites="LeSueurGPMelt">[<a href="#ref-LeSueurGPMelt" role="doc-biblioref">1</a>]</span> with a modified Thermal Proteome Profiling (TPP) experimental protocol to potentially <strong>double experimental throughput</strong> (see Section 7.4 of my PhD thesis <span class="citation" data-cites="LeSueurThesis">[<a href="#ref-LeSueurThesis" role="doc-biblioref">2</a>]</span>).</p>
-    <p>Beyond the technical contribution itself, the talk focused on the <strong>broader implications</strong> of reducing experimental costs and making advanced methodologies more accessible to a wider range of research groups. The communication challenge was to <strong>convey both the technical value and long-term potential of the idea to a diverse audience within only ten minutes</strong>.</p>
-    <p>Jump to the <a href="#ex-10MinTalk">talk</a> below or explore the communication process through the expandable sections.</p>
+    <p>One recurring challenge in scientific research is that some of the <strong>most widely used statistical concepts are also among the most misunderstood</strong>.</p>
+    <p>As part of a series of workshops for PhD students and researchers at EMBL<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>, I developed training material to explain multiple testing, False Discovery Rate (FDR) control, and p-value miscalibration—concepts that <strong>researchers frequently encounter in practice but often find abstract, confusing, or intimidating</strong>.</p>
+    <p>Jump to the <a href="#ex-Workshop">slides</a> below or explore the communication process through the expandable sections.</p>
   </div>
 </div>
 
@@ -189,9 +167,10 @@ div.csl-indent {
 Challenges
 </p>
 <div style="text-align: justify;">
-<p>The talk targeted a <strong>diverse audience</strong> ranging from experimental biologists to computational researchers, most of whom were <strong>not specialists in Thermal Proteome Profiling</strong>.</p>
-<p>The challenge was not only to explain the core idea clearly and accurately, but also to do so within a ten-minute conference format. This left <strong>very little time to introduce the scientific problem, explain the proposed solution, and persuade the audience that the idea mattered</strong>.</p>
-The communication challenge was further complicated by the <strong>structure of the message</strong> itself. The talk began with a highly specialised methodological problem before gradually revealing a broader question hidden beneath it: <strong>how reducing experimental costs could contribute to making advanced scientific methodologies more accessible</strong>. The key challenge was therefore to guide the audience from a niche technical concept to its wider implications <strong>without losing either scientific rigour or narrative momentum</strong>.
+<p>Modern biological experiments increasingly rely on <strong>high-throughput technologies</strong> that generate <strong>large datasets</strong> and create opportunities to test hundreds or thousands of hypotheses simultaneously. While this offers considerable scientific potential, it also introduces <strong>new statistical challenges</strong> that require additional caution during data analysis.</p>
+<p>Multiple testing, False Discovery Rate (FDR) control, and p-value calibration are therefore <strong>central concepts in modern biological research</strong>, yet many researchers <strong>struggle to develop an intuitive understanding</strong> of what they mean in practice. Although encountered routinely, the reasoning behind them is often perceived as <strong>abstract, mathematically complex, or inaccessible</strong>.</p>
+<p>The communication challenge was compounded by the <strong>highly heterogeneous statistical backgrounds of the workshop’s participants</strong>, ranging from researchers with minimal formal training in statistics to others with substantial quantitative experience.</p>
+Another challenge was therefore not simply to explain statistical procedures, but to <strong>help participants build intuition and confidence</strong>, understand what changes when moving from single to multiple hypothesis testing, and develop the reasoning needed to <strong>engage with these concepts independently after the session</strong>.
 </div>
 </div>
 <div class="card-row">
@@ -200,29 +179,29 @@ The communication challenge was further complicated by the <strong>structure of 
 Approach
 </p>
 <div style="text-align: justify;">
-<p>I structured the talk around a <strong>progressive reframing of the problem</strong>, moving from a specialised methodological challenge to a broader discussion about accessibility in scientific research.</p>
-<p>Key design choices included:</p>
+<p>Rather than introducing these concepts through formulas and statistical procedures, I designed the workshop around <strong>visual reasoning and progressively reconstructed the intuition</strong> needed to understand multiple testing, False Discovery Rate control, and p-value calibration.</p>
+<p>I used <strong>histograms as a consistent visual language</strong> throughout the presentation. While participants were generally familiar with these representations, they often <strong>lacked a clear understanding of how to interpret them statistically</strong>. Histograms therefore provided a natural starting point for introducing more sophisticated concepts without requiring entirely new visual tools.</p>
+<p>Further design choices included:</p>
 <ul>
-<li>introducing enough technical intuition to make the proposed <strong>solution credible without overwhelming</strong> a non-specialist audience;</li>
-<li>prioritising the <strong>significance of the idea and what it could enable</strong> over a comprehensive methodological explanation;</li>
-<li>using the methodological innovation as a tangible example of how statistical and experimental advances can reduce barriers to research;</li>
-<li>designing a fast-paced narrative and slide structure that <strong>maintained audience engagement</strong> while delivering a complete and persuasive message within a ten-minute format.
-</li></ul></div>
+<li>structuring the explanation around the transition from single to multiple hypothesis testing, <strong>highlighting where intuitive reasoning begins to fail</strong> when the same reasoning is applied repeatedly across hundreds or thousands of tests;</li>
+<li><strong>introducing formulas without avoiding them</strong>, but only after participants have developed an intuitive understanding of the underlying concepts; and supporting them with colour coding, visual representations, and intuitive interpretations;</li>
+<li>using <strong>visual reasoning</strong> to demonstrate how p-value calibration depends on underlying modelling assumptions, and how violations of these assumptions can fundamentally alter the interpretation of statistical results.</li>
+</ul>
 </div>
-
+</div>
 <div class="card card-retractable" onclick="this.classList.toggle('expanded')">
 <p style="text-align: center;font-weight: bold; font-size: 28px;">
 Strengths
 </p>
 <div style="text-align: justify;">
 <ul>
-<li>Communicating complex ideas under <strong>severe time constraints</strong>;</li>
-<li>Maintaining <strong>audience engagement</strong> through narrative design and progressive revelation;</li>
-<li><strong>Identifying challenges</strong> faced by experimental researchers and addressing them through <strong>methodological innovation</strong>;</li>
-<li>Framing technical innovations through <strong>broader scientific and societal implications</strong>;</li>
-<li>Communicating the <strong>significance of ideas</strong> whose value lies primarily in what they could enable;</li>
-<li>Designing messages that leave a <strong>lasting impression</strong> and encourage <strong>continued reflection beyond the presentation</strong>;</li>
-<li><strong>Aligning</strong> diverse scientific audiences around a <strong>common research bottleneck</strong>.
+<li>Making <strong>abstract statistical concepts intuitive and non-intimidating</strong>;</li>
+<li>Identifying and <strong>addressing common misconceptions</strong> in quantitative reasoning;</li>
+<li>Using <strong>visual tools &amp; reasoning</strong> (histograms, color, diagrams) to support conceptual understanding;</li>
+<li>Communicating mathematical concepts without sacrificing rigour;</li>
+<li>Designing <strong>structured learning experiences under time constraints</strong> (1h workshops);</li>
+<li>Supporting audiences with highly heterogeneous quantitative backgrounds and levels of confidence in mathematics;</li>
+<li>Connecting <strong>statistical theory to real-world</strong> data analysis practice.
 </li></ul></div>
 </div>
 
@@ -232,14 +211,29 @@ Strengths
 Impact
 </p>
 <div style="text-align: justify;">
-<p>This talk was designed to <strong>communicate a methodological innovation</strong> just as much as to encourage the audience to <strong>think differently</strong> about the broader challenges it addressed. By connecting a specialised technical problem to questions of experimental cost and resource inequality, the presentation aimed to <strong>expand the conversation beyond methodology alone</strong>.</p>
-<p>Ultimately, the objective was to show how seemingly small technical advances can have implications far beyond their immediate application, and to <strong>encourage researchers to consider how their own work might contribute to lowering barriers and broadening access to scientific discovery</strong>.</p>
+<p>By focusing on intuition before procedure, the workshop helped participants understand <strong>how multiple-testing corrections work</strong>, but also <strong>why they become necessary</strong> in the first place.</p>
+<p>The goal of these workshops was <strong>not to turn experimental scientists into statisticians</strong>, but to provide them with the intuition and conceptual understanding needed to <strong>engage confidently with statistical analyses</strong>.</p>
+<p>A limited understanding of statistical concepts can lead <strong>experimentalists either to mistrust data analysts or to blindly rely on them</strong> without fully understanding the reasoning behind the analysis. Neither situation is ideal.</p>
+By helping participants build intuition for commonly used statistical procedures, these workshops aimed to <strong>facilitate more informed discussions, more critical interpretation of results, and more effective collaboration between experimentalists and quantitative researchers</strong>.
 </div>
 </div>
-<div id="ex-10MinTalk" style="margin-top: 2rem; border: 1px solid rgba(0,0,0,0.2); box-shadow: 0 6px 14px rgba(0,0,0,0.12); border-radius: 8px; padding: 1em;">
+<div id="ex-Workshop" style="margin-top: 2rem; border: 1px solid rgba(0,0,0,0.2); box-shadow: 0 6px 14px rgba(0,0,0,0.12); border-radius: 8px; padding: 1em;">
 <p style="text-align: center;font-weight: bold; font-size: 28px;">
-Explore the slides and see how a niche methodological concept and a broader conversation about accessibility in science were woven into a single ten-minute narrative.
+Selected slides illustrating how I use visual reasoning to reveal where statistical intuition breaks down—and how it can be rebuilt.
 </p>
+<!-- :::: {.carousel .dark .framed autoplay="false" transition="none"}
+
+:::: {.carousel-item image="placeholder_workshop.png" caption="Gauchos and horses in San Antonio de Areco"}
+:::
+
+:::: {.carousel-item image="placeholder_workshop.png" caption="Llamas on Humahuaqueña grassland"}
+:::
+
+:::: {.carousel-item image="placeholder_workshop.png" caption="Mendoza purple-petaled flowers"}
+:::
+
+:::
+ -->
 <div id="quarto-carousel-1" class="carousel carousel-dark slide carousel-framed" data-bs-ride="false">
 <div class="carousel-indicators">
   <button type="button" data-bs-target="#quarto-carousel-1" data-bs-slide-to="0" class=" active" aria-current="true" aria-label="Slide 1"></button>
@@ -298,248 +292,91 @@ Explore the slides and see how a niche methodological concept and a broader conv
   
   <button type="button" data-bs-target="#quarto-carousel-1" data-bs-slide-to="27" class="" aria-label="Slide 28"></button>
   
-  <button type="button" data-bs-target="#quarto-carousel-1" data-bs-slide-to="28" class="" aria-label="Slide 29"></button>
-  
-  <button type="button" data-bs-target="#quarto-carousel-1" data-bs-slide-to="29" class="" aria-label="Slide 30"></button>
-  
 </div>
 <div class="carousel-inner">
 <div class="carousel-item active no-transition" data-bs-interval="3000">
-<img src="../../images/slides_talk/slide-01.png" class="d-block mx-auto">
-<div class="carousel-caption d-none d-md-block">
-<p>I came last year to ISMB and introduced my model, GPMelt. It's true
-that what I will present today might seem like a small incremental step
-of the modelling approach...</p>
-</div>
+<img src="../../../images/slides_workshop/slide-01.png" class="d-block mx-auto">
 </div>
 <div class="carousel-item no-transition" data-bs-interval="3000">
-<img src="../../images/slides_talk/slide-02.png" class="d-block mx-auto">
-<div class="carousel-caption d-none d-md-block">
-<p>But thanks to a strong conceptual impact, I will show you that this
-small incremental step will take us to the moon! Let me first introduce
-you to the topic of Thermal stability and Thermal Proteome
-Profiling.</p>
-</div>
+<img src="../../../images/slides_workshop/slide-02.png" class="d-block mx-auto">
 </div>
 <div class="carousel-item no-transition" data-bs-interval="3000">
-<img src="../../images/slides_talk/slide-03.png" class="d-block mx-auto">
-<div class="carousel-caption d-none d-md-block">
-<p>At low temperatures, proteins are folded, and as the temperature
-increases, bonds are disrupted and proteins start to denature and
-aggregate. We can follow this melting behaviour, which, according to the
-chemical denaturation theory, is expected to be sigmoidal.</p>
-</div>
+<img src="../../../images/slides_workshop/slide-03.png" class="d-block mx-auto">
 </div>
 <div class="carousel-item no-transition" data-bs-interval="3000">
-<img src="../../images/slides_talk/slide-04.png" class="d-block mx-auto">
-<div class="carousel-caption d-none d-md-block">
-<p>An important fact about the thermal stability of proteins is that
-it’s not a fixed characteristic of a protein, but instead, is highly
-dependent on the protein’s surroundings and interactions. For example,
-upon interaction with small-molecule drugs, proteins can be stabilised
-or destabilised.</p>
-</div>
+<img src="../../../images/slides_workshop/slide-04.png" class="d-block mx-auto">
 </div>
 <div class="carousel-item no-transition" data-bs-interval="3000">
-<img src="../../images/slides_talk/slide-05.png" class="d-block mx-auto">
-<div class="carousel-caption d-none d-md-block">
-<p>Based on this observation, the Cellular Thermal Shift assay has been
-developed to investigate drug targets and off-targets. Combining this
-assay with multiplexed quantitative Mass Spectrometry analysis...</p>
-</div>
+<img src="../../../images/slides_workshop/slide-05.png" class="d-block mx-auto">
 </div>
 <div class="carousel-item no-transition" data-bs-interval="3000">
-<img src="../../images/slides_talk/slide-06.png" class="d-block mx-auto">
-<div class="carousel-caption d-none d-md-block">
-<p>...lead to the Temperature Range Thermal Proteome Profiling (TPP-TR)
-assay. Thanks to this assay, we have access - on a proteome-wide scale -
-to the melting behaviour at the tryptic peptide levels.</p>
-</div>
+<img src="../../../images/slides_workshop/slide-06.png" class="d-block mx-auto">
 </div>
 <div class="carousel-item no-transition" data-bs-interval="3000">
-<img src="../../images/slides_talk/slide-07.png" class="d-block mx-auto">
-<div class="carousel-caption d-none d-md-block">
-<p>My PhD project was focused on developing a novel statistical
-framework for TPP-TR data analysis, which we called GPMelt.</p>
-</div>
+<img src="../../../images/slides_workshop/slide-07.png" class="d-block mx-auto">
 </div>
 <div class="carousel-item no-transition" data-bs-interval="3000">
-<img src="../../images/slides_talk/slide-08.png" class="d-block mx-auto">
-<div class="carousel-caption d-none d-md-block">
-<p>To analyse TPP-TR data, we need to statistically assess the extent of
-the change in melting behaviour, and thus in thermal stability. GPMelt
-is not the first statistical framework for TPP, however, it presents
-some key new features which we will demonstrate in this talk.</p>
-</div>
+<img src="../../../images/slides_workshop/slide-08.png" class="d-block mx-auto">
 </div>
 <div class="carousel-item no-transition" data-bs-interval="3000">
-<img src="../../images/slides_talk/slide-09.png" class="d-block mx-auto">
-<div class="carousel-caption d-none d-md-block">
-<p>The main idea is to combine Gaussian Process (GP) regression with
-multi-task learning to deduce the protein’s melting behaviour from the
-observed melting curves of the different replicates.</p>
-</div>
+<img src="../../../images/slides_workshop/slide-09.png" class="d-block mx-auto">
 </div>
 <div class="carousel-item no-transition" data-bs-interval="3000">
-<img src="../../images/slides_talk/slide-10.png" class="d-block mx-auto">
-<div class="carousel-caption d-none d-md-block">
-<p>The reason why this feature is particularly important for TPP-TR data
-analysis is its capacity to provide robustness to outliers.</p>
-</div>
+<img src="../../../images/slides_workshop/slide-10.png" class="d-block mx-auto">
 </div>
 <div class="carousel-item no-transition" data-bs-interval="3000">
-<img src="../../images/slides_talk/slide-11.png" class="d-block mx-auto">
-<div class="carousel-caption d-none d-md-block">
-<p>Indeed TPP-TR data inherently suffers from a low-signal to noise
-ratio, with replicates potentially tremendously varying.</p>
-</div>
+<img src="../../../images/slides_workshop/slide-11.png" class="d-block mx-auto">
 </div>
 <div class="carousel-item no-transition" data-bs-interval="3000">
-<img src="../../images/slides_talk/slide-12.png" class="d-block mx-auto">
-<div class="carousel-caption d-none d-md-block">
-<p>Of course, a solution would be to obtain more replicates, but this
-would require increase the workload of our experimentalists...</p>
-</div>
+<img src="../../../images/slides_workshop/slide-12.png" class="d-block mx-auto">
 </div>
 <div class="carousel-item no-transition" data-bs-interval="3000">
-<img src="../../images/slides_talk/slide-13.png" class="d-block mx-auto">
-<div class="carousel-caption d-none d-md-block">
-<p>Moreover, a main bottleneck is the high cost of TPP-TR experiments,
-mainly due to the number of samples to produce and the expensive TMT
-labelling and MS running time.</p>
-</div>
+<img src="../../../images/slides_workshop/slide-13.png" class="d-block mx-auto">
 </div>
 <div class="carousel-item no-transition" data-bs-interval="3000">
-<img src="../../images/slides_talk/slide-14.png" class="d-block mx-auto">
-<div class="carousel-caption d-none d-md-block">
-<p>With this in mind, we started to wonder if we could use the
-improvement provided by the GPMelt analysis to help increase TPP-TR
-throughput.</p>
-</div>
+<img src="../../../images/slides_workshop/slide-14.png" class="d-block mx-auto">
 </div>
 <div class="carousel-item no-transition" data-bs-interval="3000">
-<img src="../../images/slides_talk/slide-15.png" class="d-block mx-auto">
-<div class="carousel-caption d-none d-md-block">
-<p>Let’s consider a standard TPP-TR experiment, with two replicates and
-8 measured temperatures.</p>
-</div>
+<img src="../../../images/slides_workshop/slide-15.png" class="d-block mx-auto">
 </div>
 <div class="carousel-item no-transition" data-bs-interval="3000">
-<img src="../../images/slides_talk/slide-16.png" class="d-block mx-auto">
-<div class="carousel-caption d-none d-md-block">
-<p>Could we take advantage of our multi-task learning approach - which
-provides additional constraints and better shares replicates'
-information - for the replicates’ melting curves to be obtained even
-though we would measure only half the number of temperatures per
-replicate?</p>
-</div>
+<img src="../../../images/slides_workshop/slide-16.png" class="d-block mx-auto">
 </div>
 <div class="carousel-item no-transition" data-bs-interval="3000">
-<img src="../../images/slides_talk/slide-17.png" class="d-block mx-auto">
-<div class="carousel-caption d-none d-md-block">
-<p>Well, yes and no. Especially, if we have half the number of
-observations, our protein’s fit (white curve) will show a much larger
-uncertainty (grey area around the curve). This is mainly because the
-replicates are measured in different MS runs and present some residual
-MS run batch effects that cannot be perfectly corrected by normalisation
-due to measurement errors specific to each MS run.</p>
-</div>
+<img src="../../../images/slides_workshop/slide-17.png" class="d-block mx-auto">
 </div>
 <div class="carousel-item no-transition" data-bs-interval="3000">
-<img src="../../images/slides_talk/slide-18.png" class="d-block mx-auto">
-<div class="carousel-caption d-none d-md-block">
-<p>How can we solve this issue? We propose a minimalistic modification
-of GPMelt’s model. Currently, the observations are modelled by a
-function f, modelled as being drawn from a GP, and some iid normally
-distributed error.</p>
-</div>
+<img src="../../../images/slides_workshop/slide-18.png" class="d-block mx-auto">
 </div>
 <div class="carousel-item no-transition" data-bs-interval="3000">
-<img src="../../images/slides_talk/slide-19.png" class="d-block mx-auto">
-<div class="carousel-caption d-none d-md-block">
-<p>We propose to explicitly model the offset “s”, modelling that
-observations across replicates are shifted differently (replicate 1 by
-s1 and replicate 2 by s2); but by the same amount within replicates (all
-observations of replicate 1 are shifted by s1).</p>
-</div>
+<img src="../../../images/slides_workshop/slide-19.png" class="d-block mx-auto">
 </div>
 <div class="carousel-item no-transition" data-bs-interval="3000">
-<img src="../../images/slides_talk/slide-20.png" class="d-block mx-auto">
-<div class="carousel-caption d-none d-md-block">
-<p>To summarise, we propose to combine an updated GPMelt model...</p>
-</div>
+<img src="../../../images/slides_workshop/slide-20.png" class="d-block mx-auto">
 </div>
 <div class="carousel-item no-transition" data-bs-interval="3000">
-<img src="../../images/slides_talk/slide-21.png" class="d-block mx-auto">
-<div class="carousel-caption d-none d-md-block">
-<p>...with a new protocol defined by redefined temperature and
-multiplexing.</p>
-</div>
+<img src="../../../images/slides_workshop/slide-21.png" class="d-block mx-auto">
 </div>
 <div class="carousel-item no-transition" data-bs-interval="3000">
-<img src="../../images/slides_talk/slide-22.png" class="d-block mx-auto">
-<div class="carousel-caption d-none d-md-block">
-<p>All together is what we call “Offset-TPP”, a sample and
-cost-efficient TPP-TR assay and analysis.</p>
-</div>
+<img src="../../../images/slides_workshop/slide-22.png" class="d-block mx-auto">
 </div>
 <div class="carousel-item no-transition" data-bs-interval="3000">
-<img src="../../images/slides_talk/slide-23.png" class="d-block mx-auto">
-<div class="carousel-caption d-none d-md-block">
-<p>Combining a minor modification of GPMelt model with an ingenious
-change of TPP’s protocol, allows to double throughput without increasing
-the cost, the workload or the input samples.</p>
-</div>
+<img src="../../../images/slides_workshop/slide-23.png" class="d-block mx-auto">
 </div>
 <div class="carousel-item no-transition" data-bs-interval="3000">
-<img src="../../images/slides_talk/slide-24.png" class="d-block mx-auto">
-<div class="carousel-caption d-none d-md-block">
-<p>But in addition, Offset-TPP could finally enable analysis of precious
-samples, opening the way for new discoveries.</p>
-</div>
+<img src="../../../images/slides_workshop/slide-24.png" class="d-block mx-auto">
 </div>
 <div class="carousel-item no-transition" data-bs-interval="3000">
-<img src="../../images/slides_talk/slide-25.png" class="d-block mx-auto">
-<div class="carousel-caption d-none d-md-block">
-<p>Now I would like to make you realise a benefit of this work on a
-broader scale.</p>
-</div>
+<img src="../../../images/slides_workshop/slide-25.png" class="d-block mx-auto">
 </div>
 <div class="carousel-item no-transition" data-bs-interval="3000">
-<img src="../../images/slides_talk/slide-26.png" class="d-block mx-auto">
-<div class="carousel-caption d-none d-md-block">
-<p>Since it’s creation, TPP has been applied to the discovery of drugs
-targets and off-targets...</p>
-</div>
+<img src="../../../images/slides_workshop/slide-26.png" class="d-block mx-auto">
 </div>
 <div class="carousel-item no-transition" data-bs-interval="3000">
-<img src="../../images/slides_talk/slide-27.png" class="d-block mx-auto">
-<div class="carousel-caption d-none d-md-block">
-<p>...and have been extended to a wide diversity of biological
-questions, leading to unprecedented discoveries regularly published in
-major research journals. However, TPP remains quite a small world, as it
-is restricted to scientists who can afford such expensive
-experiments.</p>
-</div>
+<img src="../../../images/slides_workshop/slide-27.png" class="d-block mx-auto">
 </div>
 <div class="carousel-item no-transition" data-bs-interval="3000">
-<img src="../../images/slides_talk/slide-28.png" class="d-block mx-auto">
-<div class="carousel-caption d-none d-md-block">
-<p>By reducing by half the cost of TPP experiments, we make TPP
-discoveries affordable to more scientists, hence promoting more open and
-fairer Science.</p>
-</div>
-</div>
-<div class="carousel-item no-transition" data-bs-interval="3000">
-<img src="../../images/slides_talk/slide-29.png" class="d-block mx-auto">
-</div>
-<div class="carousel-item no-transition" data-bs-interval="3000">
-<img src="../../images/slides_talk/slide-30.png" class="d-block mx-auto">
-<div class="carousel-caption d-none d-md-block">
-<p>By reducing by half the cost of TPP experiments, we make TPP
-discoveries affordable to more scientists, hence promoting more open and
-fairer Science.</p>
-</div>
+<img src="../../../images/slides_workshop/slide-28.png" class="d-block mx-auto">
 </div>
 </div>
       <button class="carousel-control-prev" type="button" data-bs-target="#quarto-carousel-1" data-bs-slide="prev">
@@ -556,23 +393,12 @@ fairer Science.</p>
 </div>
 
 
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body" role="list">
-<div id="ref-LeSueurGPMelt" class="csl-entry" role="listitem">
-<div class="csl-left-margin">1. </div><div class="csl-right-inline">Le Sueur C, Rattray M, Savitski M (2024) GPMelt: A hierarchical gaussian process framework to explore the dark meltome of thermal proteome profiling experiments. PLOS Computational Biology 20(9):e1011632</div>
-</div>
-<div id="ref-LeSueurThesis" class="csl-entry" role="listitem">
-<div class="csl-left-margin">2. </div><div class="csl-right-inline">Le Sueur C (2025) Statistical and computational method development for thermal stability proteomics. PhD thesis, ETH Zurich</div>
-</div>
-</div></section><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
 
 <ol>
-<li id="fn1"><p>International Conference on Intelligent Systems For Molecular Biology 2023 <a href="https://www.iscb.org/ismbeccb2023/home" class="uri">https://www.iscb.org/ismbeccb2023/home</a><a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn2"><p>International Conference on Intelligent Systems For Molecular Biology 2024 <a href="https://www.iscb.org/ismb2024/home-ismb-2024" class="uri">https://www.iscb.org/ismb2024/home-ismb-2024</a><a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn1"><p>European Molecular Biology Laboratory <a href="https://www.embl.org" class="uri">https://www.embl.org</a><a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
 </section></div></main></div>
-
-
-
 
 
 

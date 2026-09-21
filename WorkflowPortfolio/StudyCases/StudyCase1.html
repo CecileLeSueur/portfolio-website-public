@@ -2,21 +2,24 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.38">
+<meta name="generator" content="quarto-1.10.18">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="Data visualisation is more than a way to display results: it is a powerful tool for exploration, interpretation, and reasoning. Well-designed visualisations can reveal hidden patterns, highlight meaningful differences, communicate uncertainty, and support data-driven decision-making.The examples below illustrate different roles of data visualisation in scientific practice, from comparing groups and evaluating analytical strategies to uncovering unexpected behaviours in complex datasets. Together, they show how visual representations can transform large amounts of information into evidence that can be understood, questioned, and acted upon.Full-quality images, detailed legends, and references can be found in my PhD thesis [1].">
+<meta name="description" content="During my PhD, I built a probabilistic machine learning framework to analyse protein melting curves: a laboratory technique used to study how proteins behave under different conditions ([1], [2]).Reliable results depend on running enough repeat measurements (“replicates”) per condition. Through ongoing discussions with the scientists running these experiments, a key operational constraint emerged: more replicates improve statistical confidence, but each additional replicate increases sample, reagent, and instrument costs along with an increased lab work — all within an already stretched workflow.Explore the visual workflow below, or scroll down for the full write-up of each step.">
 
-<title>Data visualisation for evidence and insight – Cécile Le Sueur’s Portfolio</title>
+<title>From probabilistic ML framework developement to workflow redesign – Cécile Le Sueur’s Portfolio</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
 */
-code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -46,28 +49,26 @@ div.csl-indent {
 }</style>
 
 
-<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../../../">
-<script src="../../../site_libs/quarto-listing/list.min.js"></script>
-<script src="../../../site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="../../../site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../../../site_libs/quarto-html/popper.min.js"></script>
-<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../../site_libs/bootstrap/bootstrap-e8bb5c388be52abac024dbec4631dec4.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
-<script src="../../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
-<link href="../../../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
-<link href="../../../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-10c8a299f4792ed8c592409fc3b82db7.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -95,67 +96,9 @@ div.csl-indent {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing-gallery .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
 
-    const options = {
-      valueNames: ['listing-title','listing-subtitle','listing-thumbnail',{ data: ['index'] },{ data: ['categories'] }],
-      
-      searchColumns: ["listing-title","listing-subtitle","listing-thumbnail"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing-gallery'] = new List('listing-listing-gallery', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
-
-<link rel="stylesheet" href="../../../styles.css">
+<link rel="stylesheet" href="../../styles.css">
 </head>
 
 <body class="nav-fixed quarto-light">
@@ -165,7 +108,7 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="../../../index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Cécile Le Sueur’s Portfolio</span>
     </a>
   </div>
@@ -176,7 +119,7 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../../index.html"> 
+    <a class="nav-link" href="../../index.html"> 
 <span class="menu-text">home</span></a>
   </li>  
 </ul>
@@ -187,12 +130,7 @@ window.Quarto = {
 <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../../cv.html"> <i class="bi bi-file-earmark-person" role="img" aria-label="CV">
-</i> 
-<span class="menu-text">Curriculum Vitae</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../../../license.html"> 
+    <a class="nav-link" href="../../license.html"> 
 <span class="menu-text">License</span></a>
   </li>  
 </ul>
@@ -206,28 +144,48 @@ window.Quarto = {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#sec-text" id="toc-sec-text" class="nav-link active" data-scroll-target="#sec-text">From problem to impact</a>
+  <ul class="collapse">
+  <li><a href="#the-problem" id="toc-the-problem" class="nav-link" data-scroll-target="#the-problem">The problem</a></li>
+  <li><a href="#workflow-diagnosis" id="toc-workflow-diagnosis" class="nav-link" data-scroll-target="#workflow-diagnosis">Workflow diagnosis</a></li>
+  <li><a href="#options-considered" id="toc-options-considered" class="nav-link" data-scroll-target="#options-considered">Options considered</a></li>
+  <li><a href="#intervention" id="toc-intervention" class="nav-link" data-scroll-target="#intervention">Intervention</a></li>
+  <li><a href="#validation-enablement" id="toc-validation-enablement" class="nav-link" data-scroll-target="#validation-enablement">Validation &amp; enablement</a></li>
+  <li><a href="#impact" id="toc-impact" class="nav-link" data-scroll-target="#impact">Impact</a></li>
+  <li><a href="#what-i-learned" id="toc-what-i-learned" class="nav-link" data-scroll-target="#what-i-learned">What I learned</a></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
-<main class="content column-page" id="quarto-document-content">
+<main class="content column-page-left" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Data visualisation for evidence and insight</h1>
-<p class="subtitle lead">Visualisations designed to reveal patterns, communicate evidence, and support data-driven reasoning.</p>
-</div>
+<h1 class="title">From probabilistic ML framework developement to workflow redesign</h1>
+<p class="subtitle lead"><strong>From probabilistic ML framework developement to workflow redesign</strong> <br> <br>Redesigning an experimental protocol and statistical model together, to align technical improvements with domain experts’ operational constraints.</p>
+  <div class="quarto-categories">
+    <div class="quarto-category">Workflow diagnosis</div>
+    <div class="quarto-category">Translating technical constraints into practical guidance</div>
+    <div class="quarto-category">Driving adoption from proof-of-concept</div>
+  </div>
+  </div>
 
 <div>
   <div class="description">
-    <p>Data visualisation is more than a way to display results: it is a <strong>powerful tool for exploration, interpretation, and reasoning</strong>. Well-designed visualisations can <strong>reveal hidden patterns, highlight meaningful differences, communicate uncertainty, and support data-driven decision-making</strong>.</p>
-    <p>The examples below illustrate different roles of data visualisation in scientific practice, from comparing groups and evaluating analytical strategies to uncovering unexpected behaviours in complex datasets. Together, they show how <strong>visual representations can transform large amounts of information into evidence</strong> that can be understood, questioned, and acted upon.</p>
-    <p>Full-quality images, detailed legends, and references can be found in my PhD thesis <span class="citation" data-cites="LeSueurThesis">[<a href="#ref-LeSueurThesis" role="doc-biblioref">1</a>]</span>.</p>
+    <p>During my PhD, I built a probabilistic machine learning framework to analyse protein melting curves: a laboratory technique used to study how proteins behave under different conditions (<span class="citation" data-cites="savitski2014tracking">[<a href="#ref-savitski2014tracking" role="doc-biblioref">1</a>]</span>, <span class="citation" data-cites="LeSueurGPMelt">[<a href="#ref-LeSueurGPMelt" role="doc-biblioref">2</a>]</span>).</p>
+    <p>Reliable results depend on running enough repeat measurements (“replicates”) per condition. Through ongoing discussions with the scientists running these experiments, a key operational constraint emerged: <strong>more replicates improve statistical confidence, but each additional replicate increases sample, reagent, and instrument costs along with an increased lab work — all within an already stretched workflow.</strong></p>
+    <p>Explore the <strong>visual workflow below</strong>, or scroll down for the <strong><a href="#sec-text">full write-up of each step</a></strong>.</p>
   </div>
 </div>
 
 
-<div class="quarto-title-meta column-page">
+<div class="quarto-title-meta column-page-left">
 
     
   
@@ -239,133 +197,68 @@ window.Quarto = {
 </header>
 
 
-<div id="listing-listing-gallery" class="quarto-listing quarto-listing-container-custom">
-<!-- From https://github.com/mcanouil/quarto-issues-experiments/tree/main/test-gallery/gallery ; and https://www.cynthiahqy.com/posts/masonry-gallery/#fn1-->
-<style type="text/css">
-.grid-gallery {
-  columns: 4 200px;
-  column-gap: 0.5rem;
-  width: 90%;
-  margin: 0 auto;
-  max-height: 600px;  /* adjust until only 2 items fit per column */
-}
-.grid-item {
-  width: 150px;
-  margin: 0 0.5rem 0.5rem 0;
-  display: inline-block;
-  border-radius: 5px;
-  background: #FFFFFF;
-  border: 1px solid #333;
-  border-color: hsla(0, 0%, 0%, 0.5);
-  border-radius: 5px;
-  break-inside: avoid;
-
-}
-img.grid-item {
-  width: 100%;
-}
-img.grid-item:hover {
-  transform: scale(1.025);
-}
-
-figcaption {
-    display: none;
-}
-.quarto-figure {
-    margin-bottom: 0px;
-    }
-</style>
-<div class="grid-gallery">
-<div>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="../../../images/ScientificIllustration/DataSciences/groupComparison.png" class="lightbox" data-glightbox="description: .lightbox-desc-1;title:Groups comparison;" data-gallery="quarto-grid-gallery" title="Groups comparison"><img src="../../../images/ScientificIllustration/DataSciences/groupComparison.png" class="grid-item img-fluid figure-img" loading="lazy" alt="Groups comparison"></a></p>
-<figcaption><strong>Groups comparison</strong></figcaption>
+<p><a href="../../images/workflow/StudyCase1-workflow-redesign.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Click on the image to zoom in! (© 2026 Cécile Le Sueur)"><img src="../../images/workflow/StudyCase1-workflow-redesign.jpg" class="img-fluid figure-img" style="width:70.0%" alt="Click on the image to zoom in! (© 2026 Cécile Le Sueur)"></a></p>
+<figcaption>Click on the image to zoom in! (© 2026 Cécile Le Sueur)</figcaption>
 </figure>
 </div>
-</div>
-<div>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><a href="../../../images/ScientificIllustration/DataSciences/Uncertainty.png" class="lightbox" data-glightbox="description: .lightbox-desc-2;title:Communicating model uncertainty;" data-gallery="quarto-grid-gallery" title="Communicating model uncertainty"><img src="../../../images/ScientificIllustration/DataSciences/Uncertainty.png" class="grid-item img-fluid figure-img" loading="lazy" alt="Communicating model uncertainty"></a></p>
-<figcaption><strong>Communicating model uncertainty</strong></figcaption>
-</figure>
-</div>
-</div>
-<div>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><a href="../../../images/ScientificIllustration/DataSciences/IRS_condition_wise_offsetTPP.png" class="lightbox" data-glightbox="description: .lightbox-desc-3;title:Dimensionality reduction for evaluating analytical strategies;" data-gallery="quarto-grid-gallery" title="Dimensionality reduction for evaluating analytical strategies"><img src="../../../images/ScientificIllustration/DataSciences/IRS_condition_wise_offsetTPP.png" class="grid-item img-fluid figure-img" loading="lazy" alt="Dimensionality reduction for evaluating analytical strategies"></a></p>
-<figcaption><strong>Dimensionality reduction for evaluating analytical strategies</strong></figcaption>
-</figure>
-</div>
-</div>
-<div>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><a href="../../../images/ScientificIllustration/DataSciences/ROCcurves.png" class="lightbox" data-glightbox="description: .lightbox-desc-4;title:Generating insight through methods comparison;" data-gallery="quarto-grid-gallery" title="Generating insight through methods comparison"><img src="../../../images/ScientificIllustration/DataSciences/ROCcurves.png" class="grid-item img-fluid figure-img" loading="lazy" alt="Generating insight through methods comparison"></a></p>
-<figcaption><strong>Generating insight through methods comparison</strong></figcaption>
-</figure>
-</div>
-</div>
-<div>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><a href="../../../images/ScientificIllustration/DataSciences/volcanoPlot.png" class="lightbox" data-glightbox="description: .lightbox-desc-5;title:Revealing a hidden pattern - permutation datasets &amp; volcano plots;" data-gallery="quarto-grid-gallery" title="Revealing a hidden pattern - permutation datasets &amp; volcano plots"><img src="../../../images/ScientificIllustration/DataSciences/volcanoPlot.png" class="grid-item img-fluid figure-img" loading="lazy" alt="Revealing a hidden pattern - permutation datasets &amp; volcano plots"></a></p>
-<figcaption><strong>Revealing a hidden pattern - permutation datasets &amp; volcano plots</strong></figcaption>
-</figure>
-</div>
-</div>
-<div>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><a href="../../../images/ScientificIllustration/DataSciences/Histograms_300dpi.png" class="lightbox" data-glightbox="description: .lightbox-desc-6;title:Revealing a hidden pattern - p-values histograms;" data-gallery="quarto-grid-gallery" title="Revealing a hidden pattern - p-values histograms"><img src="../../../images/ScientificIllustration/DataSciences/Histograms_300dpi.png" class="grid-item img-fluid figure-img" loading="lazy" alt="Revealing a hidden pattern - p-values histograms"></a></p>
-<figcaption><strong>Revealing a hidden pattern - p-values histograms</strong></figcaption>
-</figure>
-</div>
-</div>
-<div>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><a href="../../../images/ScientificIllustration/DataSciences/convergence_example.png" class="lightbox" data-glightbox="description: .lightbox-desc-7;title:Conceptualising statistical optimisation;" data-gallery="quarto-grid-gallery" title="Conceptualising statistical optimisation"><img src="../../../images/ScientificIllustration/DataSciences/convergence_example.png" class="grid-item img-fluid figure-img" loading="lazy" alt="Conceptualising statistical optimisation"></a></p>
-<figcaption><strong>Conceptualising statistical optimisation</strong></figcaption>
-</figure>
-</div>
-</div>
-</div>
-<div class="listing-no-matching d-none">No matching items</div>
-</div>
+<section id="sec-text" class="level1">
+<h1>From problem to impact</h1>
+<section id="the-problem" class="level2">
+<h2 class="anchored" data-anchor-id="the-problem">The problem</h2>
+<p>Two constraints dominated the workflow: the cost of reagents and samples, and the workload of running and measuring them via mass spectrometry. Existing methods in the field (<span class="citation" data-cites="gaetani2019proteome">[<a href="#ref-gaetani2019proteome" role="doc-biblioref">3</a>]</span>, <span class="citation" data-cites="zijlmans2023stpp">[<a href="#ref-zijlmans2023stpp" role="doc-biblioref">4</a>]</span>) addressed this by cutting sample count and measurement time — but only by discarding the shape of the melting curve, data that recent research suggests carries real biological signal. <strong>The field’s standard fix for the cost problem was quietly trading away information that mattered.</strong></p>
+</section>
+<section id="workflow-diagnosis" class="level2">
+<h2 class="anchored" data-anchor-id="workflow-diagnosis">Workflow diagnosis</h2>
+<p>Discussions with the experimental team surfaced the real bottleneck: existing approaches optimised the analysis method while treating the experimental protocol as fixed. <strong>Nobody had questioned whether the protocol itself needed to stay fixed while only the analysis flexed</strong>. Reframing the protocol as adjustable — not just the analysis — was the key step toward a viable solution.</p>
+</section>
+<section id="options-considered" class="level2">
+<h2 class="anchored" data-anchor-id="options-considered">Options considered</h2>
+<ul>
+<li><em>Do nothing:</em> keep the existing protocol; accept the cost/workload ceiling.</li>
+<li><em>Adopt an existing fast method</em> (<span class="citation" data-cites="gaetani2019proteome">[<a href="#ref-gaetani2019proteome" role="doc-biblioref">3</a>]</span>, <span class="citation" data-cites="zijlmans2023stpp">[<a href="#ref-zijlmans2023stpp" role="doc-biblioref">4</a>]</span>): cuts cost and time, but sacrifices melting-curve shape data.</li>
+<li><em>Redesign protocol and statistical model together:</em> the option pursued — changing how data is collected and how it’s processed, so less raw data still yields statistically valid, shape-preserving results.</li>
+</ul>
+</section>
+<section id="intervention" class="level2">
+<h2 class="anchored" data-anchor-id="intervention">Intervention</h2>
+<p><strong>Proposed and prototyped an adapted version of the existing protocol (TPP-TR), designed to halve reagent, sample, and instrument-time consumption while preserving full melting-curve shape measurement</strong> — something existing fast methods couldn’t do. This required redesigning both ends: how the experiment was run, and how the existing ML framework processed the resulting, structurally different data, including new preprocessing and adjustments to the underlying statistical model to preserve replicate-level rigor. We refer to chapter 7 of <span class="citation" data-cites="LeSueurThesis">[<a href="#ref-LeSueurThesis" role="doc-biblioref">5</a>]</span> for technical details.</p>
+</section>
+<section id="validation-enablement" class="level2">
+<h2 class="anchored" data-anchor-id="validation-enablement">Validation &amp; enablement</h2>
+<p>Validated the approach on a test dataset as proof of concept. Presented the work at an international conference to build visibility and external credibility (see the dedicated page on the <a href="../../CommunicationWorkflow/ScienceComm/Talk/index.html">Communication portfolio</a>), and worked directly with lab colleagues to walk through the trade-offs and build buy-in for the change. <strong>The project reached proof-of-concept stage rather than full lab rollout, due to time constraints within the PhD — but the statistical validation and conference reception indicate it’s ready for a lab to take further</strong>.</p>
+</section>
+<section id="impact" class="level2">
+<h2 class="anchored" data-anchor-id="impact">Impact</h2>
+<p><strong>For the same reagents, samples, and instrument time, the redesigned protocol was projected to double data throughput without reducing the replicate count needed for statistical confidence.</strong></p>
+<p>Beyond the immediate efficiency gain, this would reduce workload on already-stretched experimental teams and <strong>lower the cost barrier for labs to use the method</strong> at all — widening access to a technique otherwise limited to well-funded groups.</p>
+</section>
+<section id="what-i-learned" class="level2">
+<h2 class="anchored" data-anchor-id="what-i-learned">What I learned</h2>
+<p>The instinct to reach for “more data” is often the wrong lever. <strong>The gain came from questioning an assumption everyone treated as fixed, and from understanding the constraints of the people doing the experimental work, not just the statistical ones.</strong></p>
+<p>Technology adoption isn’t only about better answers to the scientific question — it’s about redesigning the process around the people who have to live with it.</p>
 
 
 
-<div class="hidden" aria-hidden="true">
-<div class="glightbox-desc lightbox-desc-1">
-<p>Using comparative visualisation (bar charts, boxplots, violin plots, and statistical significance tests) to compare two analytical approaches. Together, these representations highlight differences in the phosphosites detected by each method and show that phosphosites uniquely identified by GPMelt are associated with higher functional scores, supporting their biological relevance (Figure 6.9BC from [1]). (© 2025 Cécile Le Sueur)</p>
-</div>
-<div class="glightbox-desc lightbox-desc-2">
-<p>Comparing model fits produced by NPARC (top row) and GPMelt (bottom row). While NPARC provides only a fitted curve, GPMelt additionally communicates uncertainty through a 95% confidence region around the posterior mean estimate, supporting more informed interpretation of the results (Figure 6.8D from [1]). (© 2025 Cécile Le Sueur)</p>
-</div>
-<div class="glightbox-desc lightbox-desc-3">
-<p>Using multidimensional scaling (MDS) to evaluate the effectiveness of three batch-correction strategies. By projecting complex longitudinal data into an interpretable visual space, the figure reveals which method successfully aligns measurements across temperatures, conditions, and replicates (Figure B20 from [1]). (© 2025 Cécile Le Sueur)</p>
-</div>
-<div class="glightbox-desc lightbox-desc-4">
-<p>Using ROC curves to compare the performance of four statistical methods across two datasets. The visualisation revealed the consistently poorer performance of one approach, motivating further investigation and ultimately leading to the identification of its sensitivity to outliers (Figure 6.6 from [1]). (© 2025 Cécile Le Sueur)</p>
-</div>
-<div class="glightbox-desc lightbox-desc-5">
-<p>Comparing real and permuted datasets through volcano plots. The unexpected presence of numerous discoveries in the permuted datasets (second row) revealed a previously unnoticed batch effect, illustrating how visualisation can uncover hidden patterns and guide methodological investigation (Figure 7.7 from [1]). (© 2025 Cécile Le Sueur)</p>
-</div>
-<div class="glightbox-desc lightbox-desc-6">
-<p>Using p-value histograms to diagnose a statistical calibration problem. The visualisation immediately revealed that the method produced miscalibrated p-values on this dataset (left panel), leading to the discovery that non-sigmoidal data violated the model assumptions. Removing these data restored calibration (right panel) and confirmed the source of the issue.(Figure 6.8C from [1]). (© 2025 Cécile Le Sueur)</p>
-</div>
-<div class="glightbox-desc lightbox-desc-7">
-<p>Combining conceptual illustration (A) and model diagnostics (B) to explain convergence analysis. The figure uses a simplified optimisation landscape (A) to visualise how model fitting can become trapped in local optima before reaching a better solution (as examplified in the second panel in (B)), helping make an abstract statistical concept more intuitive (Figure 5.3 from [1]). (© 2025 Cécile Le Sueur)</p>
-</div>
-</div>
-
+</section>
+</section>
 
 <div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body" role="list">
+<div id="ref-savitski2014tracking" class="csl-entry" role="listitem">
+<div class="csl-left-margin">1. </div><div class="csl-right-inline"><span class="nocase">Savitski MM, Reinhard FB, Franken H, et al</span> (2014) Tracking cancer drugs in living cells by thermal profiling of the proteome. Science 346(6205):1255784</div>
+</div>
+<div id="ref-LeSueurGPMelt" class="csl-entry" role="listitem">
+<div class="csl-left-margin">2. </div><div class="csl-right-inline">Le Sueur C, Rattray M, Savitski M (2024) GPMelt: A hierarchical gaussian process framework to explore the dark meltome of thermal proteome profiling experiments. PLOS Computational Biology 20(9):e1011632</div>
+</div>
+<div id="ref-gaetani2019proteome" class="csl-entry" role="listitem">
+<div class="csl-left-margin">3. </div><div class="csl-right-inline">Gaetani M, Sabatier P, Saei AA, et al (2019) Proteome integral solubility alteration: A high-throughput proteomics assay for target deconvolution. Journal of proteome research 18(11):4027–4037</div>
+</div>
+<div id="ref-zijlmans2023stpp" class="csl-entry" role="listitem">
+<div class="csl-left-margin">4. </div><div class="csl-right-inline">Zijlmans DW, Hernández-Quiles M, Jansen PW, et al (2023) STPP-UP: An alternative method for drug target identification using protein thermal stability. Journal of Biological Chemistry 299(11)</div>
+</div>
 <div id="ref-LeSueurThesis" class="csl-entry" role="listitem">
-<div class="csl-left-margin">1. </div><div class="csl-right-inline">Le Sueur C (2025) Statistical and computational method development for thermal stability proteomics. PhD thesis, ETH Zurich</div>
+<div class="csl-left-margin">5. </div><div class="csl-right-inline">Le Sueur C (2025) Statistical and computational method development for thermal stability proteomics. PhD thesis, ETH Zurich</div>
 </div>
 </div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

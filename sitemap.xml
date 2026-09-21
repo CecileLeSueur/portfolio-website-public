@@ -1,51 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://CecileLeSueur.github.io/portfolio-website-public/Teaching/Videos/index.html</loc>
-    <lastmod>2026-06-10T15:50:04.332Z</lastmod>
+    <loc>https://CecileLeSueur.github.io/portfolio-website-public/cv.html</loc>
+    <lastmod>2026-09-21T10:58:50.549Z</lastmod>
   </url>
   <url>
-    <loc>https://CecileLeSueur.github.io/portfolio-website-public/Teaching/Tutorials/index.html</loc>
-    <lastmod>2026-06-10T15:50:04.332Z</lastmod>
+    <loc>https://CecileLeSueur.github.io/portfolio-website-public/CommunicationWorkflow/Teaching/Tutorials/index.html</loc>
+    <lastmod>2026-09-21T10:58:50.548Z</lastmod>
+  </url>
+  <url>
+    <loc>https://CecileLeSueur.github.io/portfolio-website-public/CommunicationWorkflow/Teaching/Workshops/index.html</loc>
+    <lastmod>2026-09-21T10:58:50.548Z</lastmod>
+  </url>
+  <url>
+    <loc>https://CecileLeSueur.github.io/portfolio-website-public/CommunicationWorkflow/ScienceComm/ScientificIllustration/examples/CoverImage.html</loc>
+    <lastmod>2026-09-21T10:58:50.547Z</lastmod>
+  </url>
+  <url>
+    <loc>https://CecileLeSueur.github.io/portfolio-website-public/CommunicationWorkflow/ScienceComm/ScientificIllustration/index.html</loc>
+    <lastmod>2026-09-21T10:58:50.548Z</lastmod>
+  </url>
+  <url>
+    <loc>https://CecileLeSueur.github.io/portfolio-website-public/CommunicationWorkflow/ScienceComm/Poster/index.html</loc>
+    <lastmod>2026-09-21T10:58:50.547Z</lastmod>
+  </url>
+  <url>
+    <loc>https://CecileLeSueur.github.io/portfolio-website-public/WorkflowPortfolio/index.html</loc>
+    <lastmod>2026-09-21T10:58:50.549Z</lastmod>
+  </url>
+  <url>
+    <loc>https://CecileLeSueur.github.io/portfolio-website-public/WorkflowPortfolio/StudyCases/StudyCase4.html</loc>
+    <lastmod>2026-09-21T10:58:50.549Z</lastmod>
+  </url>
+  <url>
+    <loc>https://CecileLeSueur.github.io/portfolio-website-public/WorkflowPortfolio/StudyCases/StudyCase3.html</loc>
+    <lastmod>2026-09-21T10:58:50.549Z</lastmod>
   </url>
   <url>
     <loc>https://CecileLeSueur.github.io/portfolio-website-public/index.html</loc>
-    <lastmod>2026-06-10T15:50:04.428Z</lastmod>
+    <lastmod>2026-09-21T10:58:50.694Z</lastmod>
   </url>
   <url>
-    <loc>https://CecileLeSueur.github.io/portfolio-website-public/ScienceComm/Poster/index.html</loc>
-    <lastmod>2026-06-10T15:50:04.331Z</lastmod>
+    <loc>https://CecileLeSueur.github.io/portfolio-website-public/WorkflowPortfolio/StudyCases/StudyCase2.html</loc>
+    <lastmod>2026-09-21T10:58:50.549Z</lastmod>
   </url>
   <url>
-    <loc>https://CecileLeSueur.github.io/portfolio-website-public/ScienceComm/ScientificIllustration/examples/ThesisFigureGallery.html</loc>
-    <lastmod>2026-06-10T15:50:04.331Z</lastmod>
+    <loc>https://CecileLeSueur.github.io/portfolio-website-public/WorkflowPortfolio/StudyCases/StudyCase1.html</loc>
+    <lastmod>2026-09-21T10:58:50.549Z</lastmod>
   </url>
   <url>
-    <loc>https://CecileLeSueur.github.io/portfolio-website-public/ScienceComm/ScientificIllustration/index.html</loc>
-    <lastmod>2026-06-10T15:50:04.331Z</lastmod>
+    <loc>https://CecileLeSueur.github.io/portfolio-website-public/CommunicationWorkflow/index.html</loc>
+    <lastmod>2026-09-21T10:58:50.548Z</lastmod>
   </url>
   <url>
-    <loc>https://CecileLeSueur.github.io/portfolio-website-public/ScienceComm/Talk/index.html</loc>
-    <lastmod>2026-06-10T15:50:04.332Z</lastmod>
+    <loc>https://CecileLeSueur.github.io/portfolio-website-public/CommunicationWorkflow/ScienceComm/Talk/index.html</loc>
+    <lastmod>2026-09-21T10:58:50.548Z</lastmod>
   </url>
   <url>
-    <loc>https://CecileLeSueur.github.io/portfolio-website-public/ScienceComm/ScientificIllustration/examples/DataSciencesGallery.html</loc>
-    <lastmod>2026-06-10T15:50:04.331Z</lastmod>
+    <loc>https://CecileLeSueur.github.io/portfolio-website-public/CommunicationWorkflow/ScienceComm/ScientificIllustration/examples/DataSciencesGallery.html</loc>
+    <lastmod>2026-09-21T10:58:50.548Z</lastmod>
   </url>
   <url>
-    <loc>https://CecileLeSueur.github.io/portfolio-website-public/ScienceComm/ScientificIllustration/examples/CoverImage.html</loc>
-    <lastmod>2026-06-10T15:50:04.331Z</lastmod>
+    <loc>https://CecileLeSueur.github.io/portfolio-website-public/CommunicationWorkflow/ScienceComm/ScientificIllustration/examples/ThesisFigureGallery.html</loc>
+    <lastmod>2026-09-21T10:58:50.548Z</lastmod>
   </url>
   <url>
-    <loc>https://CecileLeSueur.github.io/portfolio-website-public/cv.html</loc>
-    <lastmod>2026-06-10T15:50:04.332Z</lastmod>
+    <loc>https://CecileLeSueur.github.io/portfolio-website-public/CommunicationWorkflow/Teaching/Videos/index.html</loc>
+    <lastmod>2026-09-21T10:58:50.548Z</lastmod>
   </url>
   <url>
     <loc>https://CecileLeSueur.github.io/portfolio-website-public/license.html</loc>
-    <lastmod>2026-06-10T15:50:04.428Z</lastmod>
-  </url>
-  <url>
-    <loc>https://CecileLeSueur.github.io/portfolio-website-public/Teaching/Workshops/index.html</loc>
-    <lastmod>2026-06-10T15:50:04.332Z</lastmod>
+    <lastmod>2026-09-21T10:58:50.694Z</lastmod>
   </url>
 </urlset>

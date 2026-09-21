@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="description" content="One of the biggest communication challenges during my PhD was explaining hierarchical Gaussian Process (GP) regression, the statistical framework underlying GPMelt [1], a method I developed to analyse Thermal Proteome Profiling (TPP) datasets.While the method was designed for biologists, its correct use requires understanding several highly abstract statistical concepts that are unfamiliar to most users.To address this challenge, I created a series of educational resources combining videos, visual explanations, theory, and hands-on tutorials tailored to audiences ranging from experimental biologists to statistically trained users.Jump to the videos below or explore the communication process through the expandable sections.">
 
-<title>Curriculum Vitae – Cécile Le Sueur’s Portfolio</title>
+<title>Adapting complex concepts to different audiences:  from Gaussian Process intuition to formalism – Cécile Le Sueur's Portfolio</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -26,26 +27,47 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-83d17bea82f52be0b2a4bbaffcd8e01e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../">
+<script src="../../../site_libs/quarto-listing/list.min.js"></script>
+<script src="../../../site_libs/quarto-listing/quarto-listing.js"></script>
+<script src="../../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../site_libs/bootstrap/bootstrap-cd55cfdd28625eb0f340cf31cbbf6ef6.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -73,9 +95,67 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script>
 
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-sample-listings .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
 
-<link rel="stylesheet" href="styles.css">
+    const options = {
+      valueNames: ['listing-title','listing-url','listing-thumbnail','listing-description',{ data: ['index'] },{ data: ['categories'] }],
+      
+      searchColumns: ["listing-title","listing-url","listing-thumbnail","listing-description"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-sample-listings'] = new List('listing-sample-listings', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../../../styles.css">
 </head>
 
 <body class="nav-fixed quarto-light">
@@ -85,7 +165,7 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../../index.html">
     <span class="navbar-title">Cécile Le Sueur’s Portfolio</span>
     </a>
   </div>
@@ -96,7 +176,7 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
+    <a class="nav-link" href="../../../index.html"> 
 <span class="menu-text">home</span></a>
   </li>  
 </ul>
@@ -107,7 +187,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./license.html"> 
+    <a class="nav-link" href="../../../license.html"> 
 <span class="menu-text">License</span></a>
   </li>  
 </ul>
@@ -118,23 +198,38 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
         
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content column-page" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Curriculum Vitae</h1>
+<h1 class="title">Adapting complex concepts to different audiences:<br> from Gaussian Process intuition to formalism</h1>
+<p class="subtitle lead"><strong>Adapting complex concepts to different audiences</strong> <br> <br> Example: <br> <strong>Hierachical Gaussian Process</strong> <br> <br> Output: <br> <strong>Videos</strong></p>
+  <div class="quarto-categories">
+    <div class="quarto-category">Audience Adaptation</div>
+    <div class="quarto-category">Knowledge Translation</div>
+    <div class="quarto-category">Conceptual Abstraction</div>
+    <div class="quarto-category">Method Adoption</div>
+  </div>
+  </div>
+
+<div>
+  <div class="description">
+    <p>One of the biggest communication challenges during my PhD was explaining <strong>hierarchical Gaussian Process (GP) regression</strong>, the statistical framework underlying GPMelt <span class="citation" data-cites="LeSueurGPMelt">[<a href="#ref-LeSueurGPMelt" role="doc-biblioref">1</a>]</span>, a method I developed to analyse Thermal Proteome Profiling (TPP) datasets.</p>
+    <p>While the method was <strong>designed for biologists</strong>, its correct use requires understanding several <strong>highly abstract statistical concepts</strong> that are unfamiliar to most users.</p>
+    <p>To address this challenge, I created a <strong>series of educational resources</strong> combining videos, visual explanations, theory, and hands-on tutorials tailored to <strong>audiences ranging from experimental biologists to statistically trained users</strong>.</p>
+    <p>Jump to the <a href="#ex-Videos">videos</a> below or explore the communication process through the expandable sections.</p>
+  </div>
 </div>
 
 
-
-<div class="quarto-title-meta">
+<div class="quarto-title-meta column-page">
 
     
   
@@ -146,12 +241,144 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<iframe src="cv_Website.pdf" width="100%" height="900px">
-</iframe>
+<div class="card card-retractable" style="margin-bottom: 2rem;" onclick="this.classList.toggle('expanded')">
+<p style="text-align: center;font-weight: bold; font-size: 28px;">
+Challenges
+</p>
+<div style="text-align: justify;">
+<p>Hierarchical Gaussian Process regression is a <strong>highly abstract statistical framework</strong> that can be <strong>intimidating</strong> even for quantitatively trained scientists. Yet, using GPMelt effectively requires understanding several <strong>interconnected concepts spanning multiple levels of abstraction</strong>, from the intuition behind Gaussian Process regression and its application to Thermal Proteome Profiling data, to the way biological experimental designs are represented within a hierarchical statistical model.</p>
+<p>The communication challenge was therefore twofold: <strong>lowering the barrier created by mathematical complexity while preserving the concepts necessary for meaningful use of the method</strong>. At the same time, the resources had to work for audiences ranging from experimental biologists with limited statistical training to bioinformaticians and statisticians with very different levels of familiarity with Gaussian Processes.</p>
+The key challenge was to <strong>communicate the same underlying ideas across multiple levels of abstraction and audiences</strong> without sacrificing clarity, rigor, or engagement.
+</div>
+</div>
+<div class="card-row">
+<div class="card card-retractable" onclick="this.classList.toggle('expanded')">
+<p style="text-align: center;font-weight: bold; font-size: 28px;">
+Approach
+</p>
+<div style="text-align: justify;">
+<p>Rather than introducing the framework through <strong>mathematical formalism</strong>, I designed a series of <strong>short, visual-first videos</strong> that introduced the key concepts progressively, <strong>from intuitive explanations aimed at a broad audience to more advanced material for statistically trained users</strong>. The goal was not only to make the principles easier to understand, but to <strong>provide multiple entry points into the same underlying concepts</strong>.</p>
+<p>Key design choices included:</p>
+<ul>
+<li>prioritising <strong>conceptual understanding</strong> before introducing formal definitions;</li>
+<li><strong>adapting vocabulary</strong>, examples, and level of detail to each audience;</li>
+<li>using <strong>visual metaphors, colour coding, and animation</strong> to make abstract concepts more tangible;</li>
+<li><strong>progressively increasing the level of abstraction</strong>, from intuitive explanations to more formal statistical reasoning.
+</li></ul></div>
+</div>
+
+<div class="card card-retractable" onclick="this.classList.toggle('expanded')">
+<p style="text-align: center;font-weight: bold; font-size: 28px;">
+Strengths
+</p>
+<div style="text-align: justify;">
+<ul>
+<li><strong>Adapting explanations</strong> to audiences with different levels of expertise;</li>
+<li>Making complex concepts <strong>accessible without oversimplification</strong>;</li>
+<li>Communicating across <strong>multiple levels of abstraction</strong> while preserving rigor;</li>
+<li><strong>Translation between disciplines and domains</strong> (e.g.&nbsp;from biological data to mathematical modelling; from statistical analysis to biological interpretation);</li>
+<li>Connecting experimental, statistical, and computational perspectives;</li>
+<li>Designing <strong>learning pathways</strong> that support progressive understanding, from intuition to formalization;</li>
+<li>Creating <strong>high-quality visual</strong> explanations of abstract concepts (figures, animation, storytelling);</li>
+<li>Developing <strong>concise, engaging educational content</strong> for self-directed learning.
+</li></ul></div>
+</div>
+
+</div>
+<div class="card card-retractable" style="margin-bottom: 2rem;" onclick="this.classList.toggle('expanded')">
+<p style="text-align: center;font-weight: bold; font-size: 28px;">
+Impact
+</p>
+<div style="text-align: justify;">
+<p>These resources were designed to <strong>help users understand the reasoning behind the model</strong>, not only to learn how to use GPMelt in practice. By making the underlying statistical framework more approachable across different levels of expertise, they aimed to <strong>reduce the gap between method developers and end users</strong>.</p>
+<p>This allows users to engage with the modelling framework at a <strong>depth appropriate to their needs and expertise</strong>, while maintaining a coherent conceptual link between the biological experiment and its statistical analysis. As a result, researchers can <strong>engage more confidently with the methodology</strong>, better <strong>understand its assumptions and limitations</strong>, and use the resulting analyses more <strong>critically and effectively</strong>.</p>
+<p>Ultimately, the objective was to transform the model <strong>from a black box</strong> into a tool that users could <strong>meaningfully understand and build upon</strong>. By focusing on the underlying modelling principles rather than software usage alone, these resources provide a <strong>foundation for adapting and extending the framework</strong> to new experimental settings and data types.</p>
+</div>
+</div>
+<div id="ex-Videos" style="margin-top: 2rem; border: 1px solid rgba(0,0,0,0.2); box-shadow: 0 6px 14px rgba(0,0,0,0.12); border-radius: 8px; padding: 1em;">
+<p style="text-align: center;font-weight: bold; font-size: 28px;">
+Explore the videos and see how the communication strategy comes to life
+</p>
+<div id="listing-sample-listings" class="quarto-listing quarto-listing-container-custom">
+<div class="video-rows">
+<div class="video-card">
+<p><a href="https://gpmelt-website-grp-savitski-be284daa99aadeca97f8e634d7838ce7b92.embl-community.io/contents/GPMelt_for_dummies/HierarchicalModel/hierarchical_translation_concepts.html#vid-tpp_to_hierarchy" target="_blank"> <img src="../../../images/thumbnails/slide-6.png"> </a></p>
+<div class="video-card-content">
+<h3 class="anchored">
+<a href="https://gpmelt-website-grp-savitski-be284daa99aadeca97f8e634d7838ce7b92.embl-community.io/contents/GPMelt_for_dummies/HierarchicalModel/hierarchical_translation_concepts.html#vid-tpp_to_hierarchy" target="_blank"> From biological experimental set-up into mathematical formulation. </a>
+</h3>
+<p>
+Translating a TPP experimental design into levels of a hierarchical model. <br> Focus: <strong>Bridging domain knowledge (biology) and mathematical representation.</strong>
+</p>
+</div>
+</div>
+<div class="video-card">
+<p><a href="https://gpmelt-website-grp-savitski-be284daa99aadeca97f8e634d7838ce7b92.embl-community.io/contents/GPMelt_for_dummies/Model_Specification_Estimation/gp_regression_intro.html#vid-gp_regression" target="_blank"> <img src="../../../images/thumbnails/slide-5.png"> </a></p>
+<div class="video-card-content">
+<h3 class="anchored">
+<a href="https://gpmelt-website-grp-savitski-be284daa99aadeca97f8e634d7838ce7b92.embl-community.io/contents/GPMelt_for_dummies/Model_Specification_Estimation/gp_regression_intro.html#vid-gp_regression" target="_blank"> GP regression for TPP data: an introduction for biologists. </a>
+</h3>
+<p>
+Intuitive introduction to GP regression applied to TPP data. <br> Focus: <strong>Building understanding without requiring statistical formalism. </strong>
+</p>
+</div>
+</div>
+<div class="video-card">
+<p><a href="https://gpmelt-website-grp-savitski-be284daa99aadeca97f8e634d7838ce7b92.embl-community.io/contents/GPMelt_for_dummies/Model_Specification_Estimation/gp_regression_diving.html#vid-gp_regression" target="_blank"> <img src="../../../images/thumbnails/slide-7.png"> </a></p>
+<div class="video-card-content">
+<h3 class="anchored">
+<a href="https://gpmelt-website-grp-savitski-be284daa99aadeca97f8e634d7838ce7b92.embl-community.io/contents/GPMelt_for_dummies/Model_Specification_Estimation/gp_regression_diving.html#vid-gp_regression" target="_blank"> GP regression for advanced users. </a>
+</h3>
+<p>
+Formal explanation (Bayesian framework, model definition, parameter estimation). <br>Focus: <strong>Precision, rigor, and deeper technical insight.</strong>
+</p>
+</div>
+</div>
+</div>
+<style>
+
+.video-rows {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.video-card {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 1rem;
+}
+
+.video-card img {
+  width: 200px; /* thumbnail size */
+  flex-shrink: 0;
+  border-radius: 6px;
+}
+
+.video-card-content {
+  flex: 1;
+}
+
+</style>
+<div class="listing-no-matching d-none">No matching items</div>
+</div>
+</div>
 
 
 
-</main> <!-- /main -->
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body" role="list">
+<div id="ref-LeSueurGPMelt" class="csl-entry" role="listitem">
+<div class="csl-left-margin">1. </div><div class="csl-right-inline">Le Sueur C, Rattray M, Savitski M (2024) GPMelt: A hierarchical gaussian process framework to explore the dark meltome of thermal proteome profiling experiments. PLOS Computational Biology 20(9):e1011632</div>
+</div>
+</div></section></div></main></div>
+
+
+
+
+
+ <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
@@ -552,7 +779,7 @@ ul.task-list li input[type="checkbox"] {
     }
   });
   </script>
-</div> <!-- /content -->
+ <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">

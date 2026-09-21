@@ -2,21 +2,24 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.38">
+<meta name="generator" content="quarto-1.10.18">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="Some ideas are difficult to communicate through words alone. Across my work, I use visual thinking as a communication tool to spark curiosity, explain complex concepts, and communicate data-driven insights.Depending on the communication objective, this can take the form of conceptual illustrations, explanatory figures, or analytical visualisations. Together, these examples illustrate how visual design can support different stages of communication: attracting interest, building understanding, and communicating evidence.The visuals presented here target audiences ranging from biologists to data scientists, serving as a bridge between disciplines with very different ways of thinking and communicating.Jump to the examples below or explore the communication process through the expandable sections.">
+<meta name="description" content="Joining an editorial team as an editorial assistant, I quickly noticed several points in the workflow where well-targeted interventions combined with existing, appropriate technology could resolve recurring issues.Explore the visual workflow below, or scroll down for the full write-up of each step.">
 
-<title>Visual thinking for scientific communication:   Designing visuals for clarity and engagement – Cécile Le Sueur's Portfolio</title>
+<title>From workflow gaps to pragmatic process improvement – Cécile Le Sueur’s Portfolio</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
 */
-code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -34,18 +37,19 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
-<script src="../../site_libs/quarto-listing/list.min.js"></script>
-<script src="../../site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-e8bb5c388be52abac024dbec4631dec4.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-10c8a299f4792ed8c592409fc3b82db7.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -73,65 +77,7 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-Examples .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-image','listing-title','listing-subtitle',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-title","listing-author","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-Examples'] = new List('listing-Examples', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 <link rel="stylesheet" href="../../styles.css">
 </head>
@@ -165,11 +111,6 @@ window.Quarto = {
 <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../cv.html"> <i class="bi bi-file-earmark-person" role="img" aria-label="CV">
-</i> 
-<span class="menu-text">Curriculum Vitae</span></a>
-  </li>  
-  <li class="nav-item">
     <a class="nav-link" href="../../license.html"> 
 <span class="menu-text">License</span></a>
   </li>  
@@ -184,35 +125,47 @@ window.Quarto = {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#sec-text" id="toc-sec-text" class="nav-link active" data-scroll-target="#sec-text">From problem to impact</a>
+  <ul class="collapse">
+  <li><a href="#the-problem" id="toc-the-problem" class="nav-link" data-scroll-target="#the-problem">The problem</a></li>
+  <li><a href="#workflow-diagnosis" id="toc-workflow-diagnosis" class="nav-link" data-scroll-target="#workflow-diagnosis">Workflow diagnosis</a></li>
+  <li><a href="#options-considered" id="toc-options-considered" class="nav-link" data-scroll-target="#options-considered">Options considered</a></li>
+  <li><a href="#intervention" id="toc-intervention" class="nav-link" data-scroll-target="#intervention">Intervention</a></li>
+  <li><a href="#enablementadoption" id="toc-enablementadoption" class="nav-link" data-scroll-target="#enablementadoption">Enablement/adoption</a></li>
+  <li><a href="#impact" id="toc-impact" class="nav-link" data-scroll-target="#impact">Impact</a></li>
+  <li><a href="#what-i-learned" id="toc-what-i-learned" class="nav-link" data-scroll-target="#what-i-learned">What I learned</a></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
-<main class="content column-page" id="quarto-document-content">
+<main class="content column-page-left" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Visual thinking for scientific communication: <br> Designing visuals for clarity and engagement</h1>
-<p class="subtitle lead"><strong>Visual thinking for scientific communication</strong> <br> <br> Example: <br> <strong> From conceptual illustrations to data visualisation </strong> <br> <br> Output: <br> <strong>Scientific illustrations and visualisations</strong></p>
+<h1 class="title">From workflow gaps to pragmatic process improvement</h1>
+<p class="subtitle lead"><strong>From workflow gaps to pragmatic process improvement</strong> <br> <br>Identifying structural workflow gaps and combining simple tools, process redesign and targeted enablement to improve efficiency, considering team capacity, author needs and practical constraints.</p>
   <div class="quarto-categories">
-    <div class="quarto-category">Visual Thinking</div>
-    <div class="quarto-category">Information Synthesis</div>
-    <div class="quarto-category">Conceptual Abstraction</div>
-    <div class="quarto-category">Interdisciplinary Translation</div>
+    <div class="quarto-category">Process design under resource constraints</div>
+    <div class="quarto-category">Stakeholder-facing documentation &amp; training</div>
+    <div class="quarto-category">Pragmatic tool selection (not AI-first)</div>
   </div>
   </div>
 
 <div>
   <div class="description">
-    <p>Some ideas are difficult to communicate through words alone. Across my work, I use <strong>visual thinking as a communication tool</strong> to spark curiosity, explain complex concepts, and communicate data-driven insights.</p>
-    <p>Depending on the communication objective, this can take the form of conceptual illustrations, explanatory figures, or analytical visualisations. Together, these examples illustrate how visual design can support different stages of communication: <strong>attracting interest, building understanding, and communicating evidence</strong>.</p>
-    <p>The visuals presented here target audiences ranging from biologists to data scientists, serving as a <strong>bridge between disciplines with very different ways of thinking and communicating</strong>.</p>
-    <p>Jump to the <a href="#ex-ScientificIllustrations">examples</a> below or explore the communication process through the expandable sections.</p>
+    <p>Joining an editorial team as an editorial assistant, I quickly noticed several points in the workflow where <strong>well-targeted interventions combined with existing, appropriate technology</strong> could resolve recurring issues.</p>
+    <p>Explore the <strong>visual workflow below</strong>, or scroll down for the <strong><a href="#sec-text">full write-up of each step</a></strong>.</p>
   </div>
 </div>
 
 
-<div class="quarto-title-meta column-page">
+<div class="quarto-title-meta column-page-left">
 
     
   
@@ -224,144 +177,64 @@ window.Quarto = {
 </header>
 
 
-<div class="card card-retractable" style="margin-bottom: 2rem;" onclick="this.classList.toggle('expanded')">
-<p style="text-align: center;font-weight: bold; font-size: 28px;">
-Challenges
-</p>
-<div style="text-align: justify;">
-<p>The common challenge across these visuals is to <strong>translate complex concepts into intuitive visual representations without sacrificing scientific accuracy</strong>. Many of the ideas involved are abstract, interdisciplinary, or highly technical, making them difficult to communicate effectively through text alone.</p>
-<p>Regardless of their communicative purpose, each visual therefore requires balancing multiple objectives simultaneously: <strong>accessibility</strong> for non-specialists, sufficient <strong>depth</strong> for expert audiences, <strong>clarity</strong> to support understanding and engagement, and enough <strong>visual appeal</strong> to attract and maintain attention.</p>
-The challenge is not simply to illustrate information, but to <strong>identify the visual representation that best supports understanding, highlights the key message, and communicates effectively</strong> across different backgrounds and communication contexts.
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="../../images/workflow/StudyCase3-workflow-redesign.jpg" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="Click on the image to zoom in! (© 2026 Cécile Le Sueur)"><img src="../../images/workflow/StudyCase3-workflow-redesign.jpg" class="img-fluid figure-img" style="width:70.0%" alt="Click on the image to zoom in! (© 2026 Cécile Le Sueur)"></a></p>
+<figcaption>Click on the image to zoom in! (© 2026 Cécile Le Sueur)</figcaption>
+</figure>
 </div>
-</div>
-<div class="card-row">
-<div class="card card-retractable" onclick="this.classList.toggle('expanded')">
-<p style="text-align: center;font-weight: bold; font-size: 28px;">
-Approach
-</p>
-<div style="text-align: justify;">
-<p>I design visuals as communication tools rather than decorative illustrations. The objective is not simply to represent information, but to support understanding through visual reasoning and synthesis.</p>
-<p>Key principles:</p>
+<section id="sec-text" class="level1">
+<h1>From problem to impact</h1>
+<section id="the-problem" class="level2">
+<h2 class="anchored" data-anchor-id="the-problem">The problem</h2>
+<p>Every article followed its own internal logic and style, with mandatory information frequently missing (author titles &amp; affiliations, image copyright, sections, etc.). Correcting each article involved <strong>slow and tedious manual work</strong>. With only one editor on the team, the <strong>workload was becoming unsustainable</strong>.</p>
+</section>
+<section id="workflow-diagnosis" class="level2">
+<h2 class="anchored" data-anchor-id="workflow-diagnosis">Workflow diagnosis</h2>
+<p>The root causes were structural, not individual effort: no article template existed, author guidelines were vague and incomplete, no reference manager was in use, and there was no formal technical check before a manuscript entered review. <strong>None of these gaps required advanced technology to fix — they required someone to notice they were gaps at all.</strong></p>
+</section>
+<section id="options-considered" class="level2">
+<h2 class="anchored" data-anchor-id="options-considered">Options considered</h2>
 <ul>
-<li>simplifying complex ideas without losing their essential meaning;</li>
-<li>combining abstract concepts with concrete visual representations to <strong>support intuition and understanding</strong>;</li>
-<li><strong>synthesising information</strong> from multiple disciplines or sources into <strong>coherent visual narratives</strong>;</li>
-<li>using visual hierarchy, colour, and layout to guide attention towards the most important information;</li>
-<li><strong>adapting the style and level of detail</strong> to the intended audience and communication objective.
-</li></ul></div>
-</div>
-
-<div class="card card-retractable" onclick="this.classList.toggle('expanded')">
-<p style="text-align: center;font-weight: bold; font-size: 28px;">
-Strengths
-</p>
-<div style="text-align: justify;">
+<li><em>Reference management:</em> a paid tool (EndNote, Mendeley) vs.&nbsp;Zotero — free, Word-compatible, no budget approval needed, and low enough friction that non-technical authors could adopt it directly.</li>
+<li><em>Author guidelines:</em> rewrite manually from scratch vs.&nbsp;use Gen AI to accelerate drafting a complete, clear version — chosen to move faster without compromising on the clarity the team needed.</li>
+<li><em>Technical check:</em> ad hoc, editor-by-editor judgment vs.&nbsp;a defined, explicit rule set every manuscript must pass before review — chosen for consistency and to make the check trainable and delegable, not dependent on a single editor’s memory.</li>
+</ul>
+</section>
+<section id="intervention" class="level2">
+<h2 class="anchored" data-anchor-id="intervention">Intervention</h2>
 <ul>
-<li><strong>Bridging audiences</strong> with different backgrounds through visual communication;</li>
-<li>Distilling complex ideas into their <strong>essential communicable elements</strong>;</li>
-<li>Condensing large amounts of information into <strong>clear visual summaries</strong>;</li>
-<li>Designing visuals that support <strong>curiosity, reasoning, understanding, and decision-making</strong>;</li>
-<li><strong>Adapting visual communication</strong> across different stages of the communication process.
-</li></ul></div>
-</div>
-
-</div>
-<div class="card card-retractable" style="margin-bottom: 2rem;" onclick="this.classList.toggle('expanded')">
-<p style="text-align: center;font-weight: bold; font-size: 28px;">
-Impacts
-</p>
-<div style="text-align: justify;">
-<p>Some concepts are difficult to communicate effectively through text, formulas, or verbal explanations alone, yet become immediately more accessible once visualised. By transforming abstract ideas into intuitive visual representations, these illustrations supported <strong>conceptual abstraction, knowledge translation, and information synthesis</strong> across a wide range of communication contexts.</p>
-<p>These visual representations also provided a <strong>common language between disciplines</strong>. By translating abstract concepts, workflows, and analytical reasoning into intuitive visual forms, they <strong>facilitated discussions between researchers with different areas of expertise</strong> and helped communicate key ideas more efficiently.</p>
-More broadly, this work reinforced the idea that effective <strong>visuals are not merely decorative elements</strong>. When carefully designed, they can <strong>reduce the intimidation</strong> often associated with theoretical or highly technical content, making <strong>complex ideas more approachable while preserving their depth and meaning</strong>.
-</div>
-</div>
-<!-- [striking image](examples/CoverImage.qmd) -->
-<div id="ex-ScientificIllustrations" style="margin-top: 2rem; border: 1px solid rgba(0,0,0,0.2); box-shadow: 0 6px 14px rgba(0,0,0,0.12); border-radius: 8px; padding: 1em;">
-<p style="text-align: center;font-weight: bold; font-size: 28px;">
-Scientific illustrations and visualisations
-</p>
-<div id="listing-Examples" class="quarto-listing quarto-listing-container-grid">
-<div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-listing-file-modified-sort="1781106604331" data-listing-reading-time-sort="2" data-listing-word-count-sort="279">
-<a href="../../ScienceComm/ScientificIllustration/examples/CoverImage.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="../../images/thumbnails/slide-2.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Striking image for GPMelt
-</h5>
-<div class="card-subtitle listing-subtitle">
-A visual designed to spark curiosity and communicate the core idea of the tool at a glance.
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="1" data-listing-file-modified-sort="1781106604331" data-listing-reading-time-sort="1" data-listing-word-count-sort="18">
-<a href="../../ScienceComm/ScientificIllustration/examples/ThesisFigureGallery.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="../../images/thumbnails/slide-3.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Scientific illustrations across disciplines
-</h5>
-<div class="card-subtitle listing-subtitle">
-A collection of visuals designed to translate complex concepts and support understanding across a wide range of scientific expertise.
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="2" data-listing-file-modified-sort="1781106604331" data-listing-reading-time-sort="1" data-listing-word-count-sort="2">
-<a href="../../ScienceComm/ScientificIllustration/examples/DataSciencesGallery.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="../../images/thumbnails/slide-8.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Data visualisation for evidence and insight
-</h5>
-<div class="card-subtitle listing-subtitle">
-Visualisations designed to reveal patterns, communicate evidence, and support data-driven reasoning.
-</div>
-</div>
-</div></a>
-</div>
-</div>
-<div class="listing-no-matching d-none">No matching items</div>
-</div>
-</div>
-<style>
-.quarto-listing-container-grid .list.grid {
-  grid-template-columns: repeat(3, minmax(200px, 300px)) !important;
-  justify-content: center !important;
-}
-</style>
-<!-- 
--->
-<!-- 
-As examples, I present the **striking image** aimed at advertising GPMelt on social medias, and a **selection of scientific illustrations** covering a wide range of scientific expertise, which I included in my thesis [-@LeSueurThesis] whose commitee consisted in biologists, bio-informaticians and mathematicians.
+<li>Created a standard article template.</li>
+<li>Rewrote and completed the author guidelines with Gen AI assistance.</li>
+<li>Defined an explicit technical checklist manuscripts had to satisfy before entering the review stage.</li>
+<li>Introduced Zotero as the team’s reference manager, building a complete tutorial (Gen AI-assisted) and training colleagues directly, changing the workflow so bibliographies were handled correctly at the source rather than corrected after the fact.</li>
+</ul>
+</section>
+<section id="enablementadoption" class="level2">
+<h2 class="anchored" data-anchor-id="enablementadoption">Enablement/adoption</h2>
+<p><strong>Each intervention paired a tool with matching documentation and training</strong>: the template went out to authors directly with clear instructions; the technical check was documented and taught to the specialised editors responsible for applying it; Zotero adoption was driven by a tutorial plus hands-on training for colleagues.</p>
+</section>
+<section id="impact" class="level2">
+<h2 class="anchored" data-anchor-id="impact">Impact</h2>
+<ul>
+<li><strong>Manuscript quality improved</strong> — fewer missing mandatory sections, cleaner bibliographies.</li>
+<li>Standardisation <strong>cut the editorial time spent</strong> reordering and normalising articles.</li>
+<li><strong>Author-facing back-and-forth over missing information dropped</strong>, now handled by a specialised team rather than the core editor.</li>
+<li><strong>Bibliography-related workload fell</strong> sharply, and the reference-manager switch <strong>avoided roughly €125 per article</strong> in costs previously paid to an external team.</li>
+<li>Authors reported a clearer process (via the template) and better-aligned expectations with editors (via the guidelines).</li>
+</ul>
+</section>
+<section id="what-i-learned" class="level2">
+<h2 class="anchored" data-anchor-id="what-i-learned">What I learned</h2>
+<p><strong>Small changes can produce outsized effects on workload, quality, and cost.</strong></p>
+<p><strong>Before reaching for AI, it’s worth checking whether a simpler, well-established tool or concept — like a template — already solves the problem; these are often faster to implement and just as effective.</strong></p>
+<p>Knowing your users well enough to <strong>pitch training at the right level</strong> is what actually determines whether a tool gets adopted or ignored.</p>
 
 
-Section 2: Thesis figures
-2–3 figures max
-displayed side by side or stacked
-👉 Add short captions explaining:
-what concept they illustrate
-why this representation was chosen -->
+</section>
+</section>
 
-
-
-</main></div>
-
-
-
-
- <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
@@ -762,7 +635,7 @@ why this representation was chosen -->
     }
   });
   </script>
- <!-- /content -->
+</div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">
@@ -776,6 +649,38 @@ why this representation was chosen -->
 </div>
   </div>
 </footer>
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","descPosition":"bottom","loop":false,"openEffect":"zoom","selector":".lightbox"});
+(function() {
+  let previousOnload = window.onload;
+  window.onload = () => {
+    if (previousOnload) {
+      previousOnload();
+    }
+    lightboxQuarto.on('slide_before_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      const href = trigger.getAttribute('href');
+      if (href !== null) {
+        const imgEl = window.document.querySelector(`a[href="${href}"] img`);
+        if (imgEl !== null) {
+          const srcAttr = imgEl.getAttribute("src");
+          if (srcAttr && srcAttr.startsWith("data:")) {
+            slideConfig.href = srcAttr;
+          }
+        }
+      } 
+    });
+  
+    lightboxQuarto.on('slide_after_load', (data) => {
+      const { slideIndex, slideNode, slideConfig, player, trigger } = data;
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(slideNode);
+      }
+    });
+  
+  };
+  
+})();
+          </script>
 
 
 

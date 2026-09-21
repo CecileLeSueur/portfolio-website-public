@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Cecile Le Sueur">
 
-<title>Curriculum Vitae – Cécile Le Sueur’s Portfolio</title>
+<title>index – Cécile Le Sueur's Portfolio</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -29,23 +30,25 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-83d17bea82f52be0b2a4bbaffcd8e01e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-listing/list.min.js"></script>
+<script src="../site_libs/quarto-listing/quarto-listing.js"></script>
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-83d17bea82f52be0b2a4bbaffcd8e01e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -73,19 +76,111 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script>
 
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-teaching .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
 
-<link rel="stylesheet" href="styles.css">
+    const options = {
+      valueNames: ['listing-image','listing-subtitle',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-title","listing-author","listing-image","listing-description"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-teaching'] = new List('listing-teaching', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-science_comm .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-image','listing-subtitle',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-title","listing-author","listing-image","listing-description"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-science_comm'] = new List('listing-science_comm', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
+<style>
+
+      .quarto-title-block .quarto-title-banner {
+        background: images/banner/Banner.svg;
+      }
+</style>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../styles.css">
 </head>
 
 <body class="nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">Cécile Le Sueur’s Portfolio</span>
     </a>
   </div>
@@ -96,7 +191,7 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
+    <a class="nav-link" href="../index.html"> 
 <span class="menu-text">home</span></a>
   </li>  
 </ul>
@@ -107,7 +202,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./license.html"> 
+    <a class="nav-link" href="../license.html"> 
 <span class="menu-text">License</span></a>
   </li>  
 </ul>
@@ -118,38 +213,151 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-page">
+      
+            <p class="subtitle lead"><strong>Technical Communication, Teaching &amp; Storytelling</strong><br> <br> Making complex scientific and technical ideas clear, engaging, and accessible.</p>
+                      </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta column-page">
+
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Cecile Le Sueur </p>
+            </div>
+    </div>
+      
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
-    </div>
+    
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content quarto-banner-title-block column-page" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Curriculum Vitae</h1>
+
+
+
+
+<style>
+.quarto-title-meta {
+  display: none !important;
+}
+</style>
+<section id="two-dimensions-of-my-communication-work" class="level2">
+<h2 class="anchored" data-anchor-id="two-dimensions-of-my-communication-work">Two dimensions of my communication work</h2>
+<ul>
+<li><p><a href="#Educ">Technical Education &amp; Knowledge Translation</a>: <em>Building understanding of complex machine learning, statistical, and analytical methods</em></p></li>
+<li><p><a href="#Comm">Scientific Storytelling &amp; Engagement</a>: <em>Communicating science through talks, visual design, and audience engagement</em></p></li>
+</ul>
+</section>
+<section id="Educ" class="level2">
+<h2 class="anchored" data-anchor-id="Educ">Technical Education &amp; Knowledge Translation (AI, ML &amp; Statistics)</h2>
+<div id="listing-teaching" class="quarto-listing quarto-listing-container-grid">
+<div class="list grid quarto-listing-cols-3">
+<div class="g-col-1" data-index="0" data-categories="QXVkaWVuY2UlMjBBZGFwdGF0aW9uJTJDS25vd2xlZGdlJTIwVHJhbnNsYXRpb24lMkNDb25jZXB0dWFsJTIwQWJzdHJhY3Rpb24lMkNNZXRob2QlMjBBZG9wdGlvbg==" data-listing-file-modified-sort="1789988330548" data-listing-reading-time-sort="4" data-listing-word-count-sort="635">
+<a href="../CommunicationWorkflow/Teaching/Videos/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="../images/thumbnails/slide-5.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<div class="card-subtitle listing-subtitle">
+<strong>Adapting complex concepts to different audiences</strong> <br> <br> Example: <br> <strong>Hierachical Gaussian Process</strong> <br> <br> Output: <br> <strong>Videos</strong>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="1" data-categories="VXNlciUyMEVtcG93ZXJtZW50JTJDQ3JpdGljYWwlMjBEYXRhJTIwSW50ZXJwcmV0YXRpb24lMkNBbmFseXRpY2FsJTIwRGVjaXNpb24tTWFraW5nJTJDTWV0aG9kJTIwQWRvcHRpb24=" data-listing-file-modified-sort="1789988330548" data-listing-reading-time-sort="4" data-listing-word-count-sort="609">
+<a href="../CommunicationWorkflow/Teaching/Tutorials/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="../images/thumbnails/slide-1.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<div class="card-subtitle listing-subtitle">
+<strong>Promoting understanding rather than execution</strong> <br> <br> Example: <br> <strong>GPMelt interactive tutorial</strong> <br> <br> Output: <br> <strong>Website + tutorial</strong>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="2" data-categories="VmlzdWFsJTIwUmVhc29uaW5nJTJDU3RhdGlzdGljYWwlMjBJbnR1aXRpb24lMkNNaXNjb25jZXB0aW9uJTIwQ29ycmVjdGlvbiUyQ1VzZXIlMjBFbXBvd2VybWVudA==" data-listing-file-modified-sort="1789988330548" data-listing-reading-time-sort="4" data-listing-word-count-sort="726">
+<a href="../CommunicationWorkflow/Teaching/Workshops/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="../images/slides_workshop/slide-04.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<div class="card-subtitle listing-subtitle">
+<strong>Making statistical concepts intuitive</strong> <br> <br> Example: <br> <strong>Building intuition for multiple-testing scenarios</strong> <br><br> Output: <br> <strong>Workshop</strong>
+</div>
+</div>
+</div></a>
+</div>
+</div>
+<div class="listing-no-matching d-none">No matching items</div>
+</div>
+</section>
+<section id="Comm" class="level2">
+<h2 class="anchored" data-anchor-id="Comm">Scientific Storytelling &amp; Engagement</h2>
+<div id="listing-science_comm" class="quarto-listing quarto-listing-container-grid">
+<div class="list grid quarto-listing-cols-3">
+<div class="g-col-1" data-index="0" data-categories="Q29tbXVuaXR5JTIwRW5nYWdlbWVudCUyQ1NjaWVudGlmaWMlMjBQZXJzdWFzaW9uJTJDSW1wYWN0LURyaXZlbiUyMENvbW11bmljYXRpb24lMkNCZXlvbmQlMjB0aGUlMjBUZWNobmljYWwlMjBDb250cmlidXRpb24=" data-listing-file-modified-sort="1789988330548" data-listing-reading-time-sort="3" data-listing-word-count-sort="567">
+<a href="../CommunicationWorkflow/ScienceComm/Talk/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="../images/slides_talk/slide-25.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<div class="card-subtitle listing-subtitle">
+<strong>Persuasive scientific storytelling</strong> <br> <br> Example: <br> <strong>Communicating potential, not just results</strong> <br> <br> Output: <br> <strong>10-minute Conference talk</strong>
+<p></p>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="1" data-categories="VmlzdWFsJTIwU3Rvcnl0ZWxsaW5nJTJDQ3VyaW9zaXR5JTIwR2VuZXJhdGlvbiUyQ0F1ZGllbmNlJTIwQXR0cmFjdGlvbiUyQ1NjaWVudGlmaWMlMjBNYXJrZXRpbmc=" data-listing-file-modified-sort="1789988330547" data-listing-reading-time-sort="4" data-listing-word-count-sort="692">
+<a href="../CommunicationWorkflow/ScienceComm/Poster/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="../images/thumbnails/slide-4.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<div class="card-subtitle listing-subtitle">
+<strong>Capturing attention in highly competitive environments</strong> <br> <br> Example: <br> <strong>Visual storytelling for scientific engagement</strong> <br> <br> Output: <br> <strong>High Impact conference poster</strong>
+<p></p>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="2" data-categories="VmlzdWFsJTIwVGhpbmtpbmclMkNJbmZvcm1hdGlvbiUyMFN5bnRoZXNpcyUyQ0NvbmNlcHR1YWwlMjBBYnN0cmFjdGlvbiUyQ0ludGVyZGlzY2lwbGluYXJ5JTIwVHJhbnNsYXRpb24=" data-listing-file-modified-sort="1789988330548" data-listing-reading-time-sort="3" data-listing-word-count-sort="599">
+<a href="../CommunicationWorkflow/ScienceComm/ScientificIllustration/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="../images/thumbnails/slide-2.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<div class="card-subtitle listing-subtitle">
+<strong>Visual thinking for scientific communication</strong> <br> <br> Example: <br> <strong> From conceptual illustrations to data visualisation </strong> <br> <br> Output: <br> <strong>Scientific illustrations and visualisations</strong>
+</div>
+</div>
+</div></a>
+</div>
+</div>
+<div class="listing-no-matching d-none">No matching items</div>
 </div>
 
 
 
-<div class="quarto-title-meta">
-
-    
-  
-    
-  </div>
-  
-
-
-</header>
-
-
-<iframe src="cv_Website.pdf" width="100%" height="900px">
-</iframe>
-
-
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

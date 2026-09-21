@@ -1,101 +1,353 @@
 [
   {
-    "objectID": "Teaching/Videos/index.html",
-    "href": "Teaching/Videos/index.html",
-    "title": "Adapting complex concepts to different audiences: from Gaussian Process intuition to formalism",
-    "section": "",
-    "text": "Challenges\n\n\nHierarchical Gaussian Process regression is a highly abstract statistical framework that can be intimidating even for quantitatively trained scientists. Yet, using GPMelt effectively requires understanding several interconnected concepts spanning multiple levels of abstraction, from the intuition behind Gaussian Process regression and its application to Thermal Proteome Profiling data, to the way biological experimental designs are represented within a hierarchical statistical model.\nThe communication challenge was therefore twofold: lowering the barrier created by mathematical complexity while preserving the concepts necessary for meaningful use of the method. At the same time, the resources had to work for audiences ranging from experimental biologists with limited statistical training to bioinformaticians and statisticians with very different levels of familiarity with Gaussian Processes.\nThe key challenge was to communicate the same underlying ideas across multiple levels of abstraction and audiences without sacrificing clarity, rigor, or engagement.\n\n\n\n\n\nApproach\n\n\nRather than introducing the framework through mathematical formalism, I designed a series of short, visual-first videos that introduced the key concepts progressively, from intuitive explanations aimed at a broad audience to more advanced material for statistically trained users. The goal was not only to make the principles easier to understand, but to provide multiple entry points into the same underlying concepts.\nKey design choices included:\n\nprioritising conceptual understanding before introducing formal definitions;\nadapting vocabulary, examples, and level of detail to each audience;\nusing visual metaphors, colour coding, and animation to make abstract concepts more tangible;\nprogressively increasing the level of abstraction, from intuitive explanations to more formal statistical reasoning.\n\n\n\n\n\nStrengths\n\n\n\nAdapting explanations to audiences with different levels of expertise;\nMaking complex concepts accessible without oversimplification;\nCommunicating across multiple levels of abstraction while preserving rigor;\nTranslation between disciplines and domains (e.g. from biological data to mathematical modelling; from statistical analysis to biological interpretation);\nConnecting experimental, statistical, and computational perspectives;\nDesigning learning pathways that support progressive understanding, from intuition to formalization;\nCreating high-quality visual explanations of abstract concepts (figures, animation, storytelling);\nDeveloping concise, engaging educational content for self-directed learning.\n\n\n\n\n\n\nImpact\n\n\nThese resources were designed to help users understand the reasoning behind the model, not only to learn how to use GPMelt in practice. By making the underlying statistical framework more approachable across different levels of expertise, they aimed to reduce the gap between method developers and end users.\nThis allows users to engage with the modelling framework at a depth appropriate to their needs and expertise, while maintaining a coherent conceptual link between the biological experiment and its statistical analysis. As a result, researchers can engage more confidently with the methodology, better understand its assumptions and limitations, and use the resulting analyses more critically and effectively.\nUltimately, the objective was to transform the model from a black box into a tool that users could meaningfully understand and build upon. By focusing on the underlying modelling principles rather than software usage alone, these resources provide a foundation for adapting and extending the framework to new experimental settings and data types.\n\n\n\n\nExplore the videos and see how the communication strategy comes to life\n\n\n\n\n  \n\n\n From biological experimental set-up into mathematical formulation. \n\n\nTranslating a TPP experimental design into levels of a hierarchical model.  Focus: Bridging domain knowledge (biology) and mathematical representation.\n\n\n\n\n  \n\n\n GP regression for TPP data: an introduction for biologists. \n\n\nIntuitive introduction to GP regression applied to TPP data.  Focus: Building understanding without requiring statistical formalism. \n\n\n\n\n  \n\n\n GP regression for advanced users. \n\n\nFormal explanation (Bayesian framework, model definition, parameter estimation). Focus: Precision, rigor, and deeper technical insight.\n\n\n\n\n\nNo matching items\n\n\n\n\n\nReferences\n\n1. Le Sueur C, Rattray M, Savitski M (2024) GPMelt: A hierarchical gaussian process framework to explore the dark meltome of thermal proteome profiling experiments. PLOS Computational Biology 20(9):e1011632"
-  },
-  {
-    "objectID": "Teaching/Tutorials/index.html",
-    "href": "Teaching/Tutorials/index.html",
+    "objectID": "CommunicationWorkflow/Teaching/Tutorials/index.html",
+    "href": "CommunicationWorkflow/Teaching/Tutorials/index.html",
     "title": "Hands-on teaching of complex tools: the example of GPMelt interactive tutorial",
     "section": "",
     "text": "Challenges\n\n\nGPMelt was developed as a flexible analytical framework designed to accommodate both existing and future Thermal Proteome Profiling (TPP) experimental designs. While this flexibility increases the applicability of the method, it also introduces additional complexity for users.\nMany aspects of the analysis can be configured or adapted depending on the experimental design, the biological question, and the characteristics of the data. Making informed choices therefore requires more than simply following instructions or applying default settings: users need to understand how different parameters, assumptions, and visualisations influence the resulting analyses and interpretations.\nOverall, the challenge was to design a tutorial that promotes understanding rather than execution and encourages users to move beyond default settings and black-box usage.\n\n\n\n\n\nApproach\n\n\nI designed the tutorial as a guided learning experience that combines practical usage with conceptual understanding, rather than presenting the workflow as a sequence of commands to execute.\nKey design choices included:\n\nstructuring the tutorial around the complete analytical workflow, from data preparation and parameter selection to result interpretation;\ncombining practical instructions with explanations of the modelling assumptions and analytical decisions underlying the workflow;\nexplaining the role and impact of key parameters, including the situations in which different settings may be appropriate, and illustrating it through examples drawn from multiple experimental datasets;\nproviding copy-paste ready code examples to minimise technical friction and allow users to focus on the concepts being introduced;\nintegrating high-quality visualisations alongside code to generate them and explaination on how to interpret them.\n\n\n\n\n\nStrengths\n\n\n\nDesigning user-centred learning experiences for complex technical tools;\nBridging theory and practice* to support informed decision-making**;\nEncouraging autonomy and critical thinking rather than procedural execution;\nCommunicating modelling assumptions, parameter choices, trade-offs, and methodological consequences clearly;\nReducing technical barriers to adoption thanks to code examples without sacrificing conceptual understanding;\nCreating interactive educational resources that combine code, visualisation, and explanation.\n\n\n\n\n\n\nImpact\n\n\nGPMelt was developed with the ambition of becoming an actionable statistical framework rather than a black-box analysis tool. Its flexibility was intentionally designed to accommodate not only existing experimental designs, but also the increasingly diverse methodologies emerging within the Thermal Proteome Profiling field and beyond.\nBy helping users understand the reasoning behind the framework and the consequences of different analytical choices, the tutorial enables them to understand how those choices influence the outputs, interpretations, and conclusions that can be drawn from the data. This gives researchers the confidence to adapt the methodology to their own scientific questions rather than simply applying predefined workflows.\nUltimately, the objective was to provide a foundation that supports both rigorous analysis and methodological creativity, enabling new experimental designs to be driven by scientific needs rather than constrained by available analytical tools.\n\n\n\n\nExplore the tutorial and see how users are guided from workflow execution to informed analytical decision through a hands-on learning experience.\n\n\n\n\n  \n\n\n GPMelt: Shedding light on the dark meltome \n\n\nFocus: Bridging theory and practice in a usable way.\n\n\n\n\n\nNo matching items\n\n\n\n\n\nReferences\n\n1. Le Sueur C, Rattray M, Savitski M (2024) GPMelt: A hierarchical gaussian process framework to explore the dark meltome of thermal proteome profiling experiments. PLOS Computational Biology 20(9):e1011632"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Cécile Le Sueur's Portfolio",
+    "objectID": "CommunicationWorkflow/Teaching/Workshops/index.html",
+    "href": "CommunicationWorkflow/Teaching/Workshops/index.html",
+    "title": "Building intuition for statistical reasoning:  Multiple testing, False Discovery Rate (FDR) and p-values miscalibration",
     "section": "",
-    "text": "Technical Education & Knowledge Translation: Building understanding of complex machine learning, statistical, and analytical methods\nScientific Storytelling & Engagement: Communicating science through talks, visual design, and audience engagement"
+    "text": "Challenges\n\n\nModern biological experiments increasingly rely on high-throughput technologies that generate large datasets and create opportunities to test hundreds or thousands of hypotheses simultaneously. While this offers considerable scientific potential, it also introduces new statistical challenges that require additional caution during data analysis.\nMultiple testing, False Discovery Rate (FDR) control, and p-value calibration are therefore central concepts in modern biological research, yet many researchers struggle to develop an intuitive understanding of what they mean in practice. Although encountered routinely, the reasoning behind them is often perceived as abstract, mathematically complex, or inaccessible.\nThe communication challenge was compounded by the highly heterogeneous statistical backgrounds of the workshop’s participants, ranging from researchers with minimal formal training in statistics to others with substantial quantitative experience.\nAnother challenge was therefore not simply to explain statistical procedures, but to help participants build intuition and confidence, understand what changes when moving from single to multiple hypothesis testing, and develop the reasoning needed to engage with these concepts independently after the session."
   },
   {
-    "objectID": "index.html#explore-the-portfolio",
-    "href": "index.html#explore-the-portfolio",
-    "title": "Cécile Le Sueur's Portfolio",
-    "section": "",
-    "text": "Technical Education & Knowledge Translation: Building understanding of complex machine learning, statistical, and analytical methods\nScientific Storytelling & Engagement: Communicating science through talks, visual design, and audience engagement"
-  },
-  {
-    "objectID": "index.html#Educ",
-    "href": "index.html#Educ",
-    "title": "Cécile Le Sueur's Portfolio",
-    "section": "Technical Education & Knowledge Translation (AI, ML & Statistics)",
-    "text": "Technical Education & Knowledge Translation (AI, ML & Statistics)\n\n\n\n\n\n\n\n\n\n\nAdapting complex concepts to different audiences   Example:  Hierachical Gaussian Process   Output:  Videos\n\n\n\n\n\n\n\n\n\n\n\n\nPromoting understanding rather than execution   Example:  GPMelt interactive tutorial   Output:  Website + tutorial\n\n\n\n\n\n\n\n\n\n\n\n\nMaking statistical concepts intuitive   Example:  Building intuition for multiple-testing scenarios  Output:  Workshop\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "index.html#Comm",
-    "href": "index.html#Comm",
-    "title": "Cécile Le Sueur's Portfolio",
-    "section": "Scientific Storytelling & Engagement",
-    "text": "Scientific Storytelling & Engagement\n\n\n\n\n\n\n\n\n\n\nPersuasive scientific storytelling   Example:  Communicating potential, not just results   Output:  10-minute Conference talk\n\n\n\n\n\n\n\n\n\n\n\n\n\nCapturing attention in highly competitive environments   Example:  Visual storytelling for scientific engagement   Output:  High Impact conference poster\n\n\n\n\n\n\n\n\n\n\n\n\n\nVisual thinking for scientific communication   Example:   From conceptual illustrations to data visualisation    Output:  Scientific illustrations and visualisations\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "ScienceComm/Poster/index.html",
-    "href": "ScienceComm/Poster/index.html",
-    "title": "Scientific storytelling: Designing a high-impact conference poster",
-    "section": "",
-    "text": "Challenges\n\n\nAt large international conferences, poster sessions are highly competitive environments in which hundreds of projects compete simultaneously for attention. Standing out from the crowd is therefore essential to attract an audience before they move on to the next poster, often leaving only a few minutes to pitch the project.\nFor GPMelt, this challenge was amplified by the nature of the project itself. Advanced statistical methodologies can appear intimidating to researchers unfamiliar with sophisticated modelling approaches, creating a barrier not only to understanding the work, but even to initially approaching the poster and engaging with the presenter.\nThe challenge was therefore to create a poster that attracted attention, lowered this initial barrier, and encouraged researchers from diverse backgrounds to engage confidently with both the project and the person presenting it."
-  },
-  {
-    "objectID": "ScienceComm/Poster/index.html#footnotes",
-    "href": "ScienceComm/Poster/index.html#footnotes",
-    "title": "Scientific storytelling: Designing a high-impact conference poster",
+    "objectID": "CommunicationWorkflow/Teaching/Workshops/index.html#footnotes",
+    "href": "CommunicationWorkflow/Teaching/Workshops/index.html#footnotes",
+    "title": "Building intuition for statistical reasoning:  Multiple testing, False Discovery Rate (FDR) and p-values miscalibration",
     "section": "Footnotes",
-    "text": "Footnotes\n\n\nHuman Proteome Organisation World Congress https://2024.hupo.org↩︎"
+    "text": "Footnotes\n\n\nEuropean Molecular Biology Laboratory https://www.embl.org↩︎"
   },
   {
-    "objectID": "ScienceComm/ScientificIllustration/examples/ThesisFigureGallery.html",
-    "href": "ScienceComm/ScientificIllustration/examples/ThesisFigureGallery.html",
-    "title": "Scientific illustrations across disciplines",
+    "objectID": "CommunicationWorkflow/ScienceComm/ScientificIllustration/examples/CoverImage.html",
+    "href": "CommunicationWorkflow/ScienceComm/ScientificIllustration/examples/CoverImage.html",
+    "title": "Striking image for GPMelt",
     "section": "",
-    "text": "Mass Spectrometry concepts\n\n\n\n\n\n\n\nThermodynamics concepts\n\n\n\n\n\n\n\nMolecular biology concepts\n\n\n\n\n\n\n\nProbabilistic ML/AI concepts\n\n\n\n\n\n\n\nMathematical concepts (linear algebra)\n\n\n\n\n\n\n\nDesign of biological protocols concepts\n\n\n\n\n\n\n\nStatistical concepts (normalisation)\n\n\n\n\nNo matching items\n\n\nsee [1] see [2]\n\n\n\n\n\n\nBottom-up vs Top-down proteomics (Figure 2.2 from [1]). (© 2025 Cécile Le Sueur)\n\n\nThermodynamics of heat induced protein denaturation (Figure 3.1 from [1]). (© 2025 Cécile Le Sueur)\n\n\nCellular processes influencing the modelling of temperature dynamics (Figure 3.2 from [1]). (© 2025 Cécile Le Sueur)\n\n\nImplementation of the hierarchical GP model using the multitask GP regression framework (Figure 4.1 from [1]). (© 2025 Cécile Le Sueur)\n\n\nSchematic visualisation of GPMelt extension allowing multiple kernels per level (Figure 7.8 from [1]). (© 2025 Cécile Le Sueur)\n\n\nDifferences in multiplexing between TPP-TR and 2D-TPP (Figure 7.1 from [1]). (© 2025 Cécile Le Sueur)\n\n\nIllustration of the Internal Reference Scaling (IRS) methods[2] (Figure 7.3 from [1]). (© 2025 Cécile Le Sueur)\n\n\n\n\nReferences\n\n1. Le Sueur C (2025) Statistical and computational method development for thermal stability proteomics. PhD thesis, ETH Zurich\n\n\n2. Plubell DL, Wilmarth PA, Zhao Y, et al (2017) Extended multiplexing of tandem mass tags (TMT) labeling reveals age and high fat diet specific proteome changes in mouse epididymal adipose tissue. Molecular & Cellular Proteomics 16(5):873–890"
+    "text": "Click on the image to zoom in! (© 2024 Cécile Le Sueur)\n\n\n\n\nThis image captures the transformative power of GPMelt to fully explore the complexity of melting curve behavior.\nThe mosaic of non-sigmoidal curves in the background symbolizes the diverse range of melting profiles that GPMelt can integrate. Unlike state-of-the-art methods, GPMelt is agnostic to curve shape, breaking free from the constraints of sigmoidal melting behavior. Every curve — no matter how irregular — finds a place in the analysis, allowing for a more inclusive understanding of the thermal proteome.\nIlluminated by the X-ray viewer, two non-sigmoidal curves emerge from the shadows. No longer obscured or discarded, they become fully accessible and visible, ready for interpretation. GPMelt brings these previously overlooked curves into the spotlight, making them a valuable part of the TPP-TR dataset. This comprehensive vision transforms our capacity to analyze protein thermal stability, opening up new possibilities for discovery.\nThe stethoscope, lit by the X-ray viewer’s glow, serves as a metaphor for GPMelt’s diagnostic power. It symbolizes the newfound ability of users to uncover and diagnose these unconventional curves. GPMelt doesn’t just detect atypical melting behaviors; it empowers users to explore the underlying biology, leading them toward novel discoveries. By fitting all curve types, including the most complex, GPMelt opens the door to advanced analyses like clustering, which could inspire hypotheses about the origins of non-sigmoidality and reveal deeper biological insights.\nIn essence, GPMelt is not just a tool; it’s a breakthrough that exposes previously hidden part of the meltome, pushing the boundaries of thermal proteome profiling and giving access to biological phenomena that were previously out of reach."
   },
   {
-    "objectID": "ScienceComm/ScientificIllustration/index.html",
-    "href": "ScienceComm/ScientificIllustration/index.html",
+    "objectID": "CommunicationWorkflow/ScienceComm/ScientificIllustration/index.html",
+    "href": "CommunicationWorkflow/ScienceComm/ScientificIllustration/index.html",
     "title": "Visual thinking for scientific communication:  Designing visuals for clarity and engagement",
     "section": "",
     "text": "Challenges\n\n\nThe common challenge across these visuals is to translate complex concepts into intuitive visual representations without sacrificing scientific accuracy. Many of the ideas involved are abstract, interdisciplinary, or highly technical, making them difficult to communicate effectively through text alone.\nRegardless of their communicative purpose, each visual therefore requires balancing multiple objectives simultaneously: accessibility for non-specialists, sufficient depth for expert audiences, clarity to support understanding and engagement, and enough visual appeal to attract and maintain attention.\nThe challenge is not simply to illustrate information, but to identify the visual representation that best supports understanding, highlights the key message, and communicates effectively across different backgrounds and communication contexts.\n\n\n\n\n\nApproach\n\n\nI design visuals as communication tools rather than decorative illustrations. The objective is not simply to represent information, but to support understanding through visual reasoning and synthesis.\nKey principles:\n\nsimplifying complex ideas without losing their essential meaning;\ncombining abstract concepts with concrete visual representations to support intuition and understanding;\nsynthesising information from multiple disciplines or sources into coherent visual narratives;\nusing visual hierarchy, colour, and layout to guide attention towards the most important information;\nadapting the style and level of detail to the intended audience and communication objective.\n\n\n\n\n\nStrengths\n\n\n\nBridging audiences with different backgrounds through visual communication;\nDistilling complex ideas into their essential communicable elements;\nCondensing large amounts of information into clear visual summaries;\nDesigning visuals that support curiosity, reasoning, understanding, and decision-making;\nAdapting visual communication across different stages of the communication process.\n\n\n\n\n\n\nImpacts\n\n\nSome concepts are difficult to communicate effectively through text, formulas, or verbal explanations alone, yet become immediately more accessible once visualised. By transforming abstract ideas into intuitive visual representations, these illustrations supported conceptual abstraction, knowledge translation, and information synthesis across a wide range of communication contexts.\nThese visual representations also provided a common language between disciplines. By translating abstract concepts, workflows, and analytical reasoning into intuitive visual forms, they facilitated discussions between researchers with different areas of expertise and helped communicate key ideas more efficiently.\nMore broadly, this work reinforced the idea that effective visuals are not merely decorative elements. When carefully designed, they can reduce the intimidation often associated with theoretical or highly technical content, making complex ideas more approachable while preserving their depth and meaning.\n\n\n\n\n\nScientific illustrations and visualisations\n\n\n\n\n\n\n\n\n\n\n\nStriking image for GPMelt\n\n\nA visual designed to spark curiosity and communicate the core idea of the tool at a glance.\n\n\n\n\n\n\n\n\n\n\n\n\nScientific illustrations across disciplines\n\n\nA collection of visuals designed to translate complex concepts and support understanding across a wide range of scientific expertise.\n\n\n\n\n\n\n\n\n\n\n\n\nData visualisation for evidence and insight\n\n\nVisualisations designed to reveal patterns, communicate evidence, and support data-driven reasoning.\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "ScienceComm/Talk/index.html",
-    "href": "ScienceComm/Talk/index.html",
+    "objectID": "CommunicationWorkflow/ScienceComm/Poster/index.html",
+    "href": "CommunicationWorkflow/ScienceComm/Poster/index.html",
+    "title": "Scientific storytelling: Designing a high-impact conference poster",
+    "section": "",
+    "text": "Challenges\n\n\nAt large international conferences, poster sessions are highly competitive environments in which hundreds of projects compete simultaneously for attention. Standing out from the crowd is therefore essential to attract an audience before they move on to the next poster, often leaving only a few minutes to pitch the project.\nFor GPMelt, this challenge was amplified by the nature of the project itself. Advanced statistical methodologies can appear intimidating to researchers unfamiliar with sophisticated modelling approaches, creating a barrier not only to understanding the work, but even to initially approaching the poster and engaging with the presenter.\nThe challenge was therefore to create a poster that attracted attention, lowered this initial barrier, and encouraged researchers from diverse backgrounds to engage confidently with both the project and the person presenting it."
+  },
+  {
+    "objectID": "CommunicationWorkflow/ScienceComm/Poster/index.html#footnotes",
+    "href": "CommunicationWorkflow/ScienceComm/Poster/index.html#footnotes",
+    "title": "Scientific storytelling: Designing a high-impact conference poster",
+    "section": "Footnotes",
+    "text": "Footnotes\n\n\nHuman Proteome Organisation World Congress https://2024.hupo.org↩︎"
+  },
+  {
+    "objectID": "WorkflowPortfolio/index.html",
+    "href": "WorkflowPortfolio/index.html",
+    "title": "Cécile Le Sueur's Portfolio",
+    "section": "",
+    "text": "From probabilistic ML framework developement to workflow redesign  Redesigning an experimental protocol and statistical model together, to align technical improvements with domain experts’ operational constraints.\n\n\n\n\n\n\n\n\n\n\n\n\nTurning a probabilistic ML framework into a user-friendly tool  Redesigning how a probabilistic ML framework is delivered, to align technical implementation with experimentalists’ needs and capabilities.\n\n\n\n\n\n\n\n\n\n\n\n\nFrom workflow gaps to pragmatic process improvement  Identifying structural workflow gaps and combining simple tools, process redesign and targeted enablement to improve efficiency, considering team capacity, author needs and practical constraints.\n\n\n\n\n\n\n\n\n\n\n\n\nFrom remaining workflow gaps to agentic AI intervention  Identifying where existing tools and structured interventions reach their limits, and designing an adaptive AI workflow around human needs, risk and value.\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "WorkflowPortfolio/index.html#how-i-approach-workflow-optimisation-in-practice",
+    "href": "WorkflowPortfolio/index.html#how-i-approach-workflow-optimisation-in-practice",
+    "title": "Cécile Le Sueur's Portfolio",
+    "section": "",
+    "text": "From probabilistic ML framework developement to workflow redesign  Redesigning an experimental protocol and statistical model together, to align technical improvements with domain experts’ operational constraints.\n\n\n\n\n\n\n\n\n\n\n\n\nTurning a probabilistic ML framework into a user-friendly tool  Redesigning how a probabilistic ML framework is delivered, to align technical implementation with experimentalists’ needs and capabilities.\n\n\n\n\n\n\n\n\n\n\n\n\nFrom workflow gaps to pragmatic process improvement  Identifying structural workflow gaps and combining simple tools, process redesign and targeted enablement to improve efficiency, considering team capacity, author needs and practical constraints.\n\n\n\n\n\n\n\n\n\n\n\n\nFrom remaining workflow gaps to agentic AI intervention  Identifying where existing tools and structured interventions reach their limits, and designing an adaptive AI workflow around human needs, risk and value.\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "WorkflowPortfolio/StudyCases/StudyCase4.html",
+    "href": "WorkflowPortfolio/StudyCases/StudyCase4.html",
+    "title": "From remaining workflow gaps to agentic AI intervention",
+    "section": "",
+    "text": "Click on the image to zoom in! (© 2026 Cécile Le Sueur)"
+  },
+  {
+    "objectID": "WorkflowPortfolio/StudyCases/StudyCase4.html#the-problem",
+    "href": "WorkflowPortfolio/StudyCases/StudyCase4.html#the-problem",
+    "title": "From remaining workflow gaps to agentic AI intervention",
+    "section": "The problem",
+    "text": "The problem\nThree factors compound the remaining inefficiencies. ` * First, the journal’s market position: unlike an established scientific journal, authors here aren’t always willing to comply with editorial requests, and the editorial team has to accommodate them to avoid losing manuscripts to competitors, since the journal is still establishing itself. * Second, the technical check remains manually intensive — authors reorder or rename sections despite the template and guidelines, and required information isn’t always in a consistent location, forcing manual copy-paste work. * Third, manuscripts vary in idiosyncratic ways that resist rule-based handling and often require case-by-case judgment."
+  },
+  {
+    "objectID": "WorkflowPortfolio/StudyCases/StudyCase4.html#workflow-diagnosis",
+    "href": "WorkflowPortfolio/StudyCases/StudyCase4.html#workflow-diagnosis",
+    "title": "From remaining workflow gaps to agentic AI intervention",
+    "section": "Workflow diagnosis",
+    "text": "Workflow diagnosis\nThe earlier interventions (template, guidelines, technical checklist) solved the structural gaps in the workflow, but exposed a different kind of bottleneck: judgment calls that don’t reduce to a fixed rule set. A standard automation script can enforce “section X must exist” — it can’t decide what to do when an author reorders sections in a plausible but non-standard way, rename it or when a genuine exception should be accommodated to avoid losing a manuscript. That gap — needing reasoning and flexibility rather than rule enforcement — is what pointed toward agentic AI rather than further rule-based automation."
+  },
+  {
+    "objectID": "WorkflowPortfolio/StudyCases/StudyCase4.html#options-considered",
+    "href": "WorkflowPortfolio/StudyCases/StudyCase4.html#options-considered",
+    "title": "From remaining workflow gaps to agentic AI intervention",
+    "section": "Options considered",
+    "text": "Options considered\n\nExtend the rule-based technical check further: add more explicit rules for known variations. Rejected: manuscript variation is too open-ended; rules would multiply indefinitely without covering genuine edge cases.\nManual case-by-case handling by editors (status quo): works, but doesn’t scale as the journal grows and consumes senior editorial time on low-judgment tasks.\nAgentic AI workflow: an LLM-based system capable of information extraction, section reordering, and adaptive reasoning across manuscript variation — the option pursued, because it can flexibly reason through exceptions rather than requiring every exception to be pre-specified."
+  },
+  {
+    "objectID": "WorkflowPortfolio/StudyCases/StudyCase4.html#intervention-proposed",
+    "href": "WorkflowPortfolio/StudyCases/StudyCase4.html#intervention-proposed",
+    "title": "From remaining workflow gaps to agentic AI intervention",
+    "section": "Intervention (proposed)",
+    "text": "Intervention (proposed)\nDesigned a framework mapping candidate AI interventions across the workflow, using GenAI itself to help identify bottlenecks and shape solution options — evaluating each step by AI opportunity, rationale, risk, and where human oversight remains necessary:\n\n\n\n\n\n\n\n\n\n\nWorkflow step\nAI opportunity\nWhy AI\nRisk\nHuman role\n\n\n\n\nTechnical check\nExtract required info regardless of manuscript structure; reorder/rename sections to match template\nNeeds text understanding and flexible reasoning across varied structures — a rules engine can’t anticipate every exception\nMay misinterpret ambiguous content; risk of false negatives on real errors\nEditor reviews flagged discrepancies before the manuscript proceeds\n\n\nManuscript correction\nSpelling, grammar, and typographic conventions (e.g. non-breaking spaces before French punctuation)\nCombines deterministic rules (typography) with contextual language understanding (grammar, style) faster than manual proofreading\nOver-correction risk — altering author voice or flagging valid domain-specific terms as errors\nEditor validates suggested corrections, especially domain terminology\n\n\nBibliography consistency check\nFlag citations missing a reference entry (or vice versa); catch non-Zotero submissions with formatting drift\nRequires matching content across two parts of a document and recognising equivalent citations in varied formats — beyond what the reference manager alone enforces\nMay mismatch similar-but-different entries; misses edge cases in unusual citation styles\nEditor reviews flagged mismatches before publication\n\n\nWhole-issue coherence check\nFlag inconsistent notation/terminology across all articles in an issue; catch mistakes remaining after per-article correction\nRequires holding and comparing content across multiple full-length documents at once — impractical to track manually with full recall\nRisk of false positives on legitimate topic-driven variation; too many minor flags could overwhelm editors\nEditor decides which flagged inconsistencies warrant issue-wide standardisation"
+  },
+  {
+    "objectID": "WorkflowPortfolio/StudyCases/StudyCase4.html#enablement-adoption",
+    "href": "WorkflowPortfolio/StudyCases/StudyCase4.html#enablement-adoption",
+    "title": "From remaining workflow gaps to agentic AI intervention",
+    "section": "Enablement & adoption",
+    "text": "Enablement & adoption\nThe rollout is planned in partnership with the production and IT teams, with the longer-term ambition of extending the approach beyond this journal to others across the company. The initial scope is deliberately narrow: a pilot on the current journal, with my own editorial team as first users. Training will cover practical use of the tool, but also serves a second purpose — building shared understanding of responsible AI use within the team. A feedback loop with the team is built into the design from the start, since the agentic workflow is expected to need correction as it encounters edge cases not yet anticipated."
+  },
+  {
+    "objectID": "WorkflowPortfolio/StudyCases/StudyCase4.html#impact-envisioned",
+    "href": "WorkflowPortfolio/StudyCases/StudyCase4.html#impact-envisioned",
+    "title": "From remaining workflow gaps to agentic AI intervention",
+    "section": "Impact (envisioned)",
+    "text": "Impact (envisioned)\nReducing editorial time spent on repetitive, low-judgment tasks, freeing specialised editors’ time for higher-value work, and improving manuscript-handling consistency and turnaround — without imposing rigidity that risks losing manuscripts to competitor journals in a market where authors have alternatives."
+  },
+  {
+    "objectID": "WorkflowPortfolio/StudyCases/StudyCase4.html#what-i-learned-so-far",
+    "href": "WorkflowPortfolio/StudyCases/StudyCase4.html#what-i-learned-so-far",
+    "title": "From remaining workflow gaps to agentic AI intervention",
+    "section": "What I learned so far",
+    "text": "What I learned so far\nNot every workflow bottleneck needs the same fix. Study Case 3 shows that templates and checklists solve structural gaps, where the requirement is clear and just needs enforcing.\nThis case is different: the gap isn’t a missing rule but a missing capacity to interpret meaning across variation — recognising that information is present but relocated, or that a section is mislabeled rather than absent.\nMatching an interpretation-heavy problem to a tool built for interpretation, rather than defaulting to more rules or defaulting to AI everywhere, is the judgment this case actually demonstrates."
+  },
+  {
+    "objectID": "WorkflowPortfolio/StudyCases/StudyCase3.html",
+    "href": "WorkflowPortfolio/StudyCases/StudyCase3.html",
+    "title": "From workflow gaps to pragmatic process improvement",
+    "section": "",
+    "text": "Click on the image to zoom in! (© 2026 Cécile Le Sueur)"
+  },
+  {
+    "objectID": "WorkflowPortfolio/StudyCases/StudyCase3.html#the-problem",
+    "href": "WorkflowPortfolio/StudyCases/StudyCase3.html#the-problem",
+    "title": "From workflow gaps to pragmatic process improvement",
+    "section": "The problem",
+    "text": "The problem\nEvery article followed its own internal logic and style, with mandatory information frequently missing (author titles & affiliations, image copyright, sections, etc.). Correcting each article involved slow and tedious manual work. With only one editor on the team, the workload was becoming unsustainable."
+  },
+  {
+    "objectID": "WorkflowPortfolio/StudyCases/StudyCase3.html#workflow-diagnosis",
+    "href": "WorkflowPortfolio/StudyCases/StudyCase3.html#workflow-diagnosis",
+    "title": "From workflow gaps to pragmatic process improvement",
+    "section": "Workflow diagnosis",
+    "text": "Workflow diagnosis\nThe root causes were structural, not individual effort: no article template existed, author guidelines were vague and incomplete, no reference manager was in use, and there was no formal technical check before a manuscript entered review. None of these gaps required advanced technology to fix — they required someone to notice they were gaps at all."
+  },
+  {
+    "objectID": "WorkflowPortfolio/StudyCases/StudyCase3.html#options-considered",
+    "href": "WorkflowPortfolio/StudyCases/StudyCase3.html#options-considered",
+    "title": "From workflow gaps to pragmatic process improvement",
+    "section": "Options considered",
+    "text": "Options considered\n\nReference management: a paid tool (EndNote, Mendeley) vs. Zotero — free, Word-compatible, no budget approval needed, and low enough friction that non-technical authors could adopt it directly.\nAuthor guidelines: rewrite manually from scratch vs. use Gen AI to accelerate drafting a complete, clear version — chosen to move faster without compromising on the clarity the team needed.\nTechnical check: ad hoc, editor-by-editor judgment vs. a defined, explicit rule set every manuscript must pass before review — chosen for consistency and to make the check trainable and delegable, not dependent on a single editor’s memory."
+  },
+  {
+    "objectID": "WorkflowPortfolio/StudyCases/StudyCase3.html#intervention",
+    "href": "WorkflowPortfolio/StudyCases/StudyCase3.html#intervention",
+    "title": "From workflow gaps to pragmatic process improvement",
+    "section": "Intervention",
+    "text": "Intervention\n\nCreated a standard article template.\nRewrote and completed the author guidelines with Gen AI assistance.\nDefined an explicit technical checklist manuscripts had to satisfy before entering the review stage.\nIntroduced Zotero as the team’s reference manager, building a complete tutorial (Gen AI-assisted) and training colleagues directly, changing the workflow so bibliographies were handled correctly at the source rather than corrected after the fact."
+  },
+  {
+    "objectID": "WorkflowPortfolio/StudyCases/StudyCase3.html#enablementadoption",
+    "href": "WorkflowPortfolio/StudyCases/StudyCase3.html#enablementadoption",
+    "title": "From workflow gaps to pragmatic process improvement",
+    "section": "Enablement/adoption",
+    "text": "Enablement/adoption\nEach intervention paired a tool with matching documentation and training: the template went out to authors directly with clear instructions; the technical check was documented and taught to the specialised editors responsible for applying it; Zotero adoption was driven by a tutorial plus hands-on training for colleagues."
+  },
+  {
+    "objectID": "WorkflowPortfolio/StudyCases/StudyCase3.html#impact",
+    "href": "WorkflowPortfolio/StudyCases/StudyCase3.html#impact",
+    "title": "From workflow gaps to pragmatic process improvement",
+    "section": "Impact",
+    "text": "Impact\n\nManuscript quality improved — fewer missing mandatory sections, cleaner bibliographies.\nStandardisation cut the editorial time spent reordering and normalising articles.\nAuthor-facing back-and-forth over missing information dropped, now handled by a specialised team rather than the core editor.\nBibliography-related workload fell sharply, and the reference-manager switch avoided roughly €125 per article in costs previously paid to an external team.\nAuthors reported a clearer process (via the template) and better-aligned expectations with editors (via the guidelines)."
+  },
+  {
+    "objectID": "WorkflowPortfolio/StudyCases/StudyCase3.html#what-i-learned",
+    "href": "WorkflowPortfolio/StudyCases/StudyCase3.html#what-i-learned",
+    "title": "From workflow gaps to pragmatic process improvement",
+    "section": "What I learned",
+    "text": "What I learned\nSmall changes can produce outsized effects on workload, quality, and cost.\nBefore reaching for AI, it’s worth checking whether a simpler, well-established tool or concept — like a template — already solves the problem; these are often faster to implement and just as effective.\nKnowing your users well enough to pitch training at the right level is what actually determines whether a tool gets adopted or ignored."
+  },
+  {
+    "objectID": "WorkflowPortfolio/StudyCases/StudyCase2.html",
+    "href": "WorkflowPortfolio/StudyCases/StudyCase2.html",
+    "title": "Turning a probabilistic ML framework into a user-friendly tool",
+    "section": "",
+    "text": "Click on the image to zoom in! (© 2026 Cécile Le Sueur)"
+  },
+  {
+    "objectID": "WorkflowPortfolio/StudyCases/StudyCase2.html#the-problem",
+    "href": "WorkflowPortfolio/StudyCases/StudyCase2.html#the-problem",
+    "title": "Turning a probabilistic ML framework into a user-friendly tool",
+    "section": "The problem",
+    "text": "The problem\nBiologists running these experiments typically have limited statistical training and limited computing experience. A framework that worked for developers and data analysts wasn’t automatically usable by a broader audience encompassing the biologists themselves."
+  },
+  {
+    "objectID": "WorkflowPortfolio/StudyCases/StudyCase2.html#workflow-diagnosis",
+    "href": "WorkflowPortfolio/StudyCases/StudyCase2.html#workflow-diagnosis",
+    "title": "Turning a probabilistic ML framework into a user-friendly tool",
+    "section": "Workflow diagnosis",
+    "text": "Workflow diagnosis\nThe framework itself wasn’t the barrier — access to it was. Through conversations with potential users, I identified four concrete requirements a usable version would need to meet:\n\nit had to be easy to use,\nnon-intimidating (built on tools users already trusted),\ngenuinely understandable (not just runnable),\nand deployable in whatever environment the user actually had — a personal laptop or an institutional HPC cluster — without ongoing dependency maintenance.\n\nThis reframed the task from “package a new probabilistic ML framework” to “redesign how the model reaches its users.”"
+  },
+  {
+    "objectID": "WorkflowPortfolio/StudyCases/StudyCase2.html#options-considered",
+    "href": "WorkflowPortfolio/StudyCases/StudyCase2.html#options-considered",
+    "title": "Turning a probabilistic ML framework into a user-friendly tool",
+    "section": "Options considered",
+    "text": "Options considered\n\nDistribute as a script or notebook: fastest to release, but assumes a statistical and coding fluency most biologists don’t have.\nPackage as a standard Python library (pip-installable): lower barrier than raw code, but still requires environment setup and command-line comfort most users lacked.\nContainerize with Docker only: portable and dependency-free, but without workflow orchestration, still exposes users to technical setup.\nNextflow + Docker + dedicated documentation website: the option pursued — pipeline orchestration, containerized portability, and a plain-language explanation layer combined, minimizing the technical background required to use the tool."
+  },
+  {
+    "objectID": "WorkflowPortfolio/StudyCases/StudyCase2.html#intervention",
+    "href": "WorkflowPortfolio/StudyCases/StudyCase2.html#intervention",
+    "title": "Turning a probabilistic ML framework into a user-friendly tool",
+    "section": "Intervention",
+    "text": "Intervention\nEncapsulated the full framework — from model optimisation through results analysis — into an open-source Nextflow workflow, packaged with Docker so it runs identically on a personal laptop or an institutional HPC cluster, independent of underlying library updates (GitLab repository).\nBuilt a dedicated website (GPMelt website, see also the dedicated page on the Communication portfolio) explaining both the statistical theory behind the model and the practical steps to run it, so users could understand what the tool is doing, not just execute it as a black box."
+  },
+  {
+    "objectID": "WorkflowPortfolio/StudyCases/StudyCase2.html#enablementadoption",
+    "href": "WorkflowPortfolio/StudyCases/StudyCase2.html#enablementadoption",
+    "title": "Turning a probabilistic ML framework into a user-friendly tool",
+    "section": "Enablement/adoption",
+    "text": "Enablement/adoption\nMaintained the user website as the primary point of entry for new users. Presented the tool at international conferences — two talks and two posters (see also the dedicated page for one poster on the Communication portfolio), with one talk receiving an award — to build visibility and credibility with the target scientific community."
+  },
+  {
+    "objectID": "WorkflowPortfolio/StudyCases/StudyCase2.html#impact",
+    "href": "WorkflowPortfolio/StudyCases/StudyCase2.html#impact",
+    "title": "Turning a probabilistic ML framework into a user-friendly tool",
+    "section": "Impact",
+    "text": "Impact\nThe redesigned framework became usable by a broad user base: any experimentalist, not just those with a statistics, computer science or ML background. It runs consistently across computing environments (laptop to HPC) without user-side maintenance, and the award-winning conference reception independently validated the approach beyond my own assessment."
+  },
+  {
+    "objectID": "WorkflowPortfolio/StudyCases/StudyCase2.html#what-i-learned",
+    "href": "WorkflowPortfolio/StudyCases/StudyCase2.html#what-i-learned",
+    "title": "Turning a probabilistic ML framework into a user-friendly tool",
+    "section": "What I learned",
+    "text": "What I learned\nBuilding advanced technology to solve a complex problem is only half the work. People won’t use a method they don’t understand or can’t install and run in practice — user training, documentation, and support are a core part of a technology developer’s job, not an afterthought.\nThis meant translating user needs into concrete technical requirements and coordinating delivery with technical teams to complete my own expertise — in this case, institutional IT services and developers from the AI Health Innovation Cluster team at Heidelberg."
+  },
+  {
+    "objectID": "WorkflowPortfolio/StudyCases/StudyCase1.html",
+    "href": "WorkflowPortfolio/StudyCases/StudyCase1.html",
+    "title": "From probabilistic ML framework developement to workflow redesign",
+    "section": "",
+    "text": "Click on the image to zoom in! (© 2026 Cécile Le Sueur)"
+  },
+  {
+    "objectID": "WorkflowPortfolio/StudyCases/StudyCase1.html#the-problem",
+    "href": "WorkflowPortfolio/StudyCases/StudyCase1.html#the-problem",
+    "title": "From probabilistic ML framework developement to workflow redesign",
+    "section": "The problem",
+    "text": "The problem\nTwo constraints dominated the workflow: the cost of reagents and samples, and the workload of running and measuring them via mass spectrometry. Existing methods in the field ([3], [4]) addressed this by cutting sample count and measurement time — but only by discarding the shape of the melting curve, data that recent research suggests carries real biological signal. The field’s standard fix for the cost problem was quietly trading away information that mattered."
+  },
+  {
+    "objectID": "WorkflowPortfolio/StudyCases/StudyCase1.html#workflow-diagnosis",
+    "href": "WorkflowPortfolio/StudyCases/StudyCase1.html#workflow-diagnosis",
+    "title": "From probabilistic ML framework developement to workflow redesign",
+    "section": "Workflow diagnosis",
+    "text": "Workflow diagnosis\nDiscussions with the experimental team surfaced the real bottleneck: existing approaches optimised the analysis method while treating the experimental protocol as fixed. Nobody had questioned whether the protocol itself needed to stay fixed while only the analysis flexed. Reframing the protocol as adjustable — not just the analysis — was the key step toward a viable solution."
+  },
+  {
+    "objectID": "WorkflowPortfolio/StudyCases/StudyCase1.html#options-considered",
+    "href": "WorkflowPortfolio/StudyCases/StudyCase1.html#options-considered",
+    "title": "From probabilistic ML framework developement to workflow redesign",
+    "section": "Options considered",
+    "text": "Options considered\n\nDo nothing: keep the existing protocol; accept the cost/workload ceiling.\nAdopt an existing fast method ([3], [4]): cuts cost and time, but sacrifices melting-curve shape data.\nRedesign protocol and statistical model together: the option pursued — changing how data is collected and how it’s processed, so less raw data still yields statistically valid, shape-preserving results."
+  },
+  {
+    "objectID": "WorkflowPortfolio/StudyCases/StudyCase1.html#intervention",
+    "href": "WorkflowPortfolio/StudyCases/StudyCase1.html#intervention",
+    "title": "From probabilistic ML framework developement to workflow redesign",
+    "section": "Intervention",
+    "text": "Intervention\nProposed and prototyped an adapted version of the existing protocol (TPP-TR), designed to halve reagent, sample, and instrument-time consumption while preserving full melting-curve shape measurement — something existing fast methods couldn’t do. This required redesigning both ends: how the experiment was run, and how the existing ML framework processed the resulting, structurally different data, including new preprocessing and adjustments to the underlying statistical model to preserve replicate-level rigor. We refer to chapter 7 of [5] for technical details."
+  },
+  {
+    "objectID": "WorkflowPortfolio/StudyCases/StudyCase1.html#validation-enablement",
+    "href": "WorkflowPortfolio/StudyCases/StudyCase1.html#validation-enablement",
+    "title": "From probabilistic ML framework developement to workflow redesign",
+    "section": "Validation & enablement",
+    "text": "Validation & enablement\nValidated the approach on a test dataset as proof of concept. Presented the work at an international conference to build visibility and external credibility (see the dedicated page on the Communication portfolio), and worked directly with lab colleagues to walk through the trade-offs and build buy-in for the change. The project reached proof-of-concept stage rather than full lab rollout, due to time constraints within the PhD — but the statistical validation and conference reception indicate it’s ready for a lab to take further."
+  },
+  {
+    "objectID": "WorkflowPortfolio/StudyCases/StudyCase1.html#impact",
+    "href": "WorkflowPortfolio/StudyCases/StudyCase1.html#impact",
+    "title": "From probabilistic ML framework developement to workflow redesign",
+    "section": "Impact",
+    "text": "Impact\nFor the same reagents, samples, and instrument time, the redesigned protocol was projected to double data throughput without reducing the replicate count needed for statistical confidence.\nBeyond the immediate efficiency gain, this would reduce workload on already-stretched experimental teams and lower the cost barrier for labs to use the method at all — widening access to a technique otherwise limited to well-funded groups."
+  },
+  {
+    "objectID": "WorkflowPortfolio/StudyCases/StudyCase1.html#what-i-learned",
+    "href": "WorkflowPortfolio/StudyCases/StudyCase1.html#what-i-learned",
+    "title": "From probabilistic ML framework developement to workflow redesign",
+    "section": "What I learned",
+    "text": "What I learned\nThe instinct to reach for “more data” is often the wrong lever. The gain came from questioning an assumption everyone treated as fixed, and from understanding the constraints of the people doing the experimental work, not just the statistical ones.\nTechnology adoption isn’t only about better answers to the scientific question — it’s about redesigning the process around the people who have to live with it."
+  },
+  {
+    "objectID": "CommunicationWorkflow/index.html",
+    "href": "CommunicationWorkflow/index.html",
+    "title": "Cécile Le Sueur's Portfolio",
+    "section": "",
+    "text": "Technical Education & Knowledge Translation: Building understanding of complex machine learning, statistical, and analytical methods\nScientific Storytelling & Engagement: Communicating science through talks, visual design, and audience engagement"
+  },
+  {
+    "objectID": "CommunicationWorkflow/index.html#two-dimensions-of-my-communication-work",
+    "href": "CommunicationWorkflow/index.html#two-dimensions-of-my-communication-work",
+    "title": "Cécile Le Sueur's Portfolio",
+    "section": "",
+    "text": "Technical Education & Knowledge Translation: Building understanding of complex machine learning, statistical, and analytical methods\nScientific Storytelling & Engagement: Communicating science through talks, visual design, and audience engagement"
+  },
+  {
+    "objectID": "CommunicationWorkflow/index.html#Educ",
+    "href": "CommunicationWorkflow/index.html#Educ",
+    "title": "Cécile Le Sueur's Portfolio",
+    "section": "Technical Education & Knowledge Translation (AI, ML & Statistics)",
+    "text": "Technical Education & Knowledge Translation (AI, ML & Statistics)\n\n\n\n\n\n\n\n\n\n\nAdapting complex concepts to different audiences   Example:  Hierachical Gaussian Process   Output:  Videos\n\n\n\n\n\n\n\n\n\n\n\n\nPromoting understanding rather than execution   Example:  GPMelt interactive tutorial   Output:  Website + tutorial\n\n\n\n\n\n\n\n\n\n\n\n\nMaking statistical concepts intuitive   Example:  Building intuition for multiple-testing scenarios  Output:  Workshop\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "CommunicationWorkflow/index.html#Comm",
+    "href": "CommunicationWorkflow/index.html#Comm",
+    "title": "Cécile Le Sueur's Portfolio",
+    "section": "Scientific Storytelling & Engagement",
+    "text": "Scientific Storytelling & Engagement\n\n\n\n\n\n\n\n\n\n\nPersuasive scientific storytelling   Example:  Communicating potential, not just results   Output:  10-minute Conference talk\n\n\n\n\n\n\n\n\n\n\n\n\n\nCapturing attention in highly competitive environments   Example:  Visual storytelling for scientific engagement   Output:  High Impact conference poster\n\n\n\n\n\n\n\n\n\n\n\n\n\nVisual thinking for scientific communication   Example:   From conceptual illustrations to data visualisation    Output:  Scientific illustrations and visualisations\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "CommunicationWorkflow/ScienceComm/Talk/index.html",
+    "href": "CommunicationWorkflow/ScienceComm/Talk/index.html",
     "title": "Communicating potential, not just results:  Persuasive scientific storytelling in a 10-minute conference talk",
     "section": "",
     "text": "Challenges\n\n\nThe talk targeted a diverse audience ranging from experimental biologists to computational researchers, most of whom were not specialists in Thermal Proteome Profiling.\nThe challenge was not only to explain the core idea clearly and accurately, but also to do so within a ten-minute conference format. This left very little time to introduce the scientific problem, explain the proposed solution, and persuade the audience that the idea mattered.\nThe communication challenge was further complicated by the structure of the message itself. The talk began with a highly specialised methodological problem before gradually revealing a broader question hidden beneath it: how reducing experimental costs could contribute to making advanced scientific methodologies more accessible. The key challenge was therefore to guide the audience from a niche technical concept to its wider implications without losing either scientific rigour or narrative momentum."
   },
   {
-    "objectID": "ScienceComm/Talk/index.html#footnotes",
-    "href": "ScienceComm/Talk/index.html#footnotes",
+    "objectID": "CommunicationWorkflow/ScienceComm/Talk/index.html#footnotes",
+    "href": "CommunicationWorkflow/ScienceComm/Talk/index.html#footnotes",
     "title": "Communicating potential, not just results:  Persuasive scientific storytelling in a 10-minute conference talk",
     "section": "Footnotes",
     "text": "Footnotes\n\n\nInternational Conference on Intelligent Systems For Molecular Biology 2023 https://www.iscb.org/ismbeccb2023/home↩︎\nInternational Conference on Intelligent Systems For Molecular Biology 2024 https://www.iscb.org/ismb2024/home-ismb-2024↩︎"
   },
   {
-    "objectID": "ScienceComm/ScientificIllustration/examples/DataSciencesGallery.html",
-    "href": "ScienceComm/ScientificIllustration/examples/DataSciencesGallery.html",
+    "objectID": "CommunicationWorkflow/ScienceComm/ScientificIllustration/examples/DataSciencesGallery.html",
+    "href": "CommunicationWorkflow/ScienceComm/ScientificIllustration/examples/DataSciencesGallery.html",
     "title": "Data visualisation for evidence and insight",
     "section": "",
     "text": "Groups comparison\n\n\n\n\n\n\n\nCommunicating model uncertainty\n\n\n\n\n\n\n\nDimensionality reduction for evaluating analytical strategies\n\n\n\n\n\n\n\nGenerating insight through methods comparison\n\n\n\n\n\n\n\nRevealing a hidden pattern - permutation datasets & volcano plots\n\n\n\n\n\n\n\nRevealing a hidden pattern - p-values histograms\n\n\n\n\n\n\n\nConceptualising statistical optimisation\n\n\n\n\nNo matching items\n\n\n\n\n\n\nUsing comparative visualisation (bar charts, boxplots, violin plots, and statistical significance tests) to compare two analytical approaches. Together, these representations highlight differences in the phosphosites detected by each method and show that phosphosites uniquely identified by GPMelt are associated with higher functional scores, supporting their biological relevance (Figure 6.9BC from [1]). (© 2025 Cécile Le Sueur)\n\n\nComparing model fits produced by NPARC (top row) and GPMelt (bottom row). While NPARC provides only a fitted curve, GPMelt additionally communicates uncertainty through a 95% confidence region around the posterior mean estimate, supporting more informed interpretation of the results (Figure 6.8D from [1]). (© 2025 Cécile Le Sueur)\n\n\nUsing multidimensional scaling (MDS) to evaluate the effectiveness of three batch-correction strategies. By projecting complex longitudinal data into an interpretable visual space, the figure reveals which method successfully aligns measurements across temperatures, conditions, and replicates (Figure B20 from [1]). (© 2025 Cécile Le Sueur)\n\n\nUsing ROC curves to compare the performance of four statistical methods across two datasets. The visualisation revealed the consistently poorer performance of one approach, motivating further investigation and ultimately leading to the identification of its sensitivity to outliers (Figure 6.6 from [1]). (© 2025 Cécile Le Sueur)\n\n\nComparing real and permuted datasets through volcano plots. The unexpected presence of numerous discoveries in the permuted datasets (second row) revealed a previously unnoticed batch effect, illustrating how visualisation can uncover hidden patterns and guide methodological investigation (Figure 7.7 from [1]). (© 2025 Cécile Le Sueur)\n\n\nUsing p-value histograms to diagnose a statistical calibration problem. The visualisation immediately revealed that the method produced miscalibrated p-values on this dataset (left panel), leading to the discovery that non-sigmoidal data violated the model assumptions. Removing these data restored calibration (right panel) and confirmed the source of the issue.(Figure 6.8C from [1]). (© 2025 Cécile Le Sueur)\n\n\nCombining conceptual illustration (A) and model diagnostics (B) to explain convergence analysis. The figure uses a simplified optimisation landscape (A) to visualise how model fitting can become trapped in local optima before reaching a better solution (as examplified in the second panel in (B)), helping make an abstract statistical concept more intuitive (Figure 5.3 from [1]). (© 2025 Cécile Le Sueur)\n\n\n\n\nReferences\n\n1. Le Sueur C (2025) Statistical and computational method development for thermal stability proteomics. PhD thesis, ETH Zurich"
   },
   {
-    "objectID": "ScienceComm/ScientificIllustration/examples/CoverImage.html",
-    "href": "ScienceComm/ScientificIllustration/examples/CoverImage.html",
-    "title": "Striking image for GPMelt",
+    "objectID": "CommunicationWorkflow/ScienceComm/ScientificIllustration/examples/ThesisFigureGallery.html",
+    "href": "CommunicationWorkflow/ScienceComm/ScientificIllustration/examples/ThesisFigureGallery.html",
+    "title": "Scientific illustrations across disciplines",
     "section": "",
-    "text": "Click on the image to zoom in! (© 2024 Cécile Le Sueur)\n\n\n\n\nThis image captures the transformative power of GPMelt to fully explore the complexity of melting curve behavior.\nThe mosaic of non-sigmoidal curves in the background symbolizes the diverse range of melting profiles that GPMelt can integrate. Unlike state-of-the-art methods, GPMelt is agnostic to curve shape, breaking free from the constraints of sigmoidal melting behavior. Every curve — no matter how irregular — finds a place in the analysis, allowing for a more inclusive understanding of the thermal proteome.\nIlluminated by the X-ray viewer, two non-sigmoidal curves emerge from the shadows. No longer obscured or discarded, they become fully accessible and visible, ready for interpretation. GPMelt brings these previously overlooked curves into the spotlight, making them a valuable part of the TPP-TR dataset. This comprehensive vision transforms our capacity to analyze protein thermal stability, opening up new possibilities for discovery.\nThe stethoscope, lit by the X-ray viewer’s glow, serves as a metaphor for GPMelt’s diagnostic power. It symbolizes the newfound ability of users to uncover and diagnose these unconventional curves. GPMelt doesn’t just detect atypical melting behaviors; it empowers users to explore the underlying biology, leading them toward novel discoveries. By fitting all curve types, including the most complex, GPMelt opens the door to advanced analyses like clustering, which could inspire hypotheses about the origins of non-sigmoidality and reveal deeper biological insights.\nIn essence, GPMelt is not just a tool; it’s a breakthrough that exposes previously hidden part of the meltome, pushing the boundaries of thermal proteome profiling and giving access to biological phenomena that were previously out of reach."
+    "text": "Mass Spectrometry concepts\n\n\n\n\n\n\n\nThermodynamics concepts\n\n\n\n\n\n\n\nMolecular biology concepts\n\n\n\n\n\n\n\nProbabilistic ML/AI concepts\n\n\n\n\n\n\n\nMathematical concepts (linear algebra)\n\n\n\n\n\n\n\nDesign of biological protocols concepts\n\n\n\n\n\n\n\nStatistical concepts (normalisation)\n\n\n\n\nNo matching items\n\n\nsee [1] see [2]\n\n\n\n\n\n\nBottom-up vs Top-down proteomics (Figure 2.2 from [1]). (© 2025 Cécile Le Sueur)\n\n\nThermodynamics of heat induced protein denaturation (Figure 3.1 from [1]). (© 2025 Cécile Le Sueur)\n\n\nCellular processes influencing the modelling of temperature dynamics (Figure 3.2 from [1]). (© 2025 Cécile Le Sueur)\n\n\nImplementation of the hierarchical GP model using the multitask GP regression framework (Figure 4.1 from [1]). (© 2025 Cécile Le Sueur)\n\n\nSchematic visualisation of GPMelt extension allowing multiple kernels per level (Figure 7.8 from [1]). (© 2025 Cécile Le Sueur)\n\n\nDifferences in multiplexing between TPP-TR and 2D-TPP (Figure 7.1 from [1]). (© 2025 Cécile Le Sueur)\n\n\nIllustration of the Internal Reference Scaling (IRS) methods[2] (Figure 7.3 from [1]). (© 2025 Cécile Le Sueur)\n\n\n\n\nReferences\n\n1. Le Sueur C (2025) Statistical and computational method development for thermal stability proteomics. PhD thesis, ETH Zurich\n\n\n2. Plubell DL, Wilmarth PA, Zhao Y, et al (2017) Extended multiplexing of tandem mass tags (TMT) labeling reveals age and high fat diet specific proteome changes in mouse epididymal adipose tissue. Molecular & Cellular Proteomics 16(5):873–890"
+  },
+  {
+    "objectID": "CommunicationWorkflow/Teaching/Videos/index.html",
+    "href": "CommunicationWorkflow/Teaching/Videos/index.html",
+    "title": "Adapting complex concepts to different audiences: from Gaussian Process intuition to formalism",
+    "section": "",
+    "text": "Challenges\n\n\nHierarchical Gaussian Process regression is a highly abstract statistical framework that can be intimidating even for quantitatively trained scientists. Yet, using GPMelt effectively requires understanding several interconnected concepts spanning multiple levels of abstraction, from the intuition behind Gaussian Process regression and its application to Thermal Proteome Profiling data, to the way biological experimental designs are represented within a hierarchical statistical model.\nThe communication challenge was therefore twofold: lowering the barrier created by mathematical complexity while preserving the concepts necessary for meaningful use of the method. At the same time, the resources had to work for audiences ranging from experimental biologists with limited statistical training to bioinformaticians and statisticians with very different levels of familiarity with Gaussian Processes.\nThe key challenge was to communicate the same underlying ideas across multiple levels of abstraction and audiences without sacrificing clarity, rigor, or engagement.\n\n\n\n\n\nApproach\n\n\nRather than introducing the framework through mathematical formalism, I designed a series of short, visual-first videos that introduced the key concepts progressively, from intuitive explanations aimed at a broad audience to more advanced material for statistically trained users. The goal was not only to make the principles easier to understand, but to provide multiple entry points into the same underlying concepts.\nKey design choices included:\n\nprioritising conceptual understanding before introducing formal definitions;\nadapting vocabulary, examples, and level of detail to each audience;\nusing visual metaphors, colour coding, and animation to make abstract concepts more tangible;\nprogressively increasing the level of abstraction, from intuitive explanations to more formal statistical reasoning.\n\n\n\n\n\nStrengths\n\n\n\nAdapting explanations to audiences with different levels of expertise;\nMaking complex concepts accessible without oversimplification;\nCommunicating across multiple levels of abstraction while preserving rigor;\nTranslation between disciplines and domains (e.g. from biological data to mathematical modelling; from statistical analysis to biological interpretation);\nConnecting experimental, statistical, and computational perspectives;\nDesigning learning pathways that support progressive understanding, from intuition to formalization;\nCreating high-quality visual explanations of abstract concepts (figures, animation, storytelling);\nDeveloping concise, engaging educational content for self-directed learning.\n\n\n\n\n\n\nImpact\n\n\nThese resources were designed to help users understand the reasoning behind the model, not only to learn how to use GPMelt in practice. By making the underlying statistical framework more approachable across different levels of expertise, they aimed to reduce the gap between method developers and end users.\nThis allows users to engage with the modelling framework at a depth appropriate to their needs and expertise, while maintaining a coherent conceptual link between the biological experiment and its statistical analysis. As a result, researchers can engage more confidently with the methodology, better understand its assumptions and limitations, and use the resulting analyses more critically and effectively.\nUltimately, the objective was to transform the model from a black box into a tool that users could meaningfully understand and build upon. By focusing on the underlying modelling principles rather than software usage alone, these resources provide a foundation for adapting and extending the framework to new experimental settings and data types.\n\n\n\n\nExplore the videos and see how the communication strategy comes to life\n\n\n\n\n  \n\n\n From biological experimental set-up into mathematical formulation. \n\n\nTranslating a TPP experimental design into levels of a hierarchical model.  Focus: Bridging domain knowledge (biology) and mathematical representation.\n\n\n\n\n  \n\n\n GP regression for TPP data: an introduction for biologists. \n\n\nIntuitive introduction to GP regression applied to TPP data.  Focus: Building understanding without requiring statistical formalism. \n\n\n\n\n  \n\n\n GP regression for advanced users. \n\n\nFormal explanation (Bayesian framework, model definition, parameter estimation). Focus: Precision, rigor, and deeper technical insight.\n\n\n\n\n\nNo matching items\n\n\n\n\n\nReferences\n\n1. Le Sueur C, Rattray M, Savitski M (2024) GPMelt: A hierarchical gaussian process framework to explore the dark meltome of thermal proteome profiling experiments. PLOS Computational Biology 20(9):e1011632"
   },
   {
     "objectID": "license.html",
@@ -117,19 +369,5 @@
     "title": "License",
     "section": "Content",
     "text": "Content\nAll non-code materials are licensed under Creative Commons Attribution-NonCommercial 4.0 (CC BY-NC 4.0)."
-  },
-  {
-    "objectID": "Teaching/Workshops/index.html",
-    "href": "Teaching/Workshops/index.html",
-    "title": "Building intuition for statistical reasoning:  Multiple testing, False Discovery Rate (FDR) and p-values miscalibration",
-    "section": "",
-    "text": "Challenges\n\n\nModern biological experiments increasingly rely on high-throughput technologies that generate large datasets and create opportunities to test hundreds or thousands of hypotheses simultaneously. While this offers considerable scientific potential, it also introduces new statistical challenges that require additional caution during data analysis.\nMultiple testing, False Discovery Rate (FDR) control, and p-value calibration are therefore central concepts in modern biological research, yet many researchers struggle to develop an intuitive understanding of what they mean in practice. Although encountered routinely, the reasoning behind them is often perceived as abstract, mathematically complex, or inaccessible.\nThe communication challenge was compounded by the highly heterogeneous statistical backgrounds of the workshop’s participants, ranging from researchers with minimal formal training in statistics to others with substantial quantitative experience.\nAnother challenge was therefore not simply to explain statistical procedures, but to help participants build intuition and confidence, understand what changes when moving from single to multiple hypothesis testing, and develop the reasoning needed to engage with these concepts independently after the session."
-  },
-  {
-    "objectID": "Teaching/Workshops/index.html#footnotes",
-    "href": "Teaching/Workshops/index.html#footnotes",
-    "title": "Building intuition for statistical reasoning:  Multiple testing, False Discovery Rate (FDR) and p-values miscalibration",
-    "section": "Footnotes",
-    "text": "Footnotes\n\n\nEuropean Molecular Biology Laboratory https://www.embl.org↩︎"
   }
 ]

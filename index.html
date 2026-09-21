@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.38">
+<meta name="generator" content="quarto-1.10.18">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -13,10 +13,13 @@
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
 */
-code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -42,10 +45,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-868bbfe9ed906fef61a81943b76f3171.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-83d17bea82f52be0b2a4bbaffcd8e01e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -76,7 +79,7 @@ ul.task-list li input[type="checkbox"] {
 <script>
 
   window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-teaching .list');
+    const listingTargetEl = window.document.querySelector('#listing-listing .list');
     if (!listingTargetEl) {
       // No listing discovered, do not attach.
       return; 
@@ -89,35 +92,7 @@ ul.task-list li input[type="checkbox"] {
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-teaching'] = new List('listing-teaching', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-science_comm .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-image','listing-subtitle',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-title","listing-author","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-science_comm'] = new List('listing-science_comm', options);
+    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
 
     if (window['quarto-listing-loaded']) {
       window['quarto-listing-loaded']();
@@ -139,7 +114,7 @@ background-size: cover;
 </style>
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
 
 <script type="text/javascript">
 const typesetMath = (el) => {
@@ -200,11 +175,6 @@ window.Quarto = {
 <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./cv.html"> <i class="bi bi-file-earmark-person" role="img" aria-label="CV">
-</i> 
-<span class="menu-text">Curriculum Vitae</span></a>
-  </li>  
-  <li class="nav-item">
     <a class="nav-link" href="./license.html"> 
 <span class="menu-text">License</span></a>
   </li>  
@@ -254,114 +224,52 @@ window.Quarto = {
   display: none !important;
 }
 </style>
-<section id="explore-the-portfolio" class="level2">
-<h2 class="anchored" data-anchor-id="explore-the-portfolio">Explore the portfolio</h2>
-<ul>
-<li><p><a href="#Educ">Technical Education &amp; Knowledge Translation</a>: <em>Building understanding of complex machine learning, statistical, and analytical methods</em></p></li>
-<li><p><a href="#Comm">Scientific Storytelling &amp; Engagement</a>: <em>Communicating science through talks, visual design, and audience engagement</em></p></li>
-</ul>
+<section id="turning-complex-technology-and-scientific-expertise-into-practical-solutions-clear-communication-and-meaningful-impact." class="level2">
+<h2 class="anchored" data-anchor-id="turning-complex-technology-and-scientific-expertise-into-practical-solutions-clear-communication-and-meaningful-impact.">Turning complex technology and scientific expertise into practical solutions, clear communication, and meaningful impact.</h2>
+<style>
+.quarto-listing-container-grid .list.grid {
+    grid-template-columns: repeat(2, minmax(0, 350px)) !important;
+    justify-content: center !important;
+}
+
+
+</style>
+
+
+
 </section>
-<section id="Educ" class="level2">
-<h2 class="anchored" data-anchor-id="Educ">Technical Education &amp; Knowledge Translation (AI, ML &amp; Statistics)</h2>
-<div id="listing-teaching" class="quarto-listing quarto-listing-container-grid">
+
+<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
 <div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="QXVkaWVuY2UlMjBBZGFwdGF0aW9uJTJDS25vd2xlZGdlJTIwVHJhbnNsYXRpb24lMkNDb25jZXB0dWFsJTIwQWJzdHJhY3Rpb24lMkNNZXRob2QlMjBBZG9wdGlvbg==" data-listing-file-modified-sort="1781106604332" data-listing-reading-time-sort="4" data-listing-word-count-sort="635">
-<a href="./Teaching/Videos/index.html" class="quarto-grid-link">
+<div class="g-col-1" data-index="0" data-listing-file-modified-sort="1789988330548" data-listing-reading-time-sort="1" data-listing-word-count-sort="49">
+<a href="./CommunicationWorkflow/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
-<img loading="lazy" src="./images/thumbnails/slide-5.png" class="thumbnail-image card-img" style="height: 150px;">
+<img loading="lazy" src="./images/thumbnails/slide-13.png" class="thumbnail-image card-img" style="height: 150px;">
 </p>
 <div class="card-body post-contents">
 <div class="card-subtitle listing-subtitle">
-<strong>Adapting complex concepts to different audiences</strong> <br> <br> Example: <br> <strong>Hierachical Gaussian Process</strong> <br> <br> Output: <br> <strong>Videos</strong>
+<strong>Technical Communication, Teaching &amp; Storytelling</strong><br> <br> Making complex scientific and technical ideas clear, engaging, and accessible.
 </div>
 </div>
 </div></a>
 </div>
-<div class="g-col-1" data-index="1" data-categories="VXNlciUyMEVtcG93ZXJtZW50JTJDQ3JpdGljYWwlMjBEYXRhJTIwSW50ZXJwcmV0YXRpb24lMkNBbmFseXRpY2FsJTIwRGVjaXNpb24tTWFraW5nJTJDTWV0aG9kJTIwQWRvcHRpb24=" data-listing-file-modified-sort="1781106604332" data-listing-reading-time-sort="4" data-listing-word-count-sort="609">
-<a href="./Teaching/Tutorials/index.html" class="quarto-grid-link">
+<div class="g-col-1" data-index="1" data-listing-file-modified-sort="1789988330549" data-listing-reading-time-sort="1" data-listing-word-count-sort="32">
+<a href="./WorkflowPortfolio/index.html" class="quarto-grid-link">
 <div class="quarto-grid-item card h-100 card-left">
 <p class="card-img-top">
-<img loading="lazy" src="./images/thumbnails/slide-1.png" class="thumbnail-image card-img" style="height: 150px;">
+<img loading="lazy" src="./images/thumbnails/slide-14.png" class="thumbnail-image card-img" style="height: 150px;">
 </p>
 <div class="card-body post-contents">
 <div class="card-subtitle listing-subtitle">
-<strong>Promoting understanding rather than execution</strong> <br> <br> Example: <br> <strong>GPMelt interactive tutorial</strong> <br> <br> Output: <br> <strong>Website + tutorial</strong>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="2" data-categories="VmlzdWFsJTIwUmVhc29uaW5nJTJDU3RhdGlzdGljYWwlMjBJbnR1aXRpb24lMkNNaXNjb25jZXB0aW9uJTIwQ29ycmVjdGlvbiUyQ1VzZXIlMjBFbXBvd2VybWVudA==" data-listing-file-modified-sort="1781106604332" data-listing-reading-time-sort="4" data-listing-word-count-sort="726">
-<a href="./Teaching/Workshops/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./images/slides_workshop/slide-04.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<div class="card-subtitle listing-subtitle">
-<strong>Making statistical concepts intuitive</strong> <br> <br> Example: <br> <strong>Building intuition for multiple-testing scenarios</strong> <br><br> Output: <br> <strong>Workshop</strong>
+<strong> Workflow optimisation &amp; technology enablement</strong> <br> <br> Diagnosing complex workflows, designing practical interventions, and enabling people to use them.
 </div>
 </div>
 </div></a>
 </div>
 </div>
 <div class="listing-no-matching d-none">No matching items</div>
-</div>
-</section>
-<section id="Comm" class="level2">
-<h2 class="anchored" data-anchor-id="Comm">Scientific Storytelling &amp; Engagement</h2>
-<div id="listing-science_comm" class="quarto-listing quarto-listing-container-grid">
-<div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="Q29tbXVuaXR5JTIwRW5nYWdlbWVudCUyQ1NjaWVudGlmaWMlMjBQZXJzdWFzaW9uJTJDSW1wYWN0LURyaXZlbiUyMENvbW11bmljYXRpb24lMkNCZXlvbmQlMjB0aGUlMjBUZWNobmljYWwlMjBDb250cmlidXRpb24=" data-listing-file-modified-sort="1781106604332" data-listing-reading-time-sort="3" data-listing-word-count-sort="567">
-<a href="./ScienceComm/Talk/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./images/slides_talk/slide-25.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<div class="card-subtitle listing-subtitle">
-<strong>Persuasive scientific storytelling</strong> <br> <br> Example: <br> <strong>Communicating potential, not just results</strong> <br> <br> Output: <br> <strong>10-minute Conference talk</strong>
-<p></p>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="1" data-categories="VmlzdWFsJTIwU3Rvcnl0ZWxsaW5nJTJDQ3VyaW9zaXR5JTIwR2VuZXJhdGlvbiUyQ0F1ZGllbmNlJTIwQXR0cmFjdGlvbiUyQ1NjaWVudGlmaWMlMjBNYXJrZXRpbmc=" data-listing-file-modified-sort="1781106604331" data-listing-reading-time-sort="4" data-listing-word-count-sort="692">
-<a href="./ScienceComm/Poster/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./images/thumbnails/slide-4.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<div class="card-subtitle listing-subtitle">
-<strong>Capturing attention in highly competitive environments</strong> <br> <br> Example: <br> <strong>Visual storytelling for scientific engagement</strong> <br> <br> Output: <br> <strong>High Impact conference poster</strong>
-<p></p>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="2" data-categories="VmlzdWFsJTIwVGhpbmtpbmclMkNJbmZvcm1hdGlvbiUyMFN5bnRoZXNpcyUyQ0NvbmNlcHR1YWwlMjBBYnN0cmFjdGlvbiUyQ0ludGVyZGlzY2lwbGluYXJ5JTIwVHJhbnNsYXRpb24=" data-listing-file-modified-sort="1781106604331" data-listing-reading-time-sort="3" data-listing-word-count-sort="599">
-<a href="./ScienceComm/ScientificIllustration/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="./images/thumbnails/slide-2.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<div class="card-subtitle listing-subtitle">
-<strong>Visual thinking for scientific communication</strong> <br> <br> Example: <br> <strong> From conceptual illustrations to data visualisation </strong> <br> <br> Output: <br> <strong>Scientific illustrations and visualisations</strong>
-</div>
-</div>
-</div></a>
-</div>
-</div>
-<div class="listing-no-matching d-none">No matching items</div>
-</div>
-
-
-
-</section>
-
-</main> <!-- /main -->
+</div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";

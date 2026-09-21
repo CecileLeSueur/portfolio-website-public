@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="description" content="This tutorial complements the theoretical resources presented in Example 1 by focusing on the practical use of GPMelt [1]. While the videos explain the modelling framework and its underlying assumptions, this resource is designed to help users apply the methodology in practice and make informed decisions throughout the analysis process.GPMelt combines probabilistic modelling, statistical analysis, and reproducible workflow execution into a flexible framework for analysing Thermal Proteome Profiling (TPP) datasets. This flexibility allows the framework to accommodate a wide range of experimental designs and analytical questions, but also requires users to understand how methodological choices influence the results.The goal of the tutorial was therefore not simply to teach users how to run the workflow, but to help them understand the reasoning behind parameter choices, interpret outputs critically, and make effective use of the framework’s flexibility.Jump to the website below or explore the communication process through the expandable sections.">
 
-<title>Curriculum Vitae – Cécile Le Sueur’s Portfolio</title>
+<title>Hands-on teaching of complex tools:  the example of GPMelt interactive tutorial – Cécile Le Sueur's Portfolio</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -26,26 +27,47 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-83d17bea82f52be0b2a4bbaffcd8e01e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../">
+<script src="../../../site_libs/quarto-listing/list.min.js"></script>
+<script src="../../../site_libs/quarto-listing/quarto-listing.js"></script>
+<script src="../../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../site_libs/bootstrap/bootstrap-cd55cfdd28625eb0f340cf31cbbf6ef6.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -73,9 +95,67 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script>
 
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-sample-listings .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
 
-<link rel="stylesheet" href="styles.css">
+    const options = {
+      valueNames: ['listing-title','listing-url','listing-thumbnail','listing-description',{ data: ['index'] },{ data: ['categories'] }],
+      
+      searchColumns: ["listing-title","listing-url","listing-thumbnail","listing-description"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-sample-listings'] = new List('listing-sample-listings', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../../../styles.css">
 </head>
 
 <body class="nav-fixed quarto-light">
@@ -85,7 +165,7 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../../../index.html">
     <span class="navbar-title">Cécile Le Sueur’s Portfolio</span>
     </a>
   </div>
@@ -96,7 +176,7 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
+    <a class="nav-link" href="../../../index.html"> 
 <span class="menu-text">home</span></a>
   </li>  
 </ul>
@@ -107,7 +187,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./license.html"> 
+    <a class="nav-link" href="../../../license.html"> 
 <span class="menu-text">License</span></a>
   </li>  
 </ul>
@@ -118,23 +198,38 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
         
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content column-page" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Curriculum Vitae</h1>
+<h1 class="title">Hands-on teaching of complex tools:<br> the example of GPMelt interactive tutorial</h1>
+<p class="subtitle lead"><strong>Promoting understanding rather than execution</strong> <br> <br> Example: <br> <strong>GPMelt interactive tutorial</strong> <br> <br> Output: <br> <strong>Website + tutorial</strong></p>
+  <div class="quarto-categories">
+    <div class="quarto-category">User Empowerment</div>
+    <div class="quarto-category">Critical Data Interpretation</div>
+    <div class="quarto-category">Analytical Decision-Making</div>
+    <div class="quarto-category">Method Adoption</div>
+  </div>
+  </div>
+
+<div>
+  <div class="description">
+    <p>This tutorial complements the theoretical resources presented in <a href="../../../CommunicationWorkflow/Teaching/Videos/index.html">Example 1</a> by focusing on the <strong>practical use of GPMelt</strong> <span class="citation" data-cites="LeSueurGPMelt">[<a href="#ref-LeSueurGPMelt" role="doc-biblioref">1</a>]</span>. While the videos explain the modelling framework and its underlying assumptions, this resource is designed to <strong>help users apply the methodology in practice and make informed decisions throughout the analysis process</strong>.</p>
+    <p>GPMelt combines probabilistic modelling, statistical analysis, and reproducible workflow execution into a flexible framework for analysing Thermal Proteome Profiling (TPP) datasets. This flexibility allows the framework to accommodate a wide range of experimental designs and analytical questions, but also requires users to <strong>understand how methodological choices influence the results</strong>.</p>
+    <p>The goal of the tutorial was therefore not simply to teach users how to run the workflow, but to help them understand the <strong>reasoning behind parameter choices, interpret outputs critically, and make effective use of the framework’s flexibility</strong>.</p>
+    <p>Jump to the <a href="#ex-Website">website</a> below or explore the communication process through the expandable sections.</p>
+  </div>
 </div>
 
 
-
-<div class="quarto-title-meta">
+<div class="quarto-title-meta column-page">
 
     
   
@@ -146,12 +241,118 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<iframe src="cv_Website.pdf" width="100%" height="900px">
-</iframe>
+<div class="card card-retractable" style="margin-bottom: 2rem;" onclick="this.classList.toggle('expanded')">
+<p style="text-align: center;font-weight: bold; font-size: 28px;">
+Challenges
+</p>
+<div style="text-align: justify;">
+<p>GPMelt was developed as a flexible analytical framework designed to accommodate both <strong>existing and future</strong> Thermal Proteome Profiling (TPP) experimental designs. While this <strong>flexibility increases the applicability</strong> of the method, it also <strong>introduces additional complexity</strong> for users.</p>
+<p>Many aspects of the analysis can be <strong>configured or adapted</strong> depending on the experimental design, the biological question, and the characteristics of the data. Making <strong>informed choices</strong> therefore requires <strong>more than simply following instructions or applying default settings</strong>: users need to understand how different parameters, assumptions, and visualisations influence the resulting analyses and interpretations.</p>
+Overall, the challenge was to design a <strong>tutorial that promotes understanding rather than execution</strong> and encourages users to <strong>move beyond default settings and black-box usage</strong>.
+</div>
+</div>
+<div class="card-row">
+<div class="card card-retractable" onclick="this.classList.toggle('expanded')">
+<p style="text-align: center;font-weight: bold; font-size: 28px;">
+Approach
+</p>
+<div style="text-align: justify;">
+<p>I designed the tutorial as a <strong>guided learning experience</strong> that combines practical usage with conceptual understanding, rather than presenting the workflow as a sequence of commands to execute.</p>
+<p>Key design choices included:</p>
+<ul>
+<li>structuring the tutorial around the <strong>complete analytical workflow</strong>, from data preparation and parameter selection to result interpretation;</li>
+<li>combining <strong>practical instructions with explanations of the modelling assumptions</strong> and analytical decisions underlying the workflow;</li>
+<li>explaining the <strong>role and impact of key parameters</strong>, including the situations in which different settings may be appropriate, and illustrating it through examples drawn from multiple experimental datasets;</li>
+<li>providing <strong>copy-paste ready code examples</strong> to minimise technical friction and allow users to focus on the concepts being introduced;</li>
+<li>integrating <strong>high-quality visualisations</strong> alongside code to generate them and explaination on how to interpret them.</li>
+</ul>
+</div>
+</div>
+<div class="card card-retractable" onclick="this.classList.toggle('expanded')">
+<p style="text-align: center;font-weight: bold; font-size: 28px;">
+Strengths
+</p>
+<div style="text-align: justify;">
+<ul>
+<li>Designing <strong>user-centred learning experiences</strong> for complex technical tools;</li>
+<li><strong>Bridging theory and practice* to support </strong>informed decision-making**;</li>
+<li>Encouraging <strong>autonomy and critical thinking</strong> rather than procedural execution;</li>
+<li>Communicating modelling assumptions, parameter choices, trade-offs, and methodological consequences clearly;</li>
+<li><strong>Reducing technical barriers to adoption</strong> thanks to code examples without sacrificing conceptual understanding;</li>
+<li>Creating <strong>interactive educational resources</strong> that combine code, visualisation, and explanation.
+</li></ul></div>
+
+</div>
+</div>
+<div class="card card-retractable" style="margin-bottom: 2rem;" onclick="this.classList.toggle('expanded')">
+<p style="text-align: center;font-weight: bold; font-size: 28px;">
+Impact
+</p>
+<div style="text-align: justify;">
+<p>GPMelt was developed with the ambition of becoming an <strong>actionable statistical framework</strong> rather than a black-box analysis tool. Its flexibility was intentionally designed to accommodate not only existing experimental designs, but also the increasingly diverse methodologies emerging within the Thermal Proteome Profiling field and beyond.</p>
+<p>By helping users understand the reasoning behind the framework and the consequences of different analytical choices, the tutorial enables them to understand <strong>how those choices influence the outputs, interpretations, and conclusions</strong> that can be drawn from the data. This gives researchers the <strong>confidence to adapt the methodology to their own scientific questions rather than simply applying predefined workflows</strong>.</p>
+Ultimately, the objective was to provide a foundation that supports both rigorous analysis and methodological creativity, <strong>enabling new experimental designs to be driven by scientific needs rather than constrained by available analytical tools</strong>.
+</div>
+</div>
+<div id="ex-Website" style="margin-top: 2rem; border: 1px solid rgba(0,0,0,0.2); box-shadow: 0 6px 14px rgba(0,0,0,0.12); border-radius: 8px; padding: 1em;">
+<p style="text-align: center;font-weight: bold; font-size: 28px;">
+Explore the tutorial and see how users are guided from workflow execution to informed analytical decision through a hands-on learning experience.
+</p>
+<div id="listing-sample-listings" class="quarto-listing quarto-listing-container-custom">
+<div class="video-rows">
+<div class="video-card">
+<p><a href="https://gpmelt-website-grp-savitski-be284daa99aadeca97f8e634d7838ce7b92.embl-community.io/contents/home.html" target="_blank"> <img src="../../../images/thumbnails/slide-1.png"> </a></p>
+<div class="video-card-content">
+<h3 class="anchored">
+<a href="https://gpmelt-website-grp-savitski-be284daa99aadeca97f8e634d7838ce7b92.embl-community.io/contents/home.html" target="_blank"> GPMelt: Shedding light on the dark meltome </a>
+</h3>
+<p>
+Focus: <strong>Bridging theory and practice in a usable way.</strong>
+</p>
+</div>
+</div>
+</div>
+<style>
+
+.video-rows {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.video-card {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 1rem;
+}
+
+.video-card img {
+  width: 200px; /* thumbnail size */
+  flex-shrink: 0;
+  border-radius: 6px;
+}
+
+.video-card-content {
+  flex: 1;
+}
+
+</style>
+<div class="listing-no-matching d-none">No matching items</div>
+</div>
+</div>
 
 
 
-</main> <!-- /main -->
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body" role="list">
+<div id="ref-LeSueurGPMelt" class="csl-entry" role="listitem">
+<div class="csl-left-margin">1. </div><div class="csl-right-inline">Le Sueur C, Rattray M, Savitski M (2024) GPMelt: A hierarchical gaussian process framework to explore the dark meltome of thermal proteome profiling experiments. PLOS Computational Biology 20(9):e1011632</div>
+</div>
+</div></section></div></main></div>
+
+
+ <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
@@ -552,7 +753,7 @@ ul.task-list li input[type="checkbox"] {
     }
   });
   </script>
-</div> <!-- /content -->
+ <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
     <div class="nav-footer-left">

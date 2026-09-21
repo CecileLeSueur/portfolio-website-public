@@ -1,37 +1,53 @@
 [
   {
-    "listing": "/Teaching/Videos/index.html",
+    "listing": "/CommunicationWorkflow/Teaching/Tutorials/index.html",
     "items": []
   },
   {
-    "listing": "/Teaching/Tutorials/index.html",
-    "items": []
+    "listing": "/CommunicationWorkflow/ScienceComm/ScientificIllustration/index.html",
+    "items": [
+      "/CommunicationWorkflow/ScienceComm/ScientificIllustration/examples/CoverImage.html",
+      "/CommunicationWorkflow/ScienceComm/ScientificIllustration/examples/ThesisFigureGallery.html",
+      "/CommunicationWorkflow/ScienceComm/ScientificIllustration/examples/DataSciencesGallery.html"
+    ]
+  },
+  {
+    "listing": "/WorkflowPortfolio/index.html",
+    "items": [
+      "/WorkflowPortfolio/StudyCases/StudyCase1.html",
+      "/WorkflowPortfolio/StudyCases/StudyCase2.html",
+      "/WorkflowPortfolio/StudyCases/StudyCase3.html",
+      "/WorkflowPortfolio/StudyCases/StudyCase4.html"
+    ]
   },
   {
     "listing": "/index.html",
     "items": [
-      "/Teaching/Videos/index.html",
-      "/Teaching/Tutorials/index.html",
-      "/Teaching/Workshops/index.html",
-      "/ScienceComm/Talk/index.html",
-      "/ScienceComm/Poster/index.html",
-      "/ScienceComm/ScientificIllustration/index.html"
+      "/CommunicationWorkflow/index.html",
+      "/WorkflowPortfolio/index.html"
     ]
   },
   {
-    "listing": "/ScienceComm/ScientificIllustration/examples/ThesisFigureGallery.html",
+    "listing": "/CommunicationWorkflow/index.html",
+    "items": [
+      "/CommunicationWorkflow/Teaching/Videos/index.html",
+      "/CommunicationWorkflow/Teaching/Tutorials/index.html",
+      "/CommunicationWorkflow/Teaching/Workshops/index.html",
+      "/CommunicationWorkflow/ScienceComm/Talk/index.html",
+      "/CommunicationWorkflow/ScienceComm/Poster/index.html",
+      "/CommunicationWorkflow/ScienceComm/ScientificIllustration/index.html"
+    ]
+  },
+  {
+    "listing": "/CommunicationWorkflow/ScienceComm/ScientificIllustration/examples/DataSciencesGallery.html",
     "items": []
   },
   {
-    "listing": "/ScienceComm/ScientificIllustration/index.html",
-    "items": [
-      "/ScienceComm/ScientificIllustration/examples/CoverImage.html",
-      "/ScienceComm/ScientificIllustration/examples/ThesisFigureGallery.html",
-      "/ScienceComm/ScientificIllustration/examples/DataSciencesGallery.html"
-    ]
+    "listing": "/CommunicationWorkflow/ScienceComm/ScientificIllustration/examples/ThesisFigureGallery.html",
+    "items": []
   },
   {
-    "listing": "/ScienceComm/ScientificIllustration/examples/DataSciencesGallery.html",
+    "listing": "/CommunicationWorkflow/Teaching/Videos/index.html",
     "items": []
   }
 ]

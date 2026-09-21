@@ -2,21 +2,24 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.38">
+<meta name="generator" content="quarto-1.10.18">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="One recurring challenge in scientific research is that some of the most widely used statistical concepts are also among the most misunderstood.As part of a series of workshops for PhD students and researchers at EMBL, I developed training material to explain multiple testing, False Discovery Rate (FDR) control, and p-value miscalibration—concepts that researchers frequently encounter in practice but often find abstract, confusing, or intimidating.Jump to the slides below or explore the communication process through the expandable sections.">
+<meta name="description" content="Some ideas are difficult to communicate through words alone. Across my work, I use visual thinking as a communication tool to spark curiosity, explain complex concepts, and communicate data-driven insights.Depending on the communication objective, this can take the form of conceptual illustrations, explanatory figures, or analytical visualisations. Together, these examples illustrate how visual design can support different stages of communication: attracting interest, building understanding, and communicating evidence.The visuals presented here target audiences ranging from biologists to data scientists, serving as a bridge between disciplines with very different ways of thinking and communicating.Jump to the examples below or explore the communication process through the expandable sections.">
 
-<title>Building intuition for statistical reasoning:   Multiple testing, False Discovery Rate (FDR) and p-values miscalibration – Cécile Le Sueur's Portfolio</title>
+<title>Visual thinking for scientific communication:   Designing visuals for clarity and engagement – Cécile Le Sueur's Portfolio</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
 */
-code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -27,24 +30,25 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../../">
-<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../../site_libs/quarto-html/popper.min.js"></script>
-<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-e8bb5c388be52abac024dbec4631dec4.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/quarto-contrib/carousel-0.1.0/quarto-carousel.css" rel="stylesheet">
+<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../">
+<script src="../../../site_libs/quarto-listing/list.min.js"></script>
+<script src="../../../site_libs/quarto-listing/quarto-listing.js"></script>
+<script src="../../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../site_libs/bootstrap/bootstrap-cd55cfdd28625eb0f340cf31cbbf6ef6.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -72,9 +76,67 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script>
 
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-Examples .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
 
-<link rel="stylesheet" href="../../styles.css">
+    const options = {
+      valueNames: ['listing-image','listing-title','listing-subtitle',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-title","listing-author","listing-image","listing-description"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-Examples'] = new List('listing-Examples', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../../../styles.css">
 </head>
 
 <body class="nav-fixed quarto-light">
@@ -84,7 +146,7 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="../../index.html">
+    <a class="navbar-brand" href="../../../index.html">
     <span class="navbar-title">Cécile Le Sueur’s Portfolio</span>
     </a>
   </div>
@@ -95,7 +157,7 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../index.html"> 
+    <a class="nav-link" href="../../../index.html"> 
 <span class="menu-text">home</span></a>
   </li>  
 </ul>
@@ -106,12 +168,7 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text"></span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../cv.html"> <i class="bi bi-file-earmark-person" role="img" aria-label="CV">
-</i> 
-<span class="menu-text">Curriculum Vitae</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../../license.html"> 
+    <a class="nav-link" href="../../../license.html"> 
 <span class="menu-text">License</span></a>
   </li>  
 </ul>
@@ -133,21 +190,22 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Building intuition for statistical reasoning: <br> Multiple testing, False Discovery Rate (FDR) and p-values miscalibration</h1>
-<p class="subtitle lead"><strong>Making statistical concepts intuitive</strong> <br> <br> Example: <br> <strong>Building intuition for multiple-testing scenarios</strong> <br><br> Output: <br> <strong>Workshop</strong></p>
+<h1 class="title">Visual thinking for scientific communication: <br> Designing visuals for clarity and engagement</h1>
+<p class="subtitle lead"><strong>Visual thinking for scientific communication</strong> <br> <br> Example: <br> <strong> From conceptual illustrations to data visualisation </strong> <br> <br> Output: <br> <strong>Scientific illustrations and visualisations</strong></p>
   <div class="quarto-categories">
-    <div class="quarto-category">Visual Reasoning</div>
-    <div class="quarto-category">Statistical Intuition</div>
-    <div class="quarto-category">Misconception Correction</div>
-    <div class="quarto-category">User Empowerment</div>
+    <div class="quarto-category">Visual Thinking</div>
+    <div class="quarto-category">Information Synthesis</div>
+    <div class="quarto-category">Conceptual Abstraction</div>
+    <div class="quarto-category">Interdisciplinary Translation</div>
   </div>
   </div>
 
 <div>
   <div class="description">
-    <p>One recurring challenge in scientific research is that some of the <strong>most widely used statistical concepts are also among the most misunderstood</strong>.</p>
-    <p>As part of a series of workshops for PhD students and researchers at EMBL<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>, I developed training material to explain multiple testing, False Discovery Rate (FDR) control, and p-value miscalibration—concepts that <strong>researchers frequently encounter in practice but often find abstract, confusing, or intimidating</strong>.</p>
-    <p>Jump to the <a href="#ex-Workshop">slides</a> below or explore the communication process through the expandable sections.</p>
+    <p>Some ideas are difficult to communicate through words alone. Across my work, I use <strong>visual thinking as a communication tool</strong> to spark curiosity, explain complex concepts, and communicate data-driven insights.</p>
+    <p>Depending on the communication objective, this can take the form of conceptual illustrations, explanatory figures, or analytical visualisations. Together, these examples illustrate how visual design can support different stages of communication: <strong>attracting interest, building understanding, and communicating evidence</strong>.</p>
+    <p>The visuals presented here target audiences ranging from biologists to data scientists, serving as a <strong>bridge between disciplines with very different ways of thinking and communicating</strong>.</p>
+    <p>Jump to the <a href="#ex-ScientificIllustrations">examples</a> below or explore the communication process through the expandable sections.</p>
   </div>
 </div>
 
@@ -169,10 +227,9 @@ ul.task-list li input[type="checkbox"] {
 Challenges
 </p>
 <div style="text-align: justify;">
-<p>Modern biological experiments increasingly rely on <strong>high-throughput technologies</strong> that generate <strong>large datasets</strong> and create opportunities to test hundreds or thousands of hypotheses simultaneously. While this offers considerable scientific potential, it also introduces <strong>new statistical challenges</strong> that require additional caution during data analysis.</p>
-<p>Multiple testing, False Discovery Rate (FDR) control, and p-value calibration are therefore <strong>central concepts in modern biological research</strong>, yet many researchers <strong>struggle to develop an intuitive understanding</strong> of what they mean in practice. Although encountered routinely, the reasoning behind them is often perceived as <strong>abstract, mathematically complex, or inaccessible</strong>.</p>
-<p>The communication challenge was compounded by the <strong>highly heterogeneous statistical backgrounds of the workshop’s participants</strong>, ranging from researchers with minimal formal training in statistics to others with substantial quantitative experience.</p>
-Another challenge was therefore not simply to explain statistical procedures, but to <strong>help participants build intuition and confidence</strong>, understand what changes when moving from single to multiple hypothesis testing, and develop the reasoning needed to <strong>engage with these concepts independently after the session</strong>.
+<p>The common challenge across these visuals is to <strong>translate complex concepts into intuitive visual representations without sacrificing scientific accuracy</strong>. Many of the ideas involved are abstract, interdisciplinary, or highly technical, making them difficult to communicate effectively through text alone.</p>
+<p>Regardless of their communicative purpose, each visual therefore requires balancing multiple objectives simultaneously: <strong>accessibility</strong> for non-specialists, sufficient <strong>depth</strong> for expert audiences, <strong>clarity</strong> to support understanding and engagement, and enough <strong>visual appeal</strong> to attract and maintain attention.</p>
+The challenge is not simply to illustrate information, but to <strong>identify the visual representation that best supports understanding, highlights the key message, and communicates effectively</strong> across different backgrounds and communication contexts.
 </div>
 </div>
 <div class="card-row">
@@ -181,226 +238,124 @@ Another challenge was therefore not simply to explain statistical procedures, bu
 Approach
 </p>
 <div style="text-align: justify;">
-<p>Rather than introducing these concepts through formulas and statistical procedures, I designed the workshop around <strong>visual reasoning and progressively reconstructed the intuition</strong> needed to understand multiple testing, False Discovery Rate control, and p-value calibration.</p>
-<p>I used <strong>histograms as a consistent visual language</strong> throughout the presentation. While participants were generally familiar with these representations, they often <strong>lacked a clear understanding of how to interpret them statistically</strong>. Histograms therefore provided a natural starting point for introducing more sophisticated concepts without requiring entirely new visual tools.</p>
-<p>Further design choices included:</p>
+<p>I design visuals as communication tools rather than decorative illustrations. The objective is not simply to represent information, but to support understanding through visual reasoning and synthesis.</p>
+<p>Key principles:</p>
 <ul>
-<li>structuring the explanation around the transition from single to multiple hypothesis testing, <strong>highlighting where intuitive reasoning begins to fail</strong> when the same reasoning is applied repeatedly across hundreds or thousands of tests;</li>
-<li><strong>introducing formulas without avoiding them</strong>, but only after participants have developed an intuitive understanding of the underlying concepts; and supporting them with colour coding, visual representations, and intuitive interpretations;</li>
-<li>using <strong>visual reasoning</strong> to demonstrate how p-value calibration depends on underlying modelling assumptions, and how violations of these assumptions can fundamentally alter the interpretation of statistical results.</li>
-</ul>
+<li>simplifying complex ideas without losing their essential meaning;</li>
+<li>combining abstract concepts with concrete visual representations to <strong>support intuition and understanding</strong>;</li>
+<li><strong>synthesising information</strong> from multiple disciplines or sources into <strong>coherent visual narratives</strong>;</li>
+<li>using visual hierarchy, colour, and layout to guide attention towards the most important information;</li>
+<li><strong>adapting the style and level of detail</strong> to the intended audience and communication objective.
+</li></ul></div>
 </div>
-</div>
+
 <div class="card card-retractable" onclick="this.classList.toggle('expanded')">
 <p style="text-align: center;font-weight: bold; font-size: 28px;">
 Strengths
 </p>
 <div style="text-align: justify;">
 <ul>
-<li>Making <strong>abstract statistical concepts intuitive and non-intimidating</strong>;</li>
-<li>Identifying and <strong>addressing common misconceptions</strong> in quantitative reasoning;</li>
-<li>Using <strong>visual tools &amp; reasoning</strong> (histograms, color, diagrams) to support conceptual understanding;</li>
-<li>Communicating mathematical concepts without sacrificing rigour;</li>
-<li>Designing <strong>structured learning experiences under time constraints</strong> (1h workshops);</li>
-<li>Supporting audiences with highly heterogeneous quantitative backgrounds and levels of confidence in mathematics;</li>
-<li>Connecting <strong>statistical theory to real-world</strong> data analysis practice.
+<li><strong>Bridging audiences</strong> with different backgrounds through visual communication;</li>
+<li>Distilling complex ideas into their <strong>essential communicable elements</strong>;</li>
+<li>Condensing large amounts of information into <strong>clear visual summaries</strong>;</li>
+<li>Designing visuals that support <strong>curiosity, reasoning, understanding, and decision-making</strong>;</li>
+<li><strong>Adapting visual communication</strong> across different stages of the communication process.
 </li></ul></div>
 </div>
 
 </div>
 <div class="card card-retractable" style="margin-bottom: 2rem;" onclick="this.classList.toggle('expanded')">
 <p style="text-align: center;font-weight: bold; font-size: 28px;">
-Impact
+Impacts
 </p>
 <div style="text-align: justify;">
-<p>By focusing on intuition before procedure, the workshop helped participants understand <strong>how multiple-testing corrections work</strong>, but also <strong>why they become necessary</strong> in the first place.</p>
-<p>The goal of these workshops was <strong>not to turn experimental scientists into statisticians</strong>, but to provide them with the intuition and conceptual understanding needed to <strong>engage confidently with statistical analyses</strong>.</p>
-<p>A limited understanding of statistical concepts can lead <strong>experimentalists either to mistrust data analysts or to blindly rely on them</strong> without fully understanding the reasoning behind the analysis. Neither situation is ideal.</p>
-By helping participants build intuition for commonly used statistical procedures, these workshops aimed to <strong>facilitate more informed discussions, more critical interpretation of results, and more effective collaboration between experimentalists and quantitative researchers</strong>.
+<p>Some concepts are difficult to communicate effectively through text, formulas, or verbal explanations alone, yet become immediately more accessible once visualised. By transforming abstract ideas into intuitive visual representations, these illustrations supported <strong>conceptual abstraction, knowledge translation, and information synthesis</strong> across a wide range of communication contexts.</p>
+<p>These visual representations also provided a <strong>common language between disciplines</strong>. By translating abstract concepts, workflows, and analytical reasoning into intuitive visual forms, they <strong>facilitated discussions between researchers with different areas of expertise</strong> and helped communicate key ideas more efficiently.</p>
+More broadly, this work reinforced the idea that effective <strong>visuals are not merely decorative elements</strong>. When carefully designed, they can <strong>reduce the intimidation</strong> often associated with theoretical or highly technical content, making <strong>complex ideas more approachable while preserving their depth and meaning</strong>.
 </div>
 </div>
-<div id="ex-Workshop" style="margin-top: 2rem; border: 1px solid rgba(0,0,0,0.2); box-shadow: 0 6px 14px rgba(0,0,0,0.12); border-radius: 8px; padding: 1em;">
+<!-- [striking image](examples/CoverImage.qmd) -->
+<div id="ex-ScientificIllustrations" style="margin-top: 2rem; border: 1px solid rgba(0,0,0,0.2); box-shadow: 0 6px 14px rgba(0,0,0,0.12); border-radius: 8px; padding: 1em;">
 <p style="text-align: center;font-weight: bold; font-size: 28px;">
-Selected slides illustrating how I use visual reasoning to reveal where statistical intuition breaks down—and how it can be rebuilt.
+Scientific illustrations and visualisations
 </p>
-<!-- :::: {.carousel .dark .framed autoplay="false" transition="none"}
-
-:::: {.carousel-item image="placeholder_workshop.png" caption="Gauchos and horses in San Antonio de Areco"}
-:::
-
-:::: {.carousel-item image="placeholder_workshop.png" caption="Llamas on Humahuaqueña grassland"}
-:::
-
-:::: {.carousel-item image="placeholder_workshop.png" caption="Mendoza purple-petaled flowers"}
-:::
-
-:::
- -->
-<div id="quarto-carousel-1" class="carousel carousel-dark slide carousel-framed" data-bs-ride="false">
-<div class="carousel-indicators">
-  <button type="button" data-bs-target="#quarto-carousel-1" data-bs-slide-to="0" class=" active" aria-current="true" aria-label="Slide 1"></button>
-  
-  <button type="button" data-bs-target="#quarto-carousel-1" data-bs-slide-to="1" class="" aria-label="Slide 2"></button>
-  
-  <button type="button" data-bs-target="#quarto-carousel-1" data-bs-slide-to="2" class="" aria-label="Slide 3"></button>
-  
-  <button type="button" data-bs-target="#quarto-carousel-1" data-bs-slide-to="3" class="" aria-label="Slide 4"></button>
-  
-  <button type="button" data-bs-target="#quarto-carousel-1" data-bs-slide-to="4" class="" aria-label="Slide 5"></button>
-  
-  <button type="button" data-bs-target="#quarto-carousel-1" data-bs-slide-to="5" class="" aria-label="Slide 6"></button>
-  
-  <button type="button" data-bs-target="#quarto-carousel-1" data-bs-slide-to="6" class="" aria-label="Slide 7"></button>
-  
-  <button type="button" data-bs-target="#quarto-carousel-1" data-bs-slide-to="7" class="" aria-label="Slide 8"></button>
-  
-  <button type="button" data-bs-target="#quarto-carousel-1" data-bs-slide-to="8" class="" aria-label="Slide 9"></button>
-  
-  <button type="button" data-bs-target="#quarto-carousel-1" data-bs-slide-to="9" class="" aria-label="Slide 10"></button>
-  
-  <button type="button" data-bs-target="#quarto-carousel-1" data-bs-slide-to="10" class="" aria-label="Slide 11"></button>
-  
-  <button type="button" data-bs-target="#quarto-carousel-1" data-bs-slide-to="11" class="" aria-label="Slide 12"></button>
-  
-  <button type="button" data-bs-target="#quarto-carousel-1" data-bs-slide-to="12" class="" aria-label="Slide 13"></button>
-  
-  <button type="button" data-bs-target="#quarto-carousel-1" data-bs-slide-to="13" class="" aria-label="Slide 14"></button>
-  
-  <button type="button" data-bs-target="#quarto-carousel-1" data-bs-slide-to="14" class="" aria-label="Slide 15"></button>
-  
-  <button type="button" data-bs-target="#quarto-carousel-1" data-bs-slide-to="15" class="" aria-label="Slide 16"></button>
-  
-  <button type="button" data-bs-target="#quarto-carousel-1" data-bs-slide-to="16" class="" aria-label="Slide 17"></button>
-  
-  <button type="button" data-bs-target="#quarto-carousel-1" data-bs-slide-to="17" class="" aria-label="Slide 18"></button>
-  
-  <button type="button" data-bs-target="#quarto-carousel-1" data-bs-slide-to="18" class="" aria-label="Slide 19"></button>
-  
-  <button type="button" data-bs-target="#quarto-carousel-1" data-bs-slide-to="19" class="" aria-label="Slide 20"></button>
-  
-  <button type="button" data-bs-target="#quarto-carousel-1" data-bs-slide-to="20" class="" aria-label="Slide 21"></button>
-  
-  <button type="button" data-bs-target="#quarto-carousel-1" data-bs-slide-to="21" class="" aria-label="Slide 22"></button>
-  
-  <button type="button" data-bs-target="#quarto-carousel-1" data-bs-slide-to="22" class="" aria-label="Slide 23"></button>
-  
-  <button type="button" data-bs-target="#quarto-carousel-1" data-bs-slide-to="23" class="" aria-label="Slide 24"></button>
-  
-  <button type="button" data-bs-target="#quarto-carousel-1" data-bs-slide-to="24" class="" aria-label="Slide 25"></button>
-  
-  <button type="button" data-bs-target="#quarto-carousel-1" data-bs-slide-to="25" class="" aria-label="Slide 26"></button>
-  
-  <button type="button" data-bs-target="#quarto-carousel-1" data-bs-slide-to="26" class="" aria-label="Slide 27"></button>
-  
-  <button type="button" data-bs-target="#quarto-carousel-1" data-bs-slide-to="27" class="" aria-label="Slide 28"></button>
-  
-</div>
-<div class="carousel-inner">
-<div class="carousel-item active no-transition" data-bs-interval="3000">
-<img src="../../images/slides_workshop/slide-01.png" class="d-block mx-auto">
-</div>
-<div class="carousel-item no-transition" data-bs-interval="3000">
-<img src="../../images/slides_workshop/slide-02.png" class="d-block mx-auto">
-</div>
-<div class="carousel-item no-transition" data-bs-interval="3000">
-<img src="../../images/slides_workshop/slide-03.png" class="d-block mx-auto">
-</div>
-<div class="carousel-item no-transition" data-bs-interval="3000">
-<img src="../../images/slides_workshop/slide-04.png" class="d-block mx-auto">
-</div>
-<div class="carousel-item no-transition" data-bs-interval="3000">
-<img src="../../images/slides_workshop/slide-05.png" class="d-block mx-auto">
-</div>
-<div class="carousel-item no-transition" data-bs-interval="3000">
-<img src="../../images/slides_workshop/slide-06.png" class="d-block mx-auto">
-</div>
-<div class="carousel-item no-transition" data-bs-interval="3000">
-<img src="../../images/slides_workshop/slide-07.png" class="d-block mx-auto">
-</div>
-<div class="carousel-item no-transition" data-bs-interval="3000">
-<img src="../../images/slides_workshop/slide-08.png" class="d-block mx-auto">
-</div>
-<div class="carousel-item no-transition" data-bs-interval="3000">
-<img src="../../images/slides_workshop/slide-09.png" class="d-block mx-auto">
-</div>
-<div class="carousel-item no-transition" data-bs-interval="3000">
-<img src="../../images/slides_workshop/slide-10.png" class="d-block mx-auto">
-</div>
-<div class="carousel-item no-transition" data-bs-interval="3000">
-<img src="../../images/slides_workshop/slide-11.png" class="d-block mx-auto">
-</div>
-<div class="carousel-item no-transition" data-bs-interval="3000">
-<img src="../../images/slides_workshop/slide-12.png" class="d-block mx-auto">
-</div>
-<div class="carousel-item no-transition" data-bs-interval="3000">
-<img src="../../images/slides_workshop/slide-13.png" class="d-block mx-auto">
-</div>
-<div class="carousel-item no-transition" data-bs-interval="3000">
-<img src="../../images/slides_workshop/slide-14.png" class="d-block mx-auto">
-</div>
-<div class="carousel-item no-transition" data-bs-interval="3000">
-<img src="../../images/slides_workshop/slide-15.png" class="d-block mx-auto">
-</div>
-<div class="carousel-item no-transition" data-bs-interval="3000">
-<img src="../../images/slides_workshop/slide-16.png" class="d-block mx-auto">
-</div>
-<div class="carousel-item no-transition" data-bs-interval="3000">
-<img src="../../images/slides_workshop/slide-17.png" class="d-block mx-auto">
-</div>
-<div class="carousel-item no-transition" data-bs-interval="3000">
-<img src="../../images/slides_workshop/slide-18.png" class="d-block mx-auto">
-</div>
-<div class="carousel-item no-transition" data-bs-interval="3000">
-<img src="../../images/slides_workshop/slide-19.png" class="d-block mx-auto">
-</div>
-<div class="carousel-item no-transition" data-bs-interval="3000">
-<img src="../../images/slides_workshop/slide-20.png" class="d-block mx-auto">
-</div>
-<div class="carousel-item no-transition" data-bs-interval="3000">
-<img src="../../images/slides_workshop/slide-21.png" class="d-block mx-auto">
-</div>
-<div class="carousel-item no-transition" data-bs-interval="3000">
-<img src="../../images/slides_workshop/slide-22.png" class="d-block mx-auto">
-</div>
-<div class="carousel-item no-transition" data-bs-interval="3000">
-<img src="../../images/slides_workshop/slide-23.png" class="d-block mx-auto">
-</div>
-<div class="carousel-item no-transition" data-bs-interval="3000">
-<img src="../../images/slides_workshop/slide-24.png" class="d-block mx-auto">
-</div>
-<div class="carousel-item no-transition" data-bs-interval="3000">
-<img src="../../images/slides_workshop/slide-25.png" class="d-block mx-auto">
-</div>
-<div class="carousel-item no-transition" data-bs-interval="3000">
-<img src="../../images/slides_workshop/slide-26.png" class="d-block mx-auto">
-</div>
-<div class="carousel-item no-transition" data-bs-interval="3000">
-<img src="../../images/slides_workshop/slide-27.png" class="d-block mx-auto">
-</div>
-<div class="carousel-item no-transition" data-bs-interval="3000">
-<img src="../../images/slides_workshop/slide-28.png" class="d-block mx-auto">
+<div id="listing-Examples" class="quarto-listing quarto-listing-container-grid">
+<div class="list grid quarto-listing-cols-3">
+<div class="g-col-1" data-index="0" data-listing-file-modified-sort="1789988330547" data-listing-reading-time-sort="2" data-listing-word-count-sort="279">
+<a href="../../../CommunicationWorkflow/ScienceComm/ScientificIllustration/examples/CoverImage.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="../../../images/thumbnails/slide-2.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Striking image for GPMelt
+</h5>
+<div class="card-subtitle listing-subtitle">
+A visual designed to spark curiosity and communicate the core idea of the tool at a glance.
 </div>
 </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#quarto-carousel-1" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-      </button>
-    
-      <button class="carousel-control-next" type="button" data-bs-target="#quarto-carousel-1" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-      </button>
-    
+</div></a>
+</div>
+<div class="g-col-1" data-index="1" data-listing-file-modified-sort="1789988330548" data-listing-reading-time-sort="1" data-listing-word-count-sort="18">
+<a href="../../../CommunicationWorkflow/ScienceComm/ScientificIllustration/examples/ThesisFigureGallery.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="../../../images/thumbnails/slide-3.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Scientific illustrations across disciplines
+</h5>
+<div class="card-subtitle listing-subtitle">
+A collection of visuals designed to translate complex concepts and support understanding across a wide range of scientific expertise.
 </div>
 </div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="2" data-listing-file-modified-sort="1789988330548" data-listing-reading-time-sort="1" data-listing-word-count-sort="2">
+<a href="../../../CommunicationWorkflow/ScienceComm/ScientificIllustration/examples/DataSciencesGallery.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="../../../images/thumbnails/slide-8.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Data visualisation for evidence and insight
+</h5>
+<div class="card-subtitle listing-subtitle">
+Visualisations designed to reveal patterns, communicate evidence, and support data-driven reasoning.
+</div>
+</div>
+</div></a>
+</div>
+</div>
+<div class="listing-no-matching d-none">No matching items</div>
+</div>
+</div>
+<style>
+.quarto-listing-container-grid .list.grid {
+  grid-template-columns: repeat(3, minmax(200px, 300px)) !important;
+  justify-content: center !important;
+}
+</style>
+<!-- 
+-->
+<!-- 
+As examples, I present the **striking image** aimed at advertising GPMelt on social medias, and a **selection of scientific illustrations** covering a wide range of scientific expertise, which I included in my thesis [-@LeSueurThesis] whose commitee consisted in biologists, bio-informaticians and mathematicians.
 
 
-<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+Section 2: Thesis figures
+2–3 figures max
+displayed side by side or stacked
+👉 Add short captions explaining:
+what concept they illustrate
+why this representation was chosen -->
 
-<ol>
-<li id="fn1"><p>European Molecular Biology Laboratory <a href="https://www.embl.org" class="uri">https://www.embl.org</a><a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-</ol>
-</section></div></main></div>
+
+
+</main></div>
+
 
 
 
