@@ -1,0 +1,101 @@
+---
+title: "Communicating potential, not just results: <br> Persuasive scientific storytelling in a 10-minute conference talk"
+subtitle: "<strong>Persuasive scientific storytelling</strong> <br> <br> Example: <br> <strong>Communicating potential, not just results</strong>  <br> <br> Output: <br> <strong>10-minute Conference talk</strong></p>"
+description: |
+  After delivering an award winning 20-minute talk at ISMB 2023^[International Conference on Intelligent Systems For Molecular Biology 2023 <https://www.iscb.org/ismbeccb2023/home>], I was selected to give a 10-minute presentation at ISMB 2024^[International Conference on Intelligent Systems For Molecular Biology 2024 <https://www.iscb.org/ismb2024/home-ismb-2024>] introducing a **methodological concept** that combines a slight modification of GPMelt's model [-@LeSueurGPMelt] with a modified Thermal Proteome Profiling (TPP) experimental protocol to potentially **double experimental throughput** (see Section 7.4 of my PhD thesis [-@LeSueurThesis]). 
+  
+  Beyond the technical contribution itself, the talk focused on the **broader implications** of reducing experimental costs and making advanced methodologies more accessible to a wider range of research groups. The communication challenge was to **convey both the technical value and long-term potential of the idea to a diverse audience within only ten minutes**.
+
+  Jump to the [talk](#ex-10MinTalk) below or explore the communication process through the expandable sections.
+categories: [Community Engagement, Scientific Persuasion, Impact-Driven Communication, Beyond the Technical Contribution]
+image: "../../../images/slides_talk/slide-25.png"
+order: 1
+#author: "Cécile Le Sueur"
+#date: "05.2026"
+bibliography: ../../../References/references.bib
+csl: ../../../References/bibstyle.cls
+format: 
+  html:
+    page-layout: full
+    grid:
+      sidebar-width: 100px
+      body-width: 1100px
+      margin-width: 100px
+      gutter-width: 1.5rem
+editor:
+    render-on-save: true
+filters:
+  - carousel # from https://github.com/tomicapretto/quarto-carousel/blob/main/_extensions/carousel/quarto-carousel.css
+---
+
+<div class="card card-retractable" style="margin-bottom: 2rem;" onclick="this.classList.toggle('expanded')">
+
+  <p style="text-align: center;font-weight: bold; font-size: 28px;">
+  Challenges
+  </p>
+
+  <div style="text-align: justify;">
+  The talk targeted a **diverse audience** ranging from experimental biologists to computational researchers, most of whom were **not specialists in Thermal Proteome Profiling**.
+
+  The challenge was not only to explain the core idea clearly and accurately, but also to do so within a ten-minute conference format. This left **very little time to introduce the scientific problem, explain the proposed solution, and persuade the audience that the idea mattered**.
+
+  The communication challenge was further complicated by the **structure of the message** itself. The talk began with a highly specialised methodological problem before gradually revealing a broader question hidden beneath it: **how reducing experimental costs could contribute to making advanced scientific methodologies more accessible**. The key challenge was therefore to guide the audience from a niche technical concept to its wider implications **without losing either scientific rigour or narrative momentum**.
+  </div>
+</div>
+
+<div class="card-row">
+  
+  <div class="card card-retractable" onclick="this.classList.toggle('expanded')">
+  <p style="text-align: center;font-weight: bold; font-size: 28px;">
+  Approach
+  </p>
+  
+  <div style="text-align: justify;">
+  I structured the talk around a **progressive reframing of the problem**, moving from a specialised methodological challenge to a broader discussion about accessibility in scientific research.
+
+  Key design choices included:
+
+  * introducing enough technical intuition to make the proposed **solution credible without overwhelming** a non-specialist audience;
+  * prioritising the **significance of the idea and what it could enable** over a comprehensive methodological explanation;
+  * using the methodological innovation as a tangible example of how statistical and experimental advances can reduce barriers to research;
+  * designing a fast-paced narrative and slide structure that **maintained audience engagement** while delivering a complete and persuasive message within a ten-minute format.
+  </div>
+  </div>
+
+  <div class="card card-retractable" onclick="this.classList.toggle('expanded')">
+  <p style="text-align: center;font-weight: bold; font-size: 28px;">
+  Strengths
+  </p>
+
+  <div style="text-align: justify;">
+  * Communicating complex ideas under **severe time constraints**;
+  * Maintaining **audience engagement** through narrative design and progressive revelation;
+  * **Identifying challenges** faced by experimental researchers and addressing them through **methodological innovation**;
+  * Framing technical innovations through **broader scientific and societal implications**;
+  * Communicating the **significance of ideas** whose value lies primarily in what they could enable;
+  * Designing messages that leave a **lasting impression** and encourage **continued reflection beyond the presentation**;
+  * **Aligning** diverse scientific audiences around a **common research bottleneck**.
+  </div>
+  </div>
+
+</div>
+
+<div class="card card-retractable" style="margin-bottom: 2rem;" onclick="this.classList.toggle('expanded')">
+<p style="text-align: center;font-weight: bold; font-size: 28px;">
+Impact
+</p>
+<div style="text-align: justify;">
+This talk was designed to **communicate a methodological innovation** just as much as to encourage the audience to **think differently** about the broader challenges it addressed. By connecting a specialised technical problem to questions of experimental cost and resource inequality, the presentation aimed to **expand the conversation beyond methodology alone**.
+
+Ultimately, the objective was to show how seemingly small technical advances can have implications far beyond their immediate application, and to **encourage researchers to consider how their own work might contribute to lowering barriers and broadening access to scientific discovery**.
+</div>
+</div>
+
+:::: {style="margin-top: 2rem; border: 1px solid rgba(0,0,0,0.2); box-shadow: 0 6px 14px rgba(0,0,0,0.12); border-radius: 8px; padding: 1em;" id="ex-10MinTalk"}
+
+<p style="text-align: center;font-weight: bold; font-size: 28px;">
+  Explore the slides and see how a niche methodological concept and a broader conversation about accessibility in science were woven into a single ten-minute narrative.
+</p>
+
+{{< include _carousel_include.qmd >}}
+::::
