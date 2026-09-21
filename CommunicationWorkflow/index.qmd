@@ -28,7 +28,7 @@ listing:
 toc: false
 toc-location: body
 page-layout: full
-title-block-banner: "images/banner/Banner.svg"
+title-block-banner: "../images/banner/Banner.svg"
 editor:
     render-on-save: true
 ---
